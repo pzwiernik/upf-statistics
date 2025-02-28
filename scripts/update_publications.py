@@ -21,7 +21,7 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
 # Compute the threshold year (last two years)
 current_year = datetime.datetime.now().year
-year_threshold = current_year - 2  # Only keep papers from this year or last year
+year_threshold = current_year - 1  # Only keep papers from this year or last year
 
 # Open a log file to track updates
 log_file = open(f"{HUGO_CONTENT_DIR}/update_log.txt", "a")
@@ -35,7 +35,7 @@ def extract_venue(citation):
     return "Unknown Venue"
 
 # Track new publication filenames to prevent deletion
-new_filenames = set()
+new_filenames = set(["_index.md"])  # Always keep index.md
 
 # Process each Google Scholar profile
 for SCHOLAR_ID in SCHOLAR_IDS:
@@ -86,7 +86,7 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         filename = f"{HUGO_CONTENT_DIR}/{safe_filename}.md"
 
         # Store filenames for tracking
-        new_filenames.add(filename)
+        new_filenames.add(os.path.basename(filename))  # Store only filenames, not full paths
 
         # Generate Markdown file for Hugo
         with open(filename, "w") as md_file:
@@ -105,11 +105,12 @@ publication_url: "{pub_url}"
 
         log_file.write(f"Added: {pub_title} ({pub_date})\n")
 
-# **DELETE OLD PUBLICATIONS**
-existing_files = set(f"{HUGO_CONTENT_DIR}/{f}" for f in os.listdir(HUGO_CONTENT_DIR) if f.endswith(".md"))
+# **DELETE OLD PUBLICATIONS BUT KEEP index.md**
+existing_files = {f for f in os.listdir(HUGO_CONTENT_DIR) if f.endswith(".md")}
 files_to_delete = existing_files - new_filenames
 
-for file_path in files_to_delete:
+for file_name in files_to_delete:
+    file_path = os.path.join(HUGO_CONTENT_DIR, file_name)
     os.remove(file_path)
     log_file.write(f"Deleted: {file_path}\n")
     print(f"🗑 Deleted old publication: {file_path}")
