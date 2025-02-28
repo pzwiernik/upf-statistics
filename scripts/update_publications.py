@@ -21,7 +21,7 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
 # Compute the threshold year (last two years)
 current_year = datetime.datetime.now().year
-year_threshold = current_year - 2  # Only keep papers from this year or last year
+year_threshold = current_year - 1  # Only keep papers from this year or last year
 
 # Open a log file to track updates
 log_file = open(f"{HUGO_CONTENT_DIR}/update_log.txt", "a")
@@ -66,11 +66,11 @@ for SCHOLAR_ID in SCHOLAR_IDS:
             print(f"⚠️ Error fetching metadata for {pub['bib'].get('title', 'Unknown Title')}: {e}")
             continue
 
-        pub_title = pub["bib"].get("title", "Unknown Title")
+        pub_title = pub["bib"].get("title", "Unknown Title").strip()
         pub_authors = pub["bib"].get("author", "Unknown Authors")
-        pub_citation = pub["bib"].get("citation", "")
-        pub_eprint = pub["bib"].get("eprint", "")  # ArXiv ID if available
-        pub_doi = pub["bib"].get("doi", "")
+        pub_citation = pub["bib"].get("citation", "").strip()
+        pub_eprint = pub["bib"].get("eprint", "").strip()  # ArXiv ID if available
+        pub_doi = pub["bib"].get("doi", "").strip()
         pub_venue = extract_venue(pub_citation) if pub_citation else (f"arXiv:{pub_eprint}" if pub_eprint else "Unknown Venue")
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
@@ -79,9 +79,13 @@ for SCHOLAR_ID in SCHOLAR_IDS:
 
         # Convert authors into a list if missing
         if isinstance(pub_authors, str):
-            pub_authors = pub_authors.split(", ")
+            pub_authors = [author.strip() for author in pub_authors.split(", ")]
         elif not isinstance(pub_authors, list):  
             pub_authors = ["Unknown Author"]
+
+        # Ensure proper formatting of venue/journal
+        pub_venue = f"*{pub_venue}*" if pub_venue else "Unknown Venue"
+        pub_venue = pub_venue.replace("(", "\\(").replace(")", "\\)")  # Escape parentheses for Hugo
 
         # Create a **subfolder** for each publication (required by Hugo Blox)
         safe_foldername = pub_title.lower().replace(" ", "_").replace(",", "").replace("'", "").replace(":", "").replace("/", "_")
@@ -109,7 +113,7 @@ doi: "{pub_doi}"
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "*{pub_venue}*"
+publication: {pub_venue}
 
 abstract: ""
 summary: ""
