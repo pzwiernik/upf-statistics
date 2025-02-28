@@ -8,7 +8,7 @@ SCHOLAR_IDS = [
     "WgPhMfwAAAAJ",  # Add more researchers here
 ]
 
-# Define Hugo content directory for publications
+# Define Hugo content directory
 HUGO_CONTENT_DIR = "content/publication"
 
 # Create publication folder if it doesn’t exist
@@ -33,21 +33,29 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         pub_venue = pub["bib"].get("venue", "Unknown Venue")
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
+        # Ensure the year is a valid number, default to current year if missing
+        try:
+            pub_year = int(pub_year)
+            pub_date = f"{pub_year}-01-01"  # Default to January 1st of that year
+        except ValueError:
+            pub_date = f"{datetime.datetime.now().year}-01-01"  # Default to current year if invalid
+
         # Create a safe filename
-        filename = f"{HUGO_CONTENT_DIR}/{pub_title.lower().replace(' ', '_')}.md"
+        safe_filename = pub_title.lower().replace(" ", "_").replace(",", "").replace("'", "").replace(":", "").replace("/", "_")
+        filename = f"{HUGO_CONTENT_DIR}/{safe_filename}.md"
 
         # Generate Markdown file for Hugo
         with open(filename, "w") as md_file:
             md_file.write(f"""---
 title: "{pub_title}"
-date: {pub_year}-01-01
+date: {pub_date}
 authors: "{pub_authors}"
 publication: "{pub_venue}"
 publication_url: "{pub_url}"
 ---
 """)
 
-        log_file.write(f"Added: {pub_title} ({pub_year})\n")
+        log_file.write(f"Added: {pub_title} ({pub_date})\n")
 
 log_file.close()
 print("✅ Publications updated successfully!")
