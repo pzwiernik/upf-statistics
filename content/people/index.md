@@ -1,6 +1,6 @@
 ---
 title: People
-date: 2022-2-28
+date: "2024-02-28"
 
 type: landing
 
