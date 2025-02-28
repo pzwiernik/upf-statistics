@@ -12,5 +12,5 @@ social:
     icon_pack: ai
     link: "https://scholar.google.com/citations?user=XXXXXX"
 user_groups:
-  - Researchers
+  - Principal Investigators
 ---
