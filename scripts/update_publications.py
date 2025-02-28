@@ -1,6 +1,7 @@
 from scholarly import scholarly
 import os
 import datetime
+import re
 
 # List of Google Scholar profile IDs to scrape
 SCHOLAR_IDS = [
@@ -21,37 +22,43 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 log_file = open(f"{HUGO_CONTENT_DIR}/update_log.txt", "a")
 log_file.write(f"\nUpdate run on {current_date}\n")
 
+# Function to extract venue from citation
+def extract_venue(citation):
+    if citation:
+        match = re.search(r'([^,]+), \d{4}', citation)
+        return match.group(1) if match else citation
+    return "Unknown Venue"
+
 # Process each Google Scholar profile
 for SCHOLAR_ID in SCHOLAR_IDS:
     author = scholarly.search_author_id(SCHOLAR_ID)
     scholarly.fill(author, sections=["publications"])
 
     # Sort publications by year (most recent first)
-    sorted_pubs = sorted(author["publications"], key=lambda x: x["bib"].get("year", 0), reverse=True)
+    sorted_pubs = sorted(author["publications"], key=lambda x: x["bib"].get("pub_year", "0"), reverse=True)
 
     for pub in sorted_pubs[:5]:  # Fetch the latest 5 papers per author
-        pub_title = pub["bib"]["title"]
-        pub_year = pub["bib"].get("year", "Unknown Year")
+        scholarly.fill(pub)  # Fetch full metadata
+
+        pub_title = pub["bib"].get("title", "Unknown Title")
+        pub_year = pub["bib"].get("pub_year", "Unknown Year")
         pub_authors = pub["bib"].get("author", "Unknown Authors")
-        pub_venue = pub["bib"].get("venue", "")
-        pub_eprint = pub["bib"].get("eprint", "")  # arXiv identifier if available
+        pub_citation = pub["bib"].get("citation", "")
+        pub_venue = extract_venue(pub_citation)  # Extract journal name
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
-        # Ensure the year is a valid number, default to current year if missing
+        # Ensure the year is valid
         try:
             pub_year = int(pub_year)
-            pub_date = f"{pub_year}-01-01"  # Default to January 1st of that year
+            pub_date = f"{pub_year}-01-01"
         except ValueError:
             pub_date = f"{datetime.datetime.now().year}-01-01"
 
-        # Convert authors into a proper YAML list
+        # Convert authors into a list if missing
         if isinstance(pub_authors, str):
             pub_authors = pub_authors.split(", ")
         elif not isinstance(pub_authors, list):  
             pub_authors = ["Unknown Author"]
-
-        # Prioritize journal name, fallback to arXiv identifier if available
-        pub_source = pub_venue if pub_venue else (f"arXiv:{pub_eprint}" if pub_eprint else "Unknown Venue")
 
         # Create a safe filename
         safe_filename = pub_title.lower().replace(" ", "_").replace(",", "").replace("'", "").replace(":", "").replace("/", "_")
@@ -67,7 +74,7 @@ authors:
             for author in pub_authors:
                 md_file.write(f"  - \"{author}\"\n")
 
-            md_file.write(f"""publication: "{pub_source}"
+            md_file.write(f"""publication: "{pub_venue}"
 publication_url: "{pub_url}"
 ---
 """)
