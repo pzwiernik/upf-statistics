@@ -21,7 +21,7 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
 # Compute the threshold year (last two years)
 current_year = datetime.datetime.now().year
-year_threshold = current_year - 2  # Only keep papers from this year or last year
+year_threshold = current_year - 1  # Only keep papers from this year or last year
 
 # Open a log file to track updates
 log_file = open(f"{HUGO_CONTENT_DIR}/update_log.txt", "a")
