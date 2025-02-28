@@ -21,7 +21,7 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
 # Compute the threshold year (last two years)
 current_year = datetime.datetime.now().year
-year_threshold = current_year - 1  # Only keep papers from this year or last year
+year_threshold = current_year - 2  # Only keep papers from this year or last year
 
 # Open a log file to track updates
 log_file = open(f"{HUGO_CONTENT_DIR}/update_log.txt", "a")
@@ -30,7 +30,7 @@ log_file.write(f"\nUpdate run on {current_date}\n")
 # Function to extract venue from citation
 def extract_venue(citation):
     if citation:
-        match = re.search(r'([^,]+), \d{4}', citation)
+        match = re.search(r'([^,]+), \d{4}', citation)  # Extract first part before the year
         return match.group(1) if match else citation
     return "Unknown Venue"
 
@@ -48,13 +48,7 @@ for SCHOLAR_ID in SCHOLAR_IDS:
     # Sort publications by year (most recent first)
     sorted_pubs = sorted(author["publications"], key=lambda x: x["bib"].get("pub_year", "0"), reverse=True)
 
-    # Count processed publications
-    processed_count = 0
-
     for pub in sorted_pubs:
-        if processed_count >= 10:  # Hard limit to prevent too many requests
-            break
-
         pub_year = pub["bib"].get("pub_year", "Unknown Year")
         try:
             pub_year = int(pub_year)
@@ -75,7 +69,8 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         pub_title = pub["bib"].get("title", "Unknown Title")
         pub_authors = pub["bib"].get("author", "Unknown Authors")
         pub_citation = pub["bib"].get("citation", "")
-        pub_venue = extract_venue(pub_citation)  # Extract journal name
+        pub_eprint = pub["bib"].get("eprint", "")  # ArXiv ID if available
+        pub_venue = extract_venue(pub_citation) if pub_citation else (f"arXiv:{pub_eprint}" if pub_eprint else "Unknown Venue")
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
         pub_date = f"{pub_year}-01-01"
@@ -109,7 +104,6 @@ publication_url: "{pub_url}"
 """)
 
         log_file.write(f"Added: {pub_title} ({pub_date})\n")
-        processed_count += 1  # Increase count of processed papers
 
 # **DELETE OLD PUBLICATIONS**
 existing_files = set(f"{HUGO_CONTENT_DIR}/{f}" for f in os.listdir(HUGO_CONTENT_DIR) if f.endswith(".md"))
