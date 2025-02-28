@@ -26,11 +26,15 @@ for SCHOLAR_ID in SCHOLAR_IDS:
     author = scholarly.search_author_id(SCHOLAR_ID)
     scholarly.fill(author, sections=["publications"])
 
-    for pub in author["publications"][:5]:  # Fetch the latest 5 papers per author
+    # Sort publications by year (most recent first)
+    sorted_pubs = sorted(author["publications"], key=lambda x: x["bib"].get("year", 0), reverse=True)
+
+    for pub in sorted_pubs[:5]:  # Fetch the latest 5 papers per author
         pub_title = pub["bib"]["title"]
         pub_year = pub["bib"].get("year", "Unknown Year")
         pub_authors = pub["bib"].get("author", "Unknown Authors")
-        pub_venue = pub["bib"].get("venue", "Unknown Venue")
+        pub_venue = pub["bib"].get("venue", "")
+        pub_eprint = pub["bib"].get("eprint", "")  # arXiv identifier if available
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
         # Ensure the year is a valid number, default to current year if missing
@@ -38,13 +42,16 @@ for SCHOLAR_ID in SCHOLAR_IDS:
             pub_year = int(pub_year)
             pub_date = f"{pub_year}-01-01"  # Default to January 1st of that year
         except ValueError:
-            pub_date = f"{datetime.datetime.now().year}-01-01"  # Default to current year if invalid
+            pub_date = f"{datetime.datetime.now().year}-01-01"
 
         # Convert authors into a proper YAML list
         if isinstance(pub_authors, str):
-            pub_authors = pub_authors.split(", ")  # Convert "Author1, Author2" → ["Author1", "Author2"]
+            pub_authors = pub_authors.split(", ")
         elif not isinstance(pub_authors, list):  
-            pub_authors = ["Unknown Author"]  # Ensure it's a list, not None
+            pub_authors = ["Unknown Author"]
+
+        # Prioritize journal name, fallback to arXiv identifier if available
+        pub_source = pub_venue if pub_venue else (f"arXiv:{pub_eprint}" if pub_eprint else "Unknown Venue")
 
         # Create a safe filename
         safe_filename = pub_title.lower().replace(" ", "_").replace(",", "").replace("'", "").replace(":", "").replace("/", "_")
@@ -60,7 +67,7 @@ authors:
             for author in pub_authors:
                 md_file.write(f"  - \"{author}\"\n")
 
-            md_file.write(f"""publication: "{pub_venue}"
+            md_file.write(f"""publication: "{pub_source}"
 publication_url: "{pub_url}"
 ---
 """)
