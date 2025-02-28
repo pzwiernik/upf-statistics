@@ -1,28 +1,29 @@
 ---
 # Display name
-title: Piotr Zwiernik
+title: Eulalia Nualart
 
 # Full Name (for SEO)
-first_name: Piotr
-last_name: Zwiernik
+first_name: Eulalia
+last_name: Nualart
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Associate Professor
+role: Professor of Artificial Intelligence
 
 # Organizations/Affiliations
 organizations:
-  - name: Universitat Pompeu Fabra
-    url: 'https://pzwiernik.github.io'
+  - name: Stanford University
+    url: ''
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-  - High-dimensional statistics
-  - Tensors
+  - Artificial Intelligence
+  - Computational Linguistics
+  - Information Retrieval
 
 education:
   courses:
