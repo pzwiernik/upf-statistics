@@ -40,6 +40,12 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         except ValueError:
             pub_date = f"{datetime.datetime.now().year}-01-01"  # Default to current year if invalid
 
+        # Convert authors into a proper YAML list
+        if isinstance(pub_authors, str):
+            pub_authors = pub_authors.split(", ")  # Convert "Author1, Author2" → ["Author1", "Author2"]
+        elif not isinstance(pub_authors, list):  
+            pub_authors = ["Unknown Author"]  # Ensure it's a list, not None
+
         # Create a safe filename
         safe_filename = pub_title.lower().replace(" ", "_").replace(",", "").replace("'", "").replace(":", "").replace("/", "_")
         filename = f"{HUGO_CONTENT_DIR}/{safe_filename}.md"
@@ -49,8 +55,12 @@ for SCHOLAR_ID in SCHOLAR_IDS:
             md_file.write(f"""---
 title: "{pub_title}"
 date: {pub_date}
-authors: "{pub_authors}"
-publication: "{pub_venue}"
+authors:
+""")
+            for author in pub_authors:
+                md_file.write(f"  - \"{author}\"\n")
+
+            md_file.write(f"""publication: "{pub_venue}"
 publication_url: "{pub_url}"
 ---
 """)
