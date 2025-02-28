@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
         
-        The **UPF Statistics** group has been a center of excellence for foundational research in statistics and machine learning.
+        The **UPF Statistics** group has been a center of excellence for foundational research in statistics and machine learning at Universitat Pompeu Fabra in Barcelona. 
   
   - block: collection
     content:
