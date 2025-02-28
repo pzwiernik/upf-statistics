@@ -2,6 +2,7 @@ from scholarly import scholarly
 import os
 import datetime
 import re
+import time
 
 # List of Google Scholar profile IDs to scrape
 SCHOLAR_IDS = [
@@ -38,33 +39,46 @@ new_filenames = set()
 
 # Process each Google Scholar profile
 for SCHOLAR_ID in SCHOLAR_IDS:
+    print(f"🔍 Fetching publications for Scholar ID: {SCHOLAR_ID}")
+
+    # Fetch author profile
     author = scholarly.search_author_id(SCHOLAR_ID)
     scholarly.fill(author, sections=["publications"])
 
     # Sort publications by year (most recent first)
     sorted_pubs = sorted(author["publications"], key=lambda x: x["bib"].get("pub_year", "0"), reverse=True)
 
+    # Count processed publications
+    processed_count = 0
+
     for pub in sorted_pubs:
-        scholarly.fill(pub)  # Fetch full metadata
+        if processed_count >= 10:  # Hard limit to prevent too many requests
+            break
+
+        pub_year = pub["bib"].get("pub_year", "Unknown Year")
+        try:
+            pub_year = int(pub_year)
+        except ValueError:
+            continue  # Skip if year is invalid
+
+        if pub_year < year_threshold:
+            continue  # Skip older papers
+
+        # Fetch metadata with timeout
+        try:
+            scholarly.fill(pub, sections=["bib"])
+            time.sleep(1.5)  # Prevent rate-limiting
+        except Exception as e:
+            print(f"⚠️ Error fetching metadata for {pub['bib'].get('title', 'Unknown Title')}: {e}")
+            continue
 
         pub_title = pub["bib"].get("title", "Unknown Title")
-        pub_year = pub["bib"].get("pub_year", "Unknown Year")
         pub_authors = pub["bib"].get("author", "Unknown Authors")
         pub_citation = pub["bib"].get("citation", "")
         pub_venue = extract_venue(pub_citation)  # Extract journal name
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
-        # Ensure the year is valid
-        try:
-            pub_year = int(pub_year)
-            pub_date = f"{pub_year}-01-01"
-        except ValueError:
-            pub_year = current_year  # Default to current year if invalid
-            pub_date = f"{pub_year}-01-01"
-
-        # Skip papers older than two years
-        if pub_year < year_threshold:
-            continue
+        pub_date = f"{pub_year}-01-01"
 
         # Convert authors into a list if missing
         if isinstance(pub_authors, str):
@@ -95,6 +109,7 @@ publication_url: "{pub_url}"
 """)
 
         log_file.write(f"Added: {pub_title} ({pub_date})\n")
+        processed_count += 1  # Increase count of processed papers
 
 # **DELETE OLD PUBLICATIONS**
 existing_files = set(f"{HUGO_CONTENT_DIR}/{f}" for f in os.listdir(HUGO_CONTENT_DIR) if f.endswith(".md"))
