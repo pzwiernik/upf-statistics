@@ -10,7 +10,7 @@ doi: ""
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "* 236*"
+publication: * 236*
 
 abstract: ""
 summary: ""

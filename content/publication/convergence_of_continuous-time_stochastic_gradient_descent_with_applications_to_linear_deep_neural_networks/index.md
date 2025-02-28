@@ -10,7 +10,7 @@ doi: ""
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "*arXiv preprint arXiv:2409.07401*"
+publication: *arXiv preprint arXiv:2409.07401*
 
 abstract: ""
 summary: ""

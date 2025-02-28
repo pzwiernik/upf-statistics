@@ -74,3 +74,44 @@ Added: Bandit problems with fidelity rewards (2023-01-01)
 Deleted: content/publication/conference-paper
 Deleted: content/publication/preprint
 Deleted: content/publication/journal-article
+
+Update run on 2025-02-28
+Added: Improving variable selection properties by using external data (2025-01-01)
+Added: Universality of Benign Overfitting in Binary Linear Classification (2025-01-01)
+Added: Non-independent components analysis (2024-01-01)
+Added: Identifiability in robust estimation of tree structured models (2024-01-01)
+Added: Graphical model inference with external network data (2024-01-01)
+Added: Tensors in algebraic statistics (2024-01-01)
+Added: Learning latent tree models with small query complexity (2024-01-01)
+Added: Property testing in graphical models: testing small separation numbers (2024-01-01)
+Added: Temporal connectivity of Random Geometric Graphs (2025-01-01)
+Added: A non-compensated Clark-Ocone formula for functionals of counting processes (2025-01-01)
+Added: Uniform temporal trees (2025-01-01)
+Added: On the hardness of learning from censored and nonstationary demand (2024-01-01)
+Added: Uncertainty quantification in metric spaces (2024-01-01)
+Added: Estimating the history of a random recursive tree (2024-01-01)
+Added: Increasing paths in random temporal graphs (2024-01-01)
+Added: On the size of temporal cliques in subcritical random temporal graphs (2024-01-01)
+Added: Individualized post-crisis monitoring of psychiatric patients via Hidden Markov models (2024-01-01)
+Added: Leaf Stripping on Uniform Attachment Trees (2024-01-01)
+Added: Convergence of continuous-time stochastic gradient descent with applications to linear deep neural networks (2024-01-01)
+Added: Learning latent tree models with small query complexity (2024-01-01)
+Added: Projected-L0 Decoder for Variable Selection in Linear Regression (2024-01-01)
+Added: Subtractive random forests with two choices (2024-01-01)
+Added: Property testing in graphical models: testing small separation numbers (2024-01-01)
+Added: Random friend trees (2024-01-01)
+Added: The top eigenvalue of uniformly random trees (2024-01-01)
+Added: Random friend trees (2024-01-01)
+Added: Facets of high-dimensional Gaussian polytopes (2024-01-01)
+Added: A note on estimating the dimension from a random geometric graph (2024-01-01)
+Added: Increasing paths in the temporal stochastic block model Discrete Mathematics Days 2024 (2024-01-01)
+Deleted: content/publication/archaeology_of_random_recursive_dags_and_cooper-frieze_random_networks
+Deleted: content/publication/inferring_the_mixing_properties_of_a_stationary_ergodic_process_from_a_single_sample-path
+Deleted: content/publication/entropic_covariance_models
+Deleted: content/publication/broadcasting_in_random_recursive_dags
+Deleted: content/publication/on_the_quality_of_randomized_approximations_of_tukeys_depth
+Deleted: content/publication/on_mean_estimation_for_heteroscedastic_random_variables
+Deleted: content/publication/total_positivity_in_multivariate_extremes
+Deleted: content/publication/positivity_in_linear_gaussian_structural_equation_models
+Deleted: content/publication/online-to-pac_conversions_generalization_bounds_via_regret_analysis
+Deleted: content/publication/bandit_problems_with_fidelity_rewards

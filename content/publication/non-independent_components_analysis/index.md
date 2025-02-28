@@ -10,7 +10,7 @@ doi: ""
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "*The Annals of Statistics 52 (6)*"
+publication: *The Annals of Statistics 52 \(6\)*
 
 abstract: ""
 summary: ""

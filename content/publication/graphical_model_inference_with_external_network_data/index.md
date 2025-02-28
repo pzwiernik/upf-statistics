@@ -10,7 +10,7 @@ doi: ""
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "* ujae151*"
+publication: * ujae151*
 
 abstract: ""
 summary: ""

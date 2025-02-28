@@ -10,7 +10,7 @@ doi: ""
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "*Frontiers in Digital Health 6*"
+publication: *Frontiers in Digital Health 6*
 
 abstract: ""
 summary: ""

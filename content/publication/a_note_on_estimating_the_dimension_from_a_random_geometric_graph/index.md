@@ -2,15 +2,15 @@
 title: "A note on estimating the dimension from a random geometric graph"
 authors:
   - "Caelan Atamanchuk and Luc Devroye and Gábor Lugosi"
-date: "2023-01-01"
-publishDate: "2023-09-01T00:00:00Z"
+date: "2024-01-01"
+publishDate: "2024-09-01T00:00:00Z"
 doi: ""
 
 # Publication type.
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "*arXiv preprint arXiv:2311.13059*"
+publication: *Electronic Journal of Statistics 18 \(2\)*
 
 abstract: ""
 summary: ""

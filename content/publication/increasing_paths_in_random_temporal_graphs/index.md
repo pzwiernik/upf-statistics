@@ -10,7 +10,7 @@ doi: ""
 publication_types: ["article-journal"]
 
 # Journal or conference name.
-publication: "*The Annals of Applied Probability 34 (6)*"
+publication: *The Annals of Applied Probability 34 \(6\)*
 
 abstract: ""
 summary: ""
