@@ -11,7 +11,7 @@ authors:
   - "Ignacio Crespo"
   - "Serge Darolles"
   - "Gaëlle Le Fol"
-publication: "23e journée d'économétrie" Développements récents de l'économétrie appliquée …, 2024"
+publication: ""
 publication_types: ["article-journal"]
 
 abstract: ""
