@@ -23,6 +23,13 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 log_file = open(f"{HUGO_CONTENT_DIR}/update_log.txt", "a")
 log_file.write(f"\nUpdate run on {current_date}\n")
 
+# Function to extract venue from citation
+def extract_venue(citation):
+    if citation:
+        match = re.search(r'([^,]+), \d{4}', citation)
+        return match.group(1) if match else citation
+    return "Unknown Venue"
+
 # Process each Google Scholar profile
 for SCHOLAR_ID in SCHOLAR_IDS:
     author = scholarly.search_author_id(SCHOLAR_ID)
@@ -37,18 +44,9 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         pub_title = pub["bib"].get("title", "Unknown Title")
         pub_year = pub["bib"].get("pub_year", "Unknown Year")
         pub_authors = pub["bib"].get("author", "Unknown Authors")
-        pub_citation = pub["bib"].get("citation", "")  # Use full citation for journal name
-        pub_eprint = pub["bib"].get("eprint", "").strip()  # ArXiv ID if available
-        pub_venue = pub_citation if pub_citation else "Unknown Venue"  # FIX: Use full citation
+        pub_citation = pub["bib"].get("citation", "")
+        pub_venue = extract_venue(pub_citation)  # Extract journal name
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
-
-        # Determine publication type (fixing arXiv detection)
-        if "arXiv" in pub_venue or "arXiv preprint" in pub_venue or pub_eprint:
-            pub_type = "preprint"
-            if pub_eprint:
-                pub_url = f"https://arxiv.org/abs/{pub_eprint}"  # Ensure correct arXiv URL
-        else:
-            pub_type = "article-journal"
 
         # Ensure the year is valid
         try:
@@ -78,7 +76,6 @@ authors:
                 md_file.write(f"  - \"{author}\"\n")
 
             md_file.write(f"""publication: "{pub_venue}"
-publication_types: ["{pub_type}"]
 publication_url: "{pub_url}"
 ---
 """)
@@ -87,3 +84,4 @@ publication_url: "{pub_url}"
 
 log_file.close()
 print("✅ Publications updated successfully!")
+
