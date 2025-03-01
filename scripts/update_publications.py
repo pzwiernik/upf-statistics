@@ -8,6 +8,11 @@ import time
 SCHOLAR_IDS = [
     "OwnRAwQAAAAJ",  # Replace with actual Google Scholar ID
     "WgPhMfwAAAAJ",  # Add more researchers here
+    "L3x4IcgAAAAJ",  # Add more researchers here
+    "w-EcuBUAAAAJ",  # Add more researchers here
+    "1iWGSc0AAAAJ",  # Add more researchers here
+    "2bchLEwAAAAJ",  # Add more researchers here
+    "RsbU0icAAAAJ",  # Add more researchers here
 ]
 
 # Define Hugo content directory
