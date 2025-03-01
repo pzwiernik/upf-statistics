@@ -10,7 +10,7 @@ sections:
       title: |
         UPF Statistics
       image:
-        filename: welcome.jpg
+        filename: welcome.png
       text: |
         <br>
         
