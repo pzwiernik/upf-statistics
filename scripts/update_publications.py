@@ -21,7 +21,7 @@ current_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
 # Compute the threshold year (last two years)
 current_year = datetime.datetime.now().year
-year_threshold = current_year - 1  # Only keep papers from this year or last year
+year_threshold = current_year - 2  # Only keep papers from this year or last year
 
 # Open a log file to track updates
 log_file = open(f"{HUGO_CONTENT_DIR}/update_log.txt", "a")
@@ -74,27 +74,35 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         pub_venue = extract_venue(pub_citation) if pub_citation else (f"arXiv:{pub_eprint}" if pub_eprint else "Unknown Venue")
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
-        pub_date = f"{pub_year}-01-01"
+        pub_date = f"{pub_year}-01-01T00:00:00Z"
         publish_date = f"{pub_year}-09-01T00:00:00Z"  # Simulating a valid format
 
-        # Convert authors into a list if missing
+        # Convert authors into a proper YAML list format
         if isinstance(pub_authors, str):
-            pub_authors = [author.strip() for author in pub_authors.split(", ")]
-        elif not isinstance(pub_authors, list):  
+            pub_authors = re.split(r',| and ', pub_authors)  # Splits on commas and 'and'
+            pub_authors = [author.strip() for author in pub_authors if author.strip()]
+        elif not isinstance(pub_authors, list):
             pub_authors = ["Unknown Author"]
 
         # Ensure proper formatting of venue/journal
         pub_venue = f"*{pub_venue}*" if pub_venue else "Unknown Venue"
         pub_venue = pub_venue.replace("(", "\\(").replace(")", "\\)")  # Escape parentheses for Hugo
 
-        # Create a **subfolder** for each publication (required by Hugo Blox)
-        safe_foldername = pub_title.lower().replace(" ", "_").replace(",", "").replace("'", "").replace(":", "").replace("/", "_")
-        pub_folder = os.path.join(HUGO_CONTENT_DIR, safe_foldername)
-        os.makedirs(pub_folder, exist_ok=True)
-        filename = os.path.join(pub_folder, "index.md")
+        # Determine publication type
+        if "arXiv" in pub_venue:
+            pub_type = "preprint"
+            url_pdf = f"https://arxiv.org/pdf/{pub_eprint}.pdf" if pub_eprint else ""
+            pub_url = f"https://arxiv.org/abs/{pub_eprint}" if pub_eprint else pub_url
+        else:
+            pub_type = "article-journal"
+            url_pdf = ""
+
+        # Create a safe filename
+        safe_filename = pub_title.lower().replace(" ", "_").replace(",", "").replace("'", "").replace(":", "").replace("/", "_") + ".md"
+        filename = os.path.join(HUGO_CONTENT_DIR, safe_filename)
 
         # Store filenames for tracking
-        new_filenames.add(safe_foldername)  # Track folder names
+        new_filenames.add(safe_filename)  # Track filename
 
         # Generate Markdown file for Hugo
         with open(filename, "w") as md_file:
@@ -110,7 +118,7 @@ publishDate: "{publish_date}"
 doi: "{pub_doi}"
 
 # Publication type.
-publication_types: ["article-journal"]
+publication_types: ["{pub_type}"]
 
 # Journal or conference name.
 publication: {pub_venue}
@@ -121,7 +129,8 @@ summary: ""
 tags: []
 featured: false
 
-url_pdf: ""
+# Links
+url_pdf: "{url_pdf}"
 url_code: ""
 url_dataset: ""
 url_poster: ""
@@ -140,14 +149,14 @@ publication_url: "{pub_url}"
         log_file.write(f"Added: {pub_title} ({pub_date})\n")
 
 # **DELETE OLD PUBLICATIONS BUT KEEP index.md**
-existing_folders = {f for f in os.listdir(HUGO_CONTENT_DIR) if os.path.isdir(os.path.join(HUGO_CONTENT_DIR, f))}
-folders_to_delete = existing_folders - new_filenames
+existing_files = {f for f in os.listdir(HUGO_CONTENT_DIR) if f.endswith(".md")}
+files_to_delete = existing_files - new_filenames
 
-for folder in folders_to_delete:
-    folder_path = os.path.join(HUGO_CONTENT_DIR, folder)
-    os.system(f"rm -rf {folder_path}")  # Remove outdated publication folders
-    log_file.write(f"Deleted: {folder_path}\n")
-    print(f"🗑 Deleted old publication: {folder_path}")
+for file_name in files_to_delete:
+    file_path = os.path.join(HUGO_CONTENT_DIR, file_name)
+    os.remove(file_path)
+    log_file.write(f"Deleted: {file_path}\n")
+    print(f"🗑 Deleted old publication: {file_path}")
 
 log_file.close()
 print("✅ Publications updated successfully!")
