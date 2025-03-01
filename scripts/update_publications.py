@@ -45,8 +45,16 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         pub_year = pub["bib"].get("pub_year", "Unknown Year")
         pub_authors = pub["bib"].get("author", "Unknown Authors")
         pub_citation = pub["bib"].get("citation", "")
+        pub_eprint = pub["bib"].get("eprint", "").strip()  # ArXiv ID if available
         pub_venue = extract_venue(pub_citation)  # Extract journal name
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
+
+        # Determine publication type
+        if pub_eprint:
+            pub_type = "preprint"
+            pub_url = f"https://arxiv.org/abs/{pub_eprint}"  # Link to arXiv page
+        else:
+            pub_type = "article-journal"
 
         # Ensure the year is valid
         try:
@@ -76,6 +84,7 @@ authors:
                 md_file.write(f"  - \"{author}\"\n")
 
             md_file.write(f"""publication: "{pub_venue}"
+publication_types: ["{pub_type}"]
 publication_url: "{pub_url}"
 ---
 """)
