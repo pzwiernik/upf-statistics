@@ -1,36 +1,8 @@
 ---
 title: "Uncertainty quantification in metric spaces"
+date: 2024-01-01
 authors:
-  - "Gábor Lugosi"
-  - "Marcos Matabuena"
-date: "2024-01-01T00:00:00Z"
-publishDate: "2024-09-01T00:00:00Z"
-doi: ""
-
-# Publication type.
-publication_types: ["preprint"]
-
-# Journal or conference name.
-publication: *arXiv preprint arXiv:2405.05110*
-
-abstract: ""
-summary: ""
-
-tags: []
-featured: false
-
-# Links
-url_pdf: ""
-url_code: ""
-url_dataset: ""
-url_poster: ""
-url_project: ""
-url_slides: ""
-url_source: ""
-url_video: ""
-
-projects: []
-slides: ""
-
+  - "Gábor Lugosi and Marcos Matabuena"
+publication: "arXiv preprint arXiv:2405.05110"
 publication_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&q=Uncertainty+quantification+in+metric+spaces"
 ---
