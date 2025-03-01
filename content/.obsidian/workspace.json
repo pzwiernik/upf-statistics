@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f061f75a09f3c397",
+        "id": "c72c5fa2cb11c017",
         "type": "tabs",
         "children": [
           {
-            "id": "2a96a54b724fc779",
+            "id": "8b3fd346c3ac1493",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "authors/gabor-lugosi/_index.md",
+                "file": "publication/new-paper/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -165,6 +165,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a96a54b724fc779",
-  "lastOpenFiles": []
+  "active": "8b3fd346c3ac1493",
+  "lastOpenFiles": [
+    "publication/new-paper/index.md",
+    "authors/gabor-lugosi/_index.md"
+  ]
 }
