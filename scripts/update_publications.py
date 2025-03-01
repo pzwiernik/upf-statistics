@@ -49,10 +49,11 @@ for SCHOLAR_ID in SCHOLAR_IDS:
         pub_venue = extract_venue(pub_citation)  # Extract journal name
         pub_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={pub_title.replace(' ', '+')}"
 
-        # Determine publication type
-        if pub_eprint:
+        # Determine publication type (fixing arXiv detection)
+        if "arXiv" in pub_venue or "arXiv preprint" in pub_venue or pub_eprint:
             pub_type = "preprint"
-            pub_url = f"https://arxiv.org/abs/{pub_eprint}"  # Link to arXiv page
+            if pub_eprint:
+                pub_url = f"https://arxiv.org/abs/{pub_eprint}"  # Ensure correct arXiv URL
         else:
             pub_type = "article-journal"
 
