@@ -8,8 +8,8 @@ doi: ""
 
 authors:
   - "Lorenzo Cappello"
-  - "Wai Tung Jack Lo"
-  - "Joy Zhichun Zhang"
+  - "Wai Tung ‘Jack’ Lo"
+  - "Joy Z Zhang"
   - "Peiyu Xu"
   - "Daniel Barrow"
   - "Ishani Chopra"
