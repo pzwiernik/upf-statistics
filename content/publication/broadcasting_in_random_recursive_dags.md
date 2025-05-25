@@ -9,7 +9,7 @@ doi: ""
 authors:
   - "Simon Briend"
   - "Luc Devroye"
-  - "Gábor Lugosi"
+  - "Gabor Lugosi"
 publication: "ESAIM: Probability and Statistics 29, 184-203, 2025"
 publication_types: ["article-journal"]
 

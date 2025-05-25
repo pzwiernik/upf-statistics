@@ -16,7 +16,7 @@ authors:
   - "Andrew G Clark"
   - "Martin T Wells"
   - "Jaehee Kim"
-publication: "bioRxiv, 2025.01. 19.633741, 2025"
+publication: "Proceedings of the National Academy of Sciences 122 (18), e2501394122, 2025"
 publication_types: ["article-journal"]
 
 abstract: ""
