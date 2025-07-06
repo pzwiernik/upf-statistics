@@ -1,1 +1,53 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>CMS</title></head><body><script>window.CMS_MANUAL_INIT=true;</script><script src="https://unpkg.com/netlify-cms@2/dist/netlify-cms.js"></script><script>window.addEventListener('DOMContentLoaded',()=>CMS.init({backend:{name:"github",repo:"pzwiernik/upf-statistics",branch:"main",auth_type:"implicit",app_id:"YOUR_CLIENT_ID"},media_folder:"static/uploads",public_folder:"/uploads",collections:[{name:"people",label:"People",folder:"content/authors",create:true,slug:"{{slug}}",fields:[{label:"Name",name:"title",widget:"string"},{label:"Role",name:"role",widget:"string"},{label:"User Groups",name:"user_groups",widget:"list"}]}]}));</script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Content Manager</title>
+  </head>
+
+  <body>
+    <!-- Tell Netlify CMS not to look for /admin/config.yml -->
+    <script>window.CMS_MANUAL_INIT = true;</script>
+
+    <!-- Load the Netlify CMS bundle *after* <body> so document.body exists -->
+    <script src="https://unpkg.com/netlify-cms@2/dist/netlify-cms.js"></script>
+
+    <script>
+      /* Initialise the CMS once the DOM is ready */
+      window.addEventListener('DOMContentLoaded', () => {
+        CMS.init({
+          /* GitHub backend ---------------------------------------------- */
+          backend: {
+            name: "github",
+            repo: "pzwiernik/upf-statistics",  //  owner/repo
+            branch: "main",                    //  default branch
+            auth_type: "implicit",
+            app_id: "Ov23liH7FdORtpnUHkkT"     //  ← your GitHub OAuth *Client ID*
+          },
+
+          /* Where uploaded images are stored */
+          media_folder: "static/uploads",
+          public_folder: "/uploads",
+
+          /* Collections you want to edit -------------------------------- */
+          collections: [
+            {
+              name:  "people",
+              label: "People",
+              folder: "content/authors",
+              create: true,
+              slug: "{{slug}}",
+              fields: [
+                { label: "Name",        name: "title",       widget: "string" },
+                { label: "Role",        name: "role",        widget: "string" },
+                { label: "User Groups", name: "user_groups", widget: "list"   }
+              ]
+            }
+
+            /* Add more collections here when you need them */
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>
