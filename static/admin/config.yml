@@ -3,7 +3,7 @@ backend:
   repo: pzwiernik/upf-statistics
   branch: main
   auth_type: implicit
-  app_id: Ov23liH7FdORtpnUHkkT
+  client_id: Ov23liH7FdORtpnUHkkT
   
 media_folder: "static/uploads"
 public_folder: "/uploads"
