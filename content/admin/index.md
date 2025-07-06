@@ -1,5 +1,5 @@
 ---
-type: decap_cms   # still generates the /admin/ page
+type: decap_cms
 private: true
-# outputs: [HTML]   ← optional, HTML is implied
+url: /admin/        
 ---
