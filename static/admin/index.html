@@ -3,42 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
+    <script>
+      // Prevent automatic fetch of /admin/config.yml
+      window.CMS_MANUAL_INIT = true;
+    </script>
   </head>
 
   <body>
-    <!-- Tell the bundle not to fetch /admin/config.yml automatically -->
-    <script>window.CMS_MANUAL_INIT = true;</script>
-
-    <!-- Netlify-CMS bundle. We call CMS.init *after* it finishes loading. -->
-    <script
-      src="https://unpkg.com/netlify-cms@2/dist/netlify-cms.js"
-      onload="
-        CMS.init({
-          backend: {
-            name: 'github',
-            repo: 'pzwiernik/upf-statistics',
-            branch: 'main',
-            auth_type: 'implicit',
-            app_id: 'Ov23liH7FdORtpnUHkkT'   /* GitHub OAuth Client ID */
-          },
-          media_folder: 'static/uploads',
-          public_folder: '/uploads',
-          collections: [
-            {
-              name:  'people',
-              label: 'People',
-              folder: 'content/authors',
-              create: true,
-              slug: '{{slug}}',
-              fields: [
-                { label: 'Name',        name: 'title',       widget: 'string' },
-                { label: 'Role',        name: 'role',        widget: 'string' },
-                { label: 'User Groups', name: 'user_groups', widget: 'list'   }
-              ]
-            }
-          ]
-        });
-      ">
+    <!-- Load the Netlify CMS script and wait until it finishes -->
+    <script src="https://unpkg.com/netlify-cms@2.10.192/dist/netlify-cms.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        // Wait until the CMS is defined
+        if (typeof CMS !== "undefined") {
+          CMS.init({
+            backend: {
+              name: "github",
+              repo: "pzwiernik/upf-statistics",
+              branch: "main",
+              auth_type: "implicit",
+              app_id: "Ov23liH7FdORtpnUHkkT"
+            },
+            media_folder: "static/uploads",
+            public_folder: "/uploads",
+            collections: [
+              {
+                name: "people",
+                label: "People",
+                folder: "content/authors",
+                create: true,
+                slug: "{{slug}}",
+                fields: [
+                  { label: "Name", name: "title", widget: "string" },
+                  { label: "Role", name: "role", widget: "string" },
+                  { label: "User Groups", name: "user_groups", widget: "list" }
+                ]
+              }
+            ]
+          });
+        } else {
+          console.error("CMS not defined. Script may have failed to load.");
+        }
+      });
     </script>
   </body>
 </html>
