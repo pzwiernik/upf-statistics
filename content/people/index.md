@@ -1,25 +1,52 @@
 ---
 title: People
 date: "2024-02-28"
-
 type: landing
 
 sections:
   - block: people
     content:
       title: Meet the Team
-      # Choose which groups/teams of users to display.
-      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
       user_groups:
-          - Principal Investigators
-          - Postdocs
-          - Grad Students
-          - Visitors
-          - Alumni
+        - Principal Investigators
+        - Affiliated
+        - Postdocs
+        - Grad Students
+        - Emeritus
+        - Visitors
       sort_by: Params.last_name
       sort_ascending: true
     design:
       show_interests: false
       show_role: true
       show_social: true
+
+  - block: markdown
+    content:
+      title: Alumni & Past Visitors
+      text: |
+        ## Former Postdoctoral Researchers
+
+        - [Nicolas Bianco](https://whitenoise8.github.io/) – Karlsruhe Institute of Technology  
+        - [Sebastien Bubeck](https://sbubeck.com/) – Microsoft Research  
+        - [Ciara Pike-Burke]() – Imperial College  
+        - [Jack Jewson](https://warwick.ac.uk/) – Monash University  
+        - [Déborah Sulem](https://dsulem.github.io/) – Università Svizzera Italiana  
+        - [Nanwei Wang](https://nwang3.ext.unb.ca/) – University of New Brunswick  
+
+        ## Former PhD Students
+
+        - Simon Briend - Unidistance
+        - Vasiliki Velona – Hebrew University of Jerusalem  
+        - Jordi Llorens – University of Surrey  
+        - Julia Olkhovskaya – Vrije Universiteit Amsterdam  
+        - Dmitrii Tikhonenko  
+        - Miquel Torrens – Centre for Genomic Regulation  
+        - G. Stefan Gudmundsson – Aarhus University  
+
+        ## Past Visitors
+
+        - Luca Gherardini – Università degli Studi di Firenze (2024)  
+        - Remi Bardenet – CNRS, Université de Lille (2023)  
+        - Daniele Durante – Bocconi University (2023)
 ---
