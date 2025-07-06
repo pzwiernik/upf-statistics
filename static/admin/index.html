@@ -3,9 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-  </head>
-  <body>
+
+    <!-- Tell Netlify CMS not to auto-load /admin/config.yml -->
+    <script>window.CMS_MANUAL_INIT = true;</script>
+
     <!-- Netlify CMS bundle -->
     <script src="https://unpkg.com/netlify-cms@2/dist/netlify-cms.js"></script>
-  </body>
+
+    <script>
+      /* Initialise CMS with an inline config */
+      CMS.init({
+        backend: {
+          name: "github",
+          repo: "pzwiernik/upf-statistics",      // owner/repo
+          branch: "main",
+          auth_type: "implicit",
+          app_id: "Ov23liH7FdORtpnUHkkT"         // 20-char Client ID
+        },
+
+        media_folder: "static/uploads",
+        public_folder: "/uploads",
+
+        collections: [
+          {
+            name:  "people",
+            label: "People",
+            folder: "content/authors",
+            create: true,
+            slug: "{{slug}}",
+            fields: [
+              { label: "Name",       name: "title",        widget: "string" },
+              { label: "Role",       name: "role",         widget: "string" },
+              { label: "User Groups",name: "user_groups",  widget: "list"  }
+            ]
+          }
+        ]
+      });
+    </script>
+  </head>
+  <body></body>
 </html>
