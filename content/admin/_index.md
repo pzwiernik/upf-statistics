@@ -1,9 +1,10 @@
 ---
-type: decap_cms       # tells Hugo it’s the CMS page
+type: decap_cms      # marks this as the CMS page
 private: true
 
-# Render this page using the decap_cms output (adds the editor shell).
-# We no longer include decap_cms_config, so your static/admin/config.yml wins.
-outputs:
-  - decap_cms
+# Ensure it renders exactly at /admin/
+url: /admin/
+
+# Only HTML output (works on all Hugo versions)
+outputs: ["HTML"]
 ---
