@@ -8,7 +8,7 @@ sections:
       title: Seminars
       page_type: event
       filters:
-        tags: ["seminar", "internal"]
+        category: ["seminar", "internal"]
       order: desc
       offset: 0
       count: 10
@@ -23,7 +23,7 @@ sections:
       title: Workshops & Conferences
       page_type: event
       filters:
-        tags: ["workshop", "conference"]
+        category: ["workshop", "conference"]
       order: desc
       offset: 0
       count: 10
