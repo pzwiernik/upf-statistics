@@ -7,6 +7,7 @@ sections:
     content:
       title: Seminars
       page_type: event
+      event_type: ["seminar", "internal"]
       filters:
         event_type: ["seminar", "internal"]
       order: desc
