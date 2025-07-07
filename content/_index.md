@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
         
-        The **UPF Statistics** group has been a center of excellence for foundational research in statistics and machine learning at Universitat Pompeu Fabra in Barcelona. 
+        This is the website of the statistics group in  the [Department of Economics and Business](https://www.upf.edu/en/web/econ)  at [Universitat Pompeu Fabra](https://www.upf.edu/) in Barcelona, Spain. Our group is part of the [BSE Data Science Center](https://bse.eu/data-science-center).   
   
   - block: collection
     content:
@@ -32,7 +32,9 @@ sections:
       order: desc
       page_type: post
     design:
-      view: card
+      view: compact
+      show_author: false
+      show_date: true
       columns: '1'
   
   - block: markdown
