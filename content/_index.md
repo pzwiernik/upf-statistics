@@ -20,19 +20,17 @@ sections:
   - block: collection
     content:
       title: Latest News
+      page_type: post          
       count: 5
       filters:
-        author: ''
-        category: ''
         exclude_featured: false
-        publication_type: ''
-        tag: ''
+      order: desc
     design:
       view: compact
       show_author: false
       show_date: true
       columns: "1"
-
+    
   - block: contact
     content:
       title: Contact
