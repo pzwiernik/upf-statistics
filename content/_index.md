@@ -33,7 +33,7 @@ sections:
     
   - block: contact
     content:
-      title: Contact
+      title: Find us in Barcelona
       address:
         street: >-
           Universitat Pompeu Fabra, Dept. of Economics  
