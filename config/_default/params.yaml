@@ -6,15 +6,12 @@
 # Appearance
 
 appearance:
-  theme_day: bse-dsc
+  theme_day: minimal
   theme_night:
   font: native
   font_size: M
-
-assets:
-  custom_css:
-    - css/nav-gold.css     
-
+  color: bse-dsc
+  
 # SEO
 
 marketing:
