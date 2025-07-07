@@ -11,6 +11,9 @@ appearance:
   font: native
   font_size: M
 
+assets:
+  custom_css:
+    - css/nav-gold.css     
 
 # SEO
 

@@ -1,0 +1,11 @@
+/* gold navbar text */
+.navbar .navbar-brand,
+.navbar .navbar-nav > li > a {
+  color: #C0943E !important;
+}
+
+/* active/hover state */
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li.active > a {
+  color: #ebc56d !important; /* lighter gold on hover */
+}
