@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Barcelona Stats
+title: UPF Statistics
 date: 2022-10-24
 type: landing
 
@@ -8,7 +8,7 @@ sections:
   - block: hero
     content:
       title: |
-        Barcelona Stats
+        UPF Statistics
       image:
         filename: welcome.png
       text: |
