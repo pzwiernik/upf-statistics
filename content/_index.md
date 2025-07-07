@@ -37,45 +37,6 @@ sections:
       show_date: true
       columns: '1'
 
-- block: contact
-  content:
-    title: Contact
-    # text: |-
-    #   Optional free-text paragraph here …
-
-    address:
-      street: >-
-        Universitat Pompeu Fabra, Department of Economics and Business,
-        Ramon Trias Fargas 25-27
-      city: Barcelona
-      # region: CA            # uncomment/add if you need a region
-      postcode: "08005"
-      country: Spain
-      country_code: ES
-
-    coordinates:
-      latitude: "41.389200851208734"
-      longitude: "2.1914945521791998"
-
-    appointment_url: "https://calendly.com"
-
-    # contact_links:
-    #   - icon: comments
-    #     icon_pack: fas
-    #     name: Discuss on Forum
-    #     link: "https://discourse.gohugo.io"
-
-    autolink: true          # auto-link email/phone if present
-
-    form:
-      provider: netlify
-      netlify:
-        captcha: false
-      formspree:
-        id: ""              # leave blank if not using Formspree
-  design:
-    columns: "1"
-
   - block: markdown
     content:
       title:
