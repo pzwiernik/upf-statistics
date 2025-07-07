@@ -8,7 +8,7 @@ sections:
       title: Seminars
       page_type: event
       filters:
-        event: ["Statistics Seminar", "Internal Statistics Seminar"]
+        event_type: ["seminar", "internal"]
       order: desc
       offset: 0
       count: 10
@@ -23,13 +23,13 @@ sections:
       title: Workshops & Conferences
       page_type: event
       filters:
-        event: ["Workshop", "Conference"]
+        event_type: ["workshop", "conference"]
       order: desc
       offset: 0
       count: 10
     design:
       view: compact
       show_date: true
-      show_location: true
+      show_location: false
       columns: "1"
 ---
