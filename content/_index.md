@@ -48,10 +48,6 @@ sections:
         latitude:  "41.389200851208734"
         longitude: "2.1914945521791998"
       autolink: true
-      form:
-        provider: netlify
-        netlify:
-          captcha: false
     design:
       columns: "1"
 
