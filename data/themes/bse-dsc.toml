@@ -1,0 +1,12 @@
+# data/themes/custom-ocean.toml
+name = "bse-dsc"
+
+# The palette Hugo-Blox looks for
+# (keys match those in themes/ocean.toml; change only what you need)
+[palette]
+primary    = "#398198"  # replaces blue shades site-wide
+primary_light = "#5EA8B4"
+primary_dark  = "#2B6477"
+
+# Optional: tweak accent colours if desired
+secondary  = "#C0943E"  # your gold
