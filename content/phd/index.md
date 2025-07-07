@@ -1,8 +1,5 @@
 ---
 title: PhD Opportunities with our group
-menu:
-  main:
-    weight: 50        # adjust position in navbar
 ---
 
 Our group is looking for students with a strong quantitative background interested in pursuing PhD studies in several areas related to Data Science (DS): **Statistics, Machine Learning, and Probability**.
