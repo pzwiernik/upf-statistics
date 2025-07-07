@@ -1,9 +1,24 @@
-# data/themes/bse-dsc.toml
+# Theme metadata
 name = "bse-dsc"
 
-[palette]
-primary       = "#398198"  # your custom blue (R:57 G:129 B:152)
-primary_light = "#5EA8B4"  # a lighter blue for hover/states
-primary_dark  = "#2B6477"  # a darker shade for contrast
+[light]
+  # -------- Primary brand colour --------
+  primary = "#398198"      # your teal (R57 G129 B152)
 
-secondary     = "#C0943E"  # gold (R:192 G:148 B:62)
+  # -------- Menu bar --------
+  menu_primary = "#ffffff" # bar background
+  menu_text      = "#C0943E" # gold text
+  menu_text_active = "#C0943E" # active/hover state
+  menu_title     = "#2b2b2b"
+
+  # -------- Home sections --------
+  home_section_odd  = "rgb(255,255,255)"
+  home_section_even = "rgb(247,247,247)"
+
+[dark]
+  # Primary colour for dark mode
+  primary = "#5EA8B4"      # lighter teal for better contrast
+
+  # Links in dark mode
+  link        = "#5EA8B4"
+  link_hover  = "#81C0CF"
