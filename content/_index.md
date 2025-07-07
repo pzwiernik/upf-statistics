@@ -37,6 +37,30 @@ sections:
       show_date: true
       columns: '1'
 
+- block: contact
+  content:
+    title: Contact
+    address:
+      street: >
+        Universitat Pompeu Fabra, Dept. of Economics  
+        Ramon Trias Fargas 25-27
+      city: Barcelona
+      postcode: "08005"
+      country: Spain
+      country_code: ES
+
+    coordinates:
+      latitude:  "41.389200851208734"
+      longitude: "2.1914945521791998"
+
+    autolink: true        # auto-link email/phone if you add them
+    form:
+      provider: netlify   # leave as-is; Netlify handles the POST
+      netlify:
+        captcha: false
+  design:
+    columns: "1"
+
   - block: markdown
     content:
       title:
