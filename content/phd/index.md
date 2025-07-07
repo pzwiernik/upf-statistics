@@ -1,17 +1,14 @@
 ---
-title: PhD Opportunities            # Appears in browser tabs and breadcrumbs
-date: "2025-07-07"                  # Any date is fine
-type: landing                       # Tells Hugo-Blox to treat this as a landing page
+title: PhD Opportunities          
+date: "2025-07-07"                  
+type: landing                       
 
 sections:
-  # 1 ───────────── Hero (big heading)
   - block: hero
     content:
       title: |
-        PhD Opportunities  
-        with our Group
+        PhD Opportunities with our Group
 
-  # 2 ───────────── Main description
   - block: markdown
     content:
       text: |
@@ -34,7 +31,6 @@ sections:
 
         The Center is part of the **Barcelona Graduate School of Economics (Barcelona GSE)**, which offers seven Master’s programs, including the *Master’s in Data Science* coordinated by the Center.
 
-  # 4 ───────────── About UPF
   - block: markdown
     content:
       title: About Universitat Pompeu Fabra
