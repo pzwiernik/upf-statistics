@@ -4,6 +4,7 @@ type: landing
 
 sections:
   - block: citation
+    content: {}
 
   - block: markdown
     content:
