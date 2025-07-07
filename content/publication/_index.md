@@ -1,11 +1,19 @@
 ---
 title: Publications
+type: landing
 
-# Listing view
-view: citation
+sections:
+  - block: citation
 
-# Optional banner image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: ''
+  - block: markdown
+    content:
+      title: Highlighted Publications
+      text: |
+        ## Theory
+        
+        - paper 1
+        
+        ## Applications
+        
+        - paper 1
 ---
