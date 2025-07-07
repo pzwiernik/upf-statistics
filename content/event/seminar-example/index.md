@@ -1,18 +1,23 @@
 ---
-title: Seminar example
-abstract: NA
-location: NA
-date: 2025-07-07T14:43:00.000Z
-date_end: 2025-07-07T14:43:00.000Z
-all_day: false
-event: Statistics Seminar
-event_type: seminar
-event_url: NA
-publishDate: 2025-07-07T14:43:00.000Z
-draft: false
-featured: false
-image:
-  filename: featured
-  focal_point: Smart
-  preview_only: false
+title: “Tensor Networks Seminar”
+date: 2025-10-15
+categories: ["seminar"]         
+---
+
+---
+title: “Bayesian Workshop”
+date: 2025-11-03
+categories: ["workshop"]
+---
+
+---
+title: “Data-Science Conference”
+date: 2026-02-21
+categories: ["conference"]
+---
+
+---
+title: “Internal Group Seminar”
+date: 2025-12-05
+categories: ["internal-seminar"]
 ---
