@@ -1,12 +1,9 @@
 # data/themes/bse-dsc.toml
 name = "bse-dsc"
 
-# The palette Hugo-Blox looks for
-# (keys match those in themes/ocean.toml; change only what you need)
 [palette]
-primary    = "#398198"  
-primary_light = "#5EA8B4"
-primary_dark  = "#2B6477"
+primary       = "#398198"  # your custom blue (R:57 G:129 B:152)
+primary_light = "#5EA8B4"  # a lighter blue for hover/states
+primary_dark  = "#2B6477"  # a darker shade for contrast
 
-# Optional: tweak accent colours if desired
-secondary  = "#C0943E"  # your gold
+secondary     = "#C0943E"  # gold (R:192 G:148 B:62)
