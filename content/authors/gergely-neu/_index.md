@@ -2,7 +2,7 @@
 title: "Gergely Neu"
 first_name: Gergely
 last_name: Neu
-role: Associate Professor (Affiliated)
+role: Associate Professor 
 organizations:
   - name: Universitat Pompeu Fabra
     url: "https://cs.bme.hu/~gergo/"
@@ -11,5 +11,5 @@ interests:
   - Bandit problems
   - Reinforcement‑learning theory
 user_groups:
-  - Affiliated
+  - Principal Investigators
 ---
