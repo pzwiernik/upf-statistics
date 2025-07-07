@@ -16,3 +16,6 @@ main:
   - name: PhD Studies
     url: phd
     weight: 40
+  - name: Jobs
+    url: jobs
+    weight: 50
