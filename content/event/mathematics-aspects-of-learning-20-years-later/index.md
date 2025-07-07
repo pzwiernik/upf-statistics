@@ -10,13 +10,15 @@ date: 2024-09-09T01:01:00.000Z
 date_end: 2024-09-13T01:01:00.000Z
 all_day: true
 event: Conference
-event_type: conference
 event_url: https://www.crm.cat/mathematical-aspects-of-learning-theory/
 publishDate: 2024-07-07T01:01:00.000Z
 draft: false
 featured: false
+tags:
+  - conference
 image:
   filename: featured
   focal_point: Smart
   preview_only: false
+event_type: conference
 ---
