@@ -28,24 +28,24 @@ sections:
         - Brownlees, C., & Llorens-Terrazas, J. (2024). Empirical risk minimization for time series: Nonparametric performance bounds for prediction. **Journal of Econometrics**, 244(1), 105849.
         - Rossell D, Kseung AK, Saez I, Michele G. Semi-parametric local variable selection under misspecification. **Biometrika** (2024). Paper DOI 10.1093/biomet/asae068 
         - Cappello, L., Veber, A., Palacios, J. A., An Efficient Coalescent Model for Heterochronously Sampled Molecular Data. **Journal of the American Statistical Association**. Vol. 119, No. 548, 2437-2449,2024.
-        - F. Röttger, S. Engelke, P. Zwiernik, Total positivity in multivariate extremes. Annals of Statistics 2023, Vol. 51, No. 3, 962-1004.
-        - Cappello, L., Madrid Padilla, O. H., Palacios, J. A. (2023). Bayesian Change Point Detection with Spike-and-Slab Priors. Journal of Computational and Graphical Statistics, 1-13. 
-        - Jewson J, Rossell D. Loss function selection and the use of improper models. Journal of the Royal Statistical Society B  2022 84, 1640-1665. Online version
-        - S. Lauritzen, P. Zwiernik. Locally associated graphical models and mixed convex exponential families. Annals of Statistics 2022, Vol. 50, No. 5, 962-1004.
-        - G. Lugosi and S. Mendelson. Multivariate mean estimation with direction-dependent accuracy. Journal of the European Mathematical Society, 2022.
-        - L. Addario-Berry, L. Devroye, G. Lugosi, and V. Velona. Broadcasting on random recursive trees. Annals of Applied Probability, 32(1):497-528, 2022.
-        - Rossell D. Concentration of posterior probabilities and normalized L0 criteria (2022). Bayesian Analysis, 17, 2, 565-591. Open access version
-        - Avalos-Pacheco A., Rossell D., Savage R (2022). Heterogeneous large datasets integration using Bayesian factor regression. Bayesian Analysis. 17(1): 33-66. arXiv.1810.09894
-        - Cappello, L., Palacios, J. A., Adaptive Preferential Sampling in Phylodynamics. Journal of Computational and Graphical Statistics, 31(2): 541-552, 2022. Open access version
-        - G. Lugosi, J. Truszkowski, V. Velona, and P. Zwiernik. Learning partial correlation graphs and graphical models by covariance queries. Journal of Machine Learning Research, 22(203):1--41, 2021.
-        - Rossell D, Abril O, Bhattacharya A. Approximate Laplace approximations for scalable model selection (2021). Journal of the Royal Statistical Society B, 83, 4, 853-879. Online version (open access)
-        - G. Lugosi, and S. Mendelson. Robust multivariate mean estimation: the optimality of trimmed mean. Annals of Statistics, 2021.
-        - S. Lauritzen, C. Uhler and P. Zwiernik, Total positivity in exponential families with application to binary variables. Annals of Statistics, 2021, Vol. 49, No. 3, 1436-1459.
-        - Rossell D, Rubio FJ. Additive Bayesian variable selection under censoring and  misspecification (2021). Statistical Science, 38, 1,13-29 Open access
-        - Rossell D, Zwiernik P. Dependence in elliptical partial correlation graphs (2021). Electronic Journal of Statistics, 15, 2, 4236-4263. Open access version
-        - C. Bordenave, G. Lugosi, and N. Zhivotovskiy. Noise sensitivity of the top eigenvector of a Wigner matrix. Probability Theory and Related Fields, 2020.
-        - G. Lugosi, and S. Mendelson. Risk minimization by median-of-means tournaments. Journal of the European Mathematical Society, 2020.
-        - P. Bartlett, P.L. Long, G. Lugosi, and A. Tsigler. Benign overfitting in linear regression. PNAS, 117.48 (2020): 30063-30070.
+        - F. Röttger, S. Engelke, P. Zwiernik, Total positivity in multivariate extremes. **Annals of Statistics** 2023, Vol. 51, No. 3, 962-1004.
+        - Cappello, L., Madrid Padilla, O. H., Palacios, J. A. (2023). Bayesian Change Point Detection with Spike-and-Slab Priors. **Journal of Computational and Graphical Statistics**, 1-13. 
+        - Jewson J, Rossell D. Loss function selection and the use of improper models. **Journal of the Royal Statistical Society B ** 2022 84, 1640-1665. Online version
+        - S. Lauritzen, P. Zwiernik. Locally associated graphical models and mixed convex exponential families. **Annals of Statistics** 2022, Vol. 50, No. 5, 962-1004.
+        - G. Lugosi and S. Mendelson. Multivariate mean estimation with direction-dependent accuracy. **Journal of the European Mathematical Society**, 2022.
+        - L. Addario-Berry, L. Devroye, G. Lugosi, and V. Velona. Broadcasting on random recursive trees. **Annals of Applied Probability**, 32(1):497-528, 2022.
+        - Rossell D. Concentration of posterior probabilities and normalized L0 criteria (2022). **Bayesian Analysis**, 17, 2, 565-591. Open access version
+        - Avalos-Pacheco A., Rossell D., Savage R (2022). Heterogeneous large datasets integration using Bayesian factor regression. **Bayesian Analysis**. 17(1): 33-66. arXiv.1810.09894
+        - Cappello, L., Palacios, J. A., Adaptive Preferential Sampling in Phylodynamics. **Journal of Computational and Graphical Statistics**, 31(2): 541-552, 2022. Open access version
+        - G. Lugosi, J. Truszkowski, V. Velona, and P. Zwiernik. Learning partial correlation graphs and graphical models by covariance queries. **Journal of Machine Learning Research**, 22(203):1--41, 2021.
+        - Rossell D, Abril O, Bhattacharya A. Approximate Laplace approximations for scalable model selection (2021). **Journal of the Royal Statistical Society B**, 83, 4, 853-879. Online version (open access)
+        - G. Lugosi, and S. Mendelson. Robust multivariate mean estimation: the optimality of trimmed mean. **Annals of Statistics**, 2021.
+        - S. Lauritzen, C. Uhler and P. Zwiernik, Total positivity in exponential families with application to binary variables. **Annals of Statistics**, 2021, Vol. 49, No. 3, 1436-1459.
+        - Rossell D, Rubio FJ. Additive Bayesian variable selection under censoring and  misspecification (2021). **Statistical Science**, 38, 1,13-29 Open access
+        - Rossell D, Zwiernik P. Dependence in elliptical partial correlation graphs (2021). **Electronic Journal of Statistics**, 15, 2, 4236-4263. Open access version
+        - C. Bordenave, G. Lugosi, and N. Zhivotovskiy. Noise sensitivity of the top eigenvector of a Wigner matrix. **Probability Theory and Related Fields**, 2020.
+        - G. Lugosi, and S. Mendelson. Risk minimization by median-of-means tournaments. **Journal of the European Mathematical Society**, 2020.
+        - P. Bartlett, P.L. Long, G. Lugosi, and A. Tsigler. Benign overfitting in linear regression. **PNAS**, 117.48 (2020): 30063-30070.
 
         ## Applications
         - Paper&nbsp;1
