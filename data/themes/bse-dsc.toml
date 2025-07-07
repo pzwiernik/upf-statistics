@@ -6,7 +6,7 @@ name = "bse-dsc"
   primary = "#398198"      # your teal (R57 G129 B152)
 
   # -------- Menu bar --------
-  menu_primary = "#ffffff" # bar background
+  menu_primary = "#398198" # bar background
   menu_text      = "#C0943E" # gold text
   menu_text_active = "#C0943E" # active/hover state
   menu_title     = "#2b2b2b"
