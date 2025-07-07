@@ -11,10 +11,30 @@
             "id": "766dc3bc1256a83e",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "markdown",
+              "state": {
+                "file": "content/authors/albert-satorra/_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1be7b80bca2475be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d25e3fc2ab6eccdd",
+            "type": "leaf",
+            "state": {
+              "type": "hugo-preview-view",
               "state": {},
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Hugo Preview"
             }
           }
         ]
@@ -162,5 +182,27 @@
     }
   },
   "active": "766dc3bc1256a83e",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "content/admin/index.md",
+    "content/admin/index.tex",
+    "content/admin",
+    "content/untitled folder",
+    "public/_former-group-members/simon-briend/index.xml",
+    "public/_former-group-members/index.xml",
+    "public/_former-group-members/simon-briend/page/1/index.html",
+    "public/_former-group-members/simon-briend/page/1",
+    "public/_former-group-members/page/1/index.html",
+    "public/_former-group-members/simon-briend/page",
+    "public/_former-group-members/simon-briend/index.html",
+    "resources/_gen/images/author/albert-sastorra/avatar_hu_759b59e20e8a1432.jpeg",
+    "public/author/albert-sastorra/avatar_hu_759b59e20e8a1432.jpeg",
+    "public/author/albert-sastorra/avatar.jpeg",
+    "content/_index.md",
+    "content/authors/albert-satorra/_index.md",
+    "content/people/index.md",
+    "content/post/20-12-01-wowchemy-prize/index.md",
+    "content/post/20-12-01-wowchemy-prize/featured.jpg",
+    "README.md",
+    "content/authors/piotr-zwiernik/_index.md"
+  ]
 }
