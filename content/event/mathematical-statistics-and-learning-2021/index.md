@@ -13,7 +13,6 @@ date_end: 2021-07-02T01:01:00.000Z
 all_day: true
 event: Workshop
 event_type: workshop
-categories: ["workshop"]
 event_url: https://dscbarcelona.wixsite.com/msl2020
 publishDate: 2021-06-01T01:01:00.000Z
 draft: false
