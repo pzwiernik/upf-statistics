@@ -6,9 +6,10 @@
 # Appearance
 
 appearance:
-  font: native
+  theme_day: bse-dsc
+  theme_night: bse-dsc
+  font: minimal
   font_size: M
-  color: bse-dsc
   
 # SEO
 
