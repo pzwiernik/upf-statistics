@@ -13,7 +13,6 @@ date: 2021-03-07T01:01:00.000Z
 date_end: 2021-03-08T01:01:00.000Z
 all_day: false
 event: Workshop
-event_type: workshop
 event_url: NA
 publishDate: 2021-03-01T01:01:00.000Z
 draft: false
