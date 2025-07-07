@@ -8,7 +8,7 @@ sections:
   - block: hero
     content:
       title: |
-        UPF Statistics
+        Barcelona Stats
       image:
         filename: welcome.png
       text: |
