@@ -1,5 +1,5 @@
 ---
-title: PhD Opportunities          
+title: Job Opportunities          
 date: "2025-07-07"                  
 type: landing                       
 
@@ -7,14 +7,12 @@ sections:
   - block: hero
     content:
       title: |
-        PhD Opportunities with our Group
+        Job Opportunities with our Group
 
   - block: markdown
     content:
       text: |
-        Our group is looking for students with a strong quantitative background interested in pursuing PhD studies in several areas related to Data Science (DS): **Statistics, Machine Learning, and Probability**.
-
-        Please see the website of PhD studies at the **[BSE Data Science Center](https://bse.eu/data-science-center)** for further information.
+        Currently there are no job posting.
 
   - block: markdown
     content:
