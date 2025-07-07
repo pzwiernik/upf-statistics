@@ -48,7 +48,14 @@ sections:
         - P. Bartlett, P.L. Long, G. Lugosi, and A. Tsigler. Benign overfitting in linear regression. **PNAS**, 117.48 (2020): 30063-30070.
 
         ## Applications
-        - Paper&nbsp;1
+        - Jewson J, Li L, Battaglia L, Hansen S, Rossell D, Zwiernik P. Graphical model inference with external network data. **Biometrics** 2024, 80(4).         
+        - Cappello, L., Kim, J. , Liu, S. , Palacios, J. A., Statistical Challenges in Tracking the Evolution of SARS-CoV-2. **Statistical Science**, 37(2): 162-182, 2022. 
+        - Semken C, Rossell D. Specification analysis for technology use and teenager well-being. Statistical validity and a Bayesian proposal (2022). **Journal of the Royal Statistical Society C**
+        - Parikh, V., Ioannidis, ... Cappello, L. ,..., Rivas, M., Ashley, E.  (2022) Deconvoluting complex correlates of COVID19 severity with a multi-omic pandemic tracking strategy. **Nature Communications**, 13, 5107
+        - L. Beauchemin, M. Slifker, D. Rossell, and J. Font-Burgada (2020). Characterizing MHC-I genotype predictive power for oncogenic mutation probability in cancer patients. **Immunoinformatics, Methods and Protocols**. Springer.
+        - Graeve M, Greenacre M. (2020). The selection and analysis of fatty acid ratios: A new approach for the univariate and multivariate analysis of fatty acid trophic markers in marine pelagic organisms. **Limnology and Oceanographic Methods**, 18, 196-210. doi: 10.1002/lom3.10360 with video abstract
+        - Greenacre M (2020) . Amalgamations are valid in compositional data analysis, can be used in agglomerative clustering, and their logratios have an inverse transformation. **Applied Computing and Geosciences**, 5, doi: 10.106/j.acags.2019.100017
+        - Gavard R, Jones H, Palacio Lozano D, Thomas M, Rossell D, Spencer S, Barrow M (2020). KairosMS: A new solution for the processing of hyphenated ultrahigh resolution mass spectrometry data. **Analytical Chemistry**, 92.5 3775-86
     design:
       columns: "1"
 ---
