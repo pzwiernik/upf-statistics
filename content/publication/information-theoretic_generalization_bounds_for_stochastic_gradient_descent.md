@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: Information-Theoretic Generalization Bounds for Stochastic Gradient Descent
 date: '2021-01-01T00:00:00Z'
 publishDate: '2021-01-01T00:00:00Z'

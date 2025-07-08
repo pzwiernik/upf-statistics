@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: A probabilistic theory of pattern recognition
 date: '2013-01-01T00:00:00Z'
 publishDate: '2013-01-01T00:00:00Z'

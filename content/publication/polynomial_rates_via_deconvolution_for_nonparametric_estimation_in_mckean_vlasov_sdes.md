@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: Polynomial rates via deconvolution for nonparametric estimation in McKean–Vlasov
   SDEs
 date: '2024-01-01T00:00:00Z'

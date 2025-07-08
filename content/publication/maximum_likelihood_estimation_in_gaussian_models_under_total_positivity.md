@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: Maximum likelihood estimation in Gaussian models under total positivity
 date: '2019-01-01T00:00:00Z'
 publishDate: '2019-01-01T00:00:00Z'

@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: Stromal gene expression defines poor-prognosis subtypes in colorectal cancer
 date: '2015-01-01T00:00:00Z'
 publishDate: '2015-01-01T00:00:00Z'

@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: Estimating linear covariance models with numerical nonlinear algebra
 date: '2020-01-01T00:00:00Z'
 publishDate: '2020-01-01T00:00:00Z'
