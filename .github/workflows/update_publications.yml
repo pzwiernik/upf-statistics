@@ -50,7 +50,7 @@ jobs:
           username:       ${{ secrets.SMTP_USERNAME }}
           password:       ${{ secrets.SMTP_PASSWORD }}
           subject: "Publication update – ${{ job.status }}"
-          to: pzwiernik@upf.edu
+          to: piotr.zwiernik@upf.edu
           from: GitHub Actions <no-reply@github.com>
           body: |
             Scraper run: ${{ github.run_number }}
