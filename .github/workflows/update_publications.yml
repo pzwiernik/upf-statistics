@@ -41,20 +41,20 @@ jobs:
 
       # ───── OPTIONAL E-MAIL NOTIFICATION ─────
       - name: Send confirmation mail
-        if: always()           # run even if no new files
+        if: always()
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
           server_port:    ${{ secrets.SMTP_PORT }}
+          secure: true                 # SSL for port 465
           username:       ${{ secrets.SMTP_USERNAME }}
           password:       ${{ secrets.SMTP_PASSWORD }}
-          subject: "Publication update – ${{ github.repository }} – ${{ job.status }}"
+          subject: "Publication update – ${{ job.status }}"
           to: pzwiernik@upf.edu
           from: GitHub Actions <no-reply@github.com>
-          content_type: text
           body: |
             Scraper run: ${{ github.run_number }}
             Status: ${{ job.status }}
-
+      
             Latest log:
             ${{ steps.scraper.outputs.log }}
