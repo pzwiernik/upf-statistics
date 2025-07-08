@@ -619,3 +619,18 @@ Added: Bayesian phylodynamic inference of population dynamics with dormancy (202
 Added: An Efficient Coalescent Model for Heterochronously Sampled Molecular Data (2024-01-01T00:00:00Z)
 Added: Bayesian Change Point Detection with Spike-and-Slab Priors (2023-01-01T00:00:00Z)
 Added: adaPop: Bayesian inference of dependent population dynamics in coalescent models (2023-01-01T00:00:00Z)
+Update run on 2025-07-08 09:28
+Skip author OwnRAwQAAAAJ: 'NoneType' object has no attribute 'get'
+Skip author OwnRAwQAAAAJ: no publications key returned
+Skip author WgPhMfwAAAAJ: Please enter a valid sortby parameter. Options: 'year', 'citedby'
+Skip author WgPhMfwAAAAJ: no publications key returned
+Skip author uz27G84AAAAJ: Please enter a valid sortby parameter. Options: 'year', 'citedby'
+Skip author uz27G84AAAAJ: no publications key returned
+Skip author w-EcuBUAAAAJ: Please enter a valid sortby parameter. Options: 'year', 'citedby'
+Skip author w-EcuBUAAAAJ: no publications key returned
+Skip author 1iWGSc0AAAAJ: 'NoneType' object has no attribute 'get'
+Skip author 1iWGSc0AAAAJ: no publications key returned
+Skip author 2bchLEwAAAAJ: 'NoneType' object has no attribute 'get'
+Skip author 2bchLEwAAAAJ: no publications key returned
+Skip author RsbU0icAAAAJ: Please enter a valid sortby parameter. Options: 'year', 'citedby'
+Skip author RsbU0icAAAAJ: no publications key returned
