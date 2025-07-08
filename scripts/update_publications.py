@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-Update Hugo-Blox publication pages from Google Scholar.
+Update Hugo-Blox publication pages from Google Scholar
+and keep **only the three most-recent papers per author**.
 
-• Fetch up to FETCH_LIMIT per author, keep newest MAX_PAPERS_PER_AUTHOR
-• Robust date sort (handles arXiv YYMM) to decide “newest”
-• Writes Markdown tagged with  source: scholar
-• Deletes any previously generated file not rewritten this run
-• Duplicate guard: first DOI, else arXiv ID, else canonical title
+• Deletes every old *.md in content/publication/ that is
+  not re-generated during the current run.
+• Limits Scholar requests via `publication_limit=3`
+  so the run is fast and friendly.
 """
 
 from scholarly import scholarly, ProxyGenerator, MaxTriesExceededException
-import yaml, datetime, re, time
 from pathlib import Path
+import yaml, datetime, re, time, sys
 
-# ───────── CONFIG ───────── #
+# ─────────── CONFIG ──────────── #
 SCHOLAR_IDS = [
     "OwnRAwQAAAAJ",   # Piotr Zwiernik
     "WgPhMfwAAAAJ",   # Gábor Lugosi
@@ -24,96 +24,61 @@ SCHOLAR_IDS = [
     "RsbU0icAAAAJ",   # Lorenzo Cappello
 ]
 
-FETCH_LIMIT            = 10   # pull this many, then choose newest 3
-MAX_PAPERS_PER_AUTHOR   = 3
-FEATURED_THRESHOLD      = 100
-MAX_RETRIES             = 3
-RETRY_DELAY             = 30  # seconds
-
-TAG_FIELD = "source"
-TAG_VALUE = "scholar"
+MAX_PAPERS       = 3          # newest N per author
+FEATURED_CITES   = 100        # citations ⇒ featured
+MAX_RETRIES      = 3
+RETRY_DELAY_SECS = 30
 
 HUGO_DIR = Path("content/publication")
 HUGO_DIR.mkdir(parents=True, exist_ok=True)
-# ────────────────────────── #
+LOG_PATH  = HUGO_DIR / "update_log.txt"
+# ─────────────────────────────── #
 
-# optional free-proxy rotation
+# Optional proxy rotation
 pg = ProxyGenerator()
 if pg.FreeProxies():
     scholarly.use_proxy(pg)
 
-# ───── helper utils ─────
-def safe_slug(title: str) -> str:
+# ───────── helper utilities ───────── #
+def slug(title: str) -> str:
     return re.sub(r"[^\w\-]+", "_", title.lower()).strip("_") + ".md"
 
-def yaml_dump(obj: dict) -> str:
-    return yaml.safe_dump(obj, sort_keys=False, allow_unicode=True)
+def dump_yaml(d: dict) -> str:
+    return yaml.safe_dump(d, sort_keys=False, allow_unicode=True)
 
 def write_md(meta: dict, path: Path) -> None:
-    path.write_text(f"---\n{yaml_dump(meta)}---\n", encoding="utf-8")
+    path.write_text(f"---\n{dump_yaml(meta)}---\n", encoding="utf-8")
+# ──────────────────────────────────── #
 
-def best_date(pub: dict) -> tuple[int, int]:
-    """Return (year, month) for reliable sorting newest→oldest."""
-    year = pub["bib"].get("pub_year")
-    if year and str(year).isdigit():
-        return (int(year), 0)
-
-    eprint = (pub["bib"].get("eprint") or "").strip()
-    m = re.match(r"(\d{2})(\d{2})\.\d{4,5}", eprint)   # 2309.xxxxx
-    if m:
-        y, mo = m.groups()
-        return (2000 + int(y), int(mo))
-    m = re.match(r".*/(\d{2})\d{4}", eprint)           # math/0501234
-    if m:
-        return (2000 + int(m.group(1)), 0)
-
-    return (1900, 0)
-
-def dedup_key(pub: dict, title: str) -> str:
-    """Key that is identical for duplicate records."""
-    doi    = (pub["bib"].get("doi") or "").lower().strip()
-    if doi:
-        return "doi:" + doi
-    eprint = (pub["bib"].get("eprint") or "").lower().strip()
-    if eprint:
-        return "eprint:" + eprint
-    canon = re.sub(r"[^a-z0-9]+", "", title.lower())
-    return "title:" + canon
-# ─────────────────────────
-
-log_lines  = [f"Update run on {datetime.datetime.now():%Y-%m-%d %H:%M}\n"]
-seen_keys  = set()
-new_files  = set()   # filenames generated this run
+timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+log_lines = [f"\nRun {timestamp}\n"]
+seen_titles, keep_files = set(), set()
 
 for sid in SCHOLAR_IDS:
-
-    # fetch author (limited)
+    # ── fetch author (max 3 pubs) ──
     author = None
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             author = scholarly.search_author_id(
-                sid, filled=False, publication_limit=FETCH_LIMIT
+                sid,
+                filled=False,
+                publication_limit=MAX_PAPERS,
             )
             scholarly.fill(
                 author,
                 sections=["publications"],
-                publication_limit=FETCH_LIMIT,
+                sortby="pub_year",
+                publication_limit=MAX_PAPERS,
             )
             break
-        except (MaxTriesExceededException, Exception) as e:
+        except MaxTriesExceededException as e:
             if attempt == MAX_RETRIES:
-                log_lines.append(f"Skip author {sid}: {e}\n")
+                log_lines.append(f"⚠️  author {sid}: {e}\n")
             else:
-                time.sleep(RETRY_DELAY)
+                time.sleep(RETRY_DELAY_SECS)
 
-    if not author or "publications" not in author:
-        log_lines.append(f"Skip author {sid}: no publications key\n")
-        continue
-
-    pubs = sorted(author["publications"], key=best_date, reverse=True) \
-           [:MAX_PAPERS_PER_AUTHOR]
-
-    for pub in pubs:
+    pubs = author.get("publications", []) if author else []
+    for pub in pubs:                         # already at most 3
         # fill pub details
         ok = False
         for attempt in range(1, MAX_RETRIES + 1):
@@ -121,34 +86,39 @@ for sid in SCHOLAR_IDS:
                 scholarly.fill(pub)
                 ok = True
                 break
-            except (MaxTriesExceededException, Exception) as e:
+            except MaxTriesExceededException as e:
                 if attempt == MAX_RETRIES:
-                    log_lines.append(f"Skip pub ({sid}): {e}\n")
+                    log_lines.append(f"⚠️  pub {sid}: {e}\n")
                 else:
-                    time.sleep(RETRY_DELAY)
+                    time.sleep(RETRY_DELAY_SECS)
         if not ok:
             continue
 
         title = pub["bib"].get("title", "Unknown").strip()
-        key   = dedup_key(pub, title)
-        if key in seen_keys:
+        if title.lower() in seen_titles:
             continue
-        seen_keys.add(key)
+        seen_titles.add(title.lower())
 
-        year, _   = best_date(pub)
-        date_iso  = f"{year}-01-01T00:00:00Z"
-        authors   = [a.strip() for a in re.split(r",| and ", pub["bib"].get("author", "")) if a.strip()] or ["Unknown Author"]
-        venue     = (pub["bib"].get("citation") or "").strip() or "Unknown Venue"
-        doi       = (pub["bib"].get("doi") or "").strip()
-        eprint    = (pub["bib"].get("eprint") or "").strip()
-        gs_url    = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={title.replace(' ', '+')}"
-        is_pre    = "arxiv" in venue.lower() or eprint
-        pub_url   = f"https://arxiv.org/abs/{eprint}" if is_pre and eprint else gs_url
-        pub_type  = "preprint" if is_pre else "article-journal"
-        featured  = pub.get("num_citations", 0) >= FEATURED_THRESHOLD
+        # Year handling
+        year = str(pub["bib"].get("pub_year") or datetime.datetime.now().year)
+        date_iso = f"{year}-01-01T00:00:00Z"
+
+        authors = [
+            a.strip() for a in re.split(r",| and ", pub["bib"].get("author", ""))
+            if a.strip()
+        ] or ["Unknown Author"]
+
+        venue  = (pub["bib"].get("citation") or "").strip() or "Unknown Venue"
+        doi    = (pub["bib"].get("doi") or "").strip()
+        eprint = (pub["bib"].get("eprint") or "").strip()
+        gs_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={title.replace(' ', '+')}"
+
+        is_preprint = "arxiv" in venue.lower() or eprint
+        pub_type = "preprint" if is_preprint else "article-journal"
+        pub_url  = f"https://arxiv.org/abs/{eprint}" if is_preprint and eprint else gs_url
+        featured = pub.get("num_citations", 0) >= FEATURED_CITES
 
         meta = {
-            TAG_FIELD: TAG_VALUE,
             "title": title,
             "date": date_iso,
             "publishDate": date_iso,
@@ -165,20 +135,18 @@ for sid in SCHOLAR_IDS:
             "projects": [],
         }
 
-        fname = safe_slug(title)
+        fname = slug(title)
         write_md(meta, HUGO_DIR / fname)
-        new_files.add(fname)
-        log_lines.append(f"Added: {title} ({year})\n")
+        keep_files.add(fname)
+        log_lines.append(f"✅  {title} ({year})\n")
 
-# ─── prune stale files ───
-for md_path in HUGO_DIR.glob("*.md"):
-    if md_path.name in new_files:
-        continue
-    head = md_path.read_text(encoding="utf-8").splitlines()[:15]
-    if any(f"{TAG_FIELD}: {TAG_VALUE}" in line for line in head):
-        md_path.unlink()
-        log_lines.append(f"Removed old: {md_path.name}\n")
+# ────── prune old markdown files ──────
+deleted = 0
+for path in HUGO_DIR.glob("*.md"):
+    if path.name not in keep_files:
+        path.unlink()
+        deleted += 1
 
-# append log
-(HUGO_DIR / "update_log.txt").open("a", encoding="utf-8").writelines(log_lines)
-print("✅ Publications updated successfully!")
+log_lines.append(f"Kept {len(keep_files)} files, deleted {deleted} stray files.\n")
+LOG_PATH.open("a", encoding="utf-8").writelines(log_lines)
+print("✨ Done.")
