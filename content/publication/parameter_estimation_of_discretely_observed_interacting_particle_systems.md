@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: Parameter estimation of discretely observed interacting particle systems
 date: '2023-01-01T00:00:00Z'
 publishDate: '2023-01-01T00:00:00Z'

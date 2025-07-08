@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: Realized networks
 date: '2018-01-01T00:00:00Z'
 publishDate: '2018-01-01T00:00:00Z'

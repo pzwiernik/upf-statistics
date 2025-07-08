@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: A unified view of entropy-regularized Markov decision processes
 date: '2017-01-01T00:00:00Z'
 publishDate: '2017-01-01T00:00:00Z'

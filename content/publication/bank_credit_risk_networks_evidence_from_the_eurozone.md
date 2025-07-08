@@ -1,4 +1,5 @@
 ---
+source: scholar
 title: 'Bank credit risk networks: Evidence from the Eurozone'
 date: '2021-01-01T00:00:00Z'
 publishDate: '2021-01-01T00:00:00Z'
