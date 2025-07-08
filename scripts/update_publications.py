@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """
-Update Hugo-Blox publication pages from Google Scholar (fast version).
+Update Hugo-Blox publication pages from Google Scholar.
 
-Changes vs. previous script
-───────────────────────────
-• Pass `publication_limit` to scholarly → Google returns only the newest N pubs
-• Keeps retry / proxy / robust error handling
-• Removes the later Python slice (already limited at source)
-
-Author: GitHub Actions bot
+Key points
+──────────
+• Fetches up to FETCH_LIMIT=10 pubs per author, then keeps the 3 newest
+• Custom date key handles arXiv IDs (YYMM) when Scholar omits pub_year
+• Robust retries + proxy + safe YAML
+• Adds/overwrites Markdown files, avoids duplicates across authors
 """
 
 from scholarly import scholarly, ProxyGenerator, MaxTriesExceededException
 import yaml, datetime, re, time
 from pathlib import Path
 
-# ─────────── CONFIG ─────────── #
+# ───────── CONFIG ───────── #
 SCHOLAR_IDS = [
     "OwnRAwQAAAAJ",   # Piotr Zwiernik
     "WgPhMfwAAAAJ",   # Gábor Lugosi
@@ -26,73 +25,103 @@ SCHOLAR_IDS = [
     "RsbU0icAAAAJ",   # Lorenzo Cappello
 ]
 
-MAX_PAPERS_PER_AUTHOR = 3      # pull only N newest pubs
-FEATURED_THRESHOLD    = 100    # citations ≥ X ⇒ featured: true
-MAX_RETRIES           = 3
-RETRY_DELAY           = 30     # seconds
+FETCH_LIMIT            = 10   # pull this many, then pick freshest 3
+MAX_PAPERS_PER_AUTHOR   = 3   # final number to keep
+FEATURED_THRESHOLD      = 100 # citations ⇒ featured
+MAX_RETRIES             = 3
+RETRY_DELAY             = 30  # seconds
 
 HUGO_DIR = Path("content/publication")
 HUGO_DIR.mkdir(parents=True, exist_ok=True)
-# ────────────────────────────── #
+# ────────────────────────── #
 
-# optional free-proxy rotation
+# try free proxy list
 pg = ProxyGenerator()
 if pg.FreeProxies():
     scholarly.use_proxy(pg)
 
-# ────── helpers ──────
+# ───── helper utils ─────
 def safe_slug(title: str) -> str:
     return re.sub(r"[^\w\-]+", "_", title.lower()).strip("_") + ".md"
 
-def yaml_dump(d: dict) -> str:   # pretty YAML
-    return yaml.safe_dump(d, sort_keys=False, allow_unicode=True)
+def yaml_dump(obj: dict) -> str:
+    return yaml.safe_dump(obj, sort_keys=False, allow_unicode=True)
 
 def write_md(meta: dict, path: Path) -> None:
     path.write_text(f"---\n{yaml_dump(meta)}---\n", encoding="utf-8")
-# ─────────────────────
 
-log = [f"Update run on {datetime.datetime.now():%Y-%m-%d %H:%M}\n"]
+def best_date(pub: dict) -> tuple[int, int]:
+    """Return (year, month) for robust sorting."""
+    year = pub["bib"].get("pub_year")
+    if year and str(year).isdigit():
+        return (int(year), 0)
+
+    eprint = (pub["bib"].get("eprint") or "").strip()
+
+    # modern arXiv YYMM.xxxxx
+    m = re.match(r"(\d{2})(\d{2})\.\d{4,5}", eprint)
+    if m:
+        y, mth = m.groups()
+        return (2000 + int(y), int(mth))
+
+    # legacy format math/0501234                      → 2005
+    m = re.match(r".*/(\d{2})\d{4}", eprint)
+    if m:
+        return (2000 + int(m.group(1)), 0)
+
+    # fallback very old
+    return (1900, 0)
+# ─────────────────────────
+
+log_lines   = [f"Update run on {datetime.datetime.now():%Y-%m-%d %H:%M}\n"]
 seen_titles = set()
 
 for sid in SCHOLAR_IDS:
 
-    # ── fetch author (limit pubs at source) ──
+    # ── fetch author list (limited) ──
     author = None
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             author = scholarly.search_author_id(
                 sid,
                 filled=False,
-                publication_limit=MAX_PAPERS_PER_AUTHOR
+                publication_limit=FETCH_LIMIT
             )
             scholarly.fill(
                 author,
                 sections=["publications"],
-                sortby="pub_year",
-                publication_limit=MAX_PAPERS_PER_AUTHOR
+                publication_limit=FETCH_LIMIT
             )
             break
         except (MaxTriesExceededException, Exception) as e:
             if attempt == MAX_RETRIES:
-                log.append(f"Skip author {sid}: {e}\n")
+                log_lines.append(f"Skip author {sid}: {e}\n")
             else:
                 time.sleep(RETRY_DELAY)
+
     if not author or "publications" not in author:
-        log.append(f"Skip author {sid}: no publications key returned\n")
+        log_lines.append(f"Skip author {sid}: no publications key\n")
         continue
 
-    for pub in author["publications"]:
+    # sort locally and keep newest three
+    pubs = sorted(
+        author["publications"],
+        key=best_date,
+        reverse=True
+    )[:MAX_PAPERS_PER_AUTHOR]
 
-        # ── fetch pub details with retries ──
+    for pub in pubs:
+
+        # ── fetch pub details ──
         fetched = False
         for attempt in range(1, MAX_RETRIES + 1):
             try:
-                scholarly.fill(pub)
+                scholarly.fill(pub)   # full metadata
                 fetched = True
                 break
             except (MaxTriesExceededException, Exception) as e:
                 if attempt == MAX_RETRIES:
-                    log.append(f"Skip pub ({sid}): {e}\n")
+                    log_lines.append(f"Skip pub ({sid}): {e}\n")
                 else:
                     time.sleep(RETRY_DELAY)
         if not fetched:
@@ -103,24 +132,23 @@ for sid in SCHOLAR_IDS:
             continue
         seen_titles.add(title.lower())
 
-        year   = str(pub["bib"].get("pub_year", datetime.datetime.now().year))
-        date   = f"{year}-01-01T00:00:00Z"
+        # derive fields
+        y, mth = best_date(pub)
+        date_iso = f"{y}-01-01T00:00:00Z"
         authors = [a.strip() for a in re.split(r",| and ", pub["bib"].get("author", "")) if a.strip()] or ["Unknown Author"]
-
-        venue  = (pub["bib"].get("citation") or "").strip() or "Unknown Venue"
-        doi    = (pub["bib"].get("doi") or "").strip()
-        eprint = (pub["bib"].get("eprint") or "").strip()
-        gs_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={title.replace(' ', '+')}"
-
-        is_preprint = "arxiv" in venue.lower() or eprint
-        pub_type = "preprint" if is_preprint else "article-journal"
-        pub_url  = f"https://arxiv.org/abs/{eprint}" if is_preprint and eprint else gs_url
+        venue   = (pub["bib"].get("citation") or "").strip() or "Unknown Venue"
+        doi     = (pub["bib"].get("doi") or "").strip()
+        eprint  = (pub["bib"].get("eprint") or "").strip()
+        gs_url  = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={title.replace(' ', '+')}"
+        is_pre  = "arxiv" in venue.lower() or eprint
+        pub_url = f"https://arxiv.org/abs/{eprint}" if is_pre and eprint else gs_url
+        pub_type = "preprint" if is_pre else "article-journal"
         featured = pub.get("num_citations", 0) >= FEATURED_THRESHOLD
 
         meta = {
             "title": title,
-            "date": date,
-            "publishDate": date,
+            "date": date_iso,
+            "publishDate": date_iso,
             "doi": doi,
             "authors": authors,
             "publication": venue,
@@ -135,8 +163,8 @@ for sid in SCHOLAR_IDS:
         }
 
         write_md(meta, HUGO_DIR / safe_slug(title))
-        log.append(f"Added: {title} ({year})\n")
+        log_lines.append(f"Added: {title} ({y})\n")
 
-# write log file
-(HUGO_DIR / "update_log.txt").open("a", encoding="utf-8").writelines(log)
+# append log
+(HUGO_DIR / "update_log.txt").open("a", encoding="utf-8").writelines(log_lines)
 print("✅ Publications updated successfully!")
