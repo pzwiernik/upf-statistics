@@ -1,62 +1,85 @@
 #!/usr/bin/env python3
 """
-Update Hugo Blox publications from Google Scholar.
+Update Hugo-Blox publication pages from Google Scholar.
 
-Improvements:
-  • skips duplicates across authors
-  • safe YAML via PyYAML
-  • retry/back-off for Scholar rate limits
-  • optional 'featured' flag if citations ≥ FEATURED_THRESHOLD
+Features
+────────────────────────────────────────────────────────
+• pulls the latest N papers for each Scholar ID
+• avoids duplicates across authors
+• safe YAML via PyYAML (no quoting headaches)
+• flag papers as `featured` if they reach a citation threshold
+• retries with free proxy rotation; skips author after MAX_RETRIES
+• writes/update_log.txt   (append-only)
+
+Author: GitHub Actions bot
 """
 
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator, MaxTriesExceededException
 import yaml, os, datetime, re, time
 from pathlib import Path
 
-# ───────────────  CONFIG  ────────────────
+# ─────────────── CONFIG ──────────────── #
 SCHOLAR_IDS = [
-    "OwnRAwQAAAAJ",  # Piotr
-    "WgPhMfwAAAAJ",  # Gábor
-    "uz27G84AAAAJ",  # Gergő
-    "w-EcuBUAAAAJ",  # Chiara
-    "1iWGSc0AAAAJ",  # David
-    "2bchLEwAAAAJ",  # Eulàlia
-    "RsbU0icAAAAJ",  # Lorenzo
+    "OwnRAwQAAAAJ",  # Piotr Zwiernik
+    "WgPhMfwAAAAJ",  # Gábor Lugosi
+    "uz27G84AAAAJ",  # Gergely Neu
+    "w-EcuBUAAAAJ",  # Chiara Amorino
+    "1iWGSc0AAAAJ",  # David Rossell
+    "2bchLEwAAAAJ",  # Eulàlia Nualart
+    "RsbU0icAAAAJ",  # Lorenzo Cappello
 ]
 
-HUGO_DIR             = Path("content/publication")
-MAX_PAPERS_PER_AUTHOR = 3
-RETRY_DELAY          = 30      # seconds
-FEATURED_THRESHOLD   = 100     # citations ⇒ featured: true
-# ─────────────────────────────────────────
+MAX_PAPERS_PER_AUTHOR = 5      # newest N papers per scholar
+FEATURED_THRESHOLD     = 100   # citations ≥ X ⇒ featured: true
+
+MAX_RETRIES  = 3               # scholar retries per author
+RETRY_DELAY  = 30              # seconds to wait between retries
+
+HUGO_DIR = Path("content/publication")
+# ───────────────────────────────────────── #
 
 HUGO_DIR.mkdir(parents=True, exist_ok=True)
-log = [f"Update run on {datetime.datetime.now():%Y-%m-%d %H:%M}\n"]
+
+# ───── optional: free proxy rotation ───── #
+pg = ProxyGenerator()
+if pg.FreeProxies():           # returns True if proxy list fetched successfully
+    scholarly.use_proxy(pg)
+# ───────────────────────────────────────── #
 
 def safe_slug(title: str) -> str:
+    """Convert title to a safe filename."""
     return re.sub(r"[^\w\-]+", "_", title.lower()).strip("_") + ".md"
 
 def extract_venue(citation: str | None) -> str:
     return citation.strip() if citation else "Unknown Venue"
 
 def yaml_block(data: dict) -> str:
+    """Safe YAML dump without key sorting (PyYAML)."""
     return yaml.safe_dump(data, sort_keys=False, allow_unicode=True)
 
 def write_md(meta: dict, path: Path) -> None:
-    with path.open("w") as f:
+    with path.open("w", encoding="utf-8") as f:
         f.write("---\n")
         f.write(yaml_block(meta))
         f.write("---\n")
 
+log_lines = [f"Update run on {datetime.datetime.now():%Y-%m-%d %H:%M}\n"]
 seen_titles = set()
 
 for sid in SCHOLAR_IDS:
-    try:
-        author = scholarly.search_author_id(sid)
-        scholarly.fill(author, sections=["publications"])
-    except Exception as e:
-        log.append(f"Author {sid} failed: {e}\n")
-        time.sleep(RETRY_DELAY); continue
+    author = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            author = scholarly.search_author_id(sid)
+            scholarly.fill(author, sections=["publications"])
+            break  # success
+        except MaxTriesExceededException as e:
+            if attempt == MAX_RETRIES:
+                log_lines.append(f"Skip author {sid}: {e}\n")
+            else:
+                time.sleep(RETRY_DELAY)
+    if author is None:
+        continue  # move to next scholar ID
 
     pubs = sorted(
         author["publications"],
@@ -64,29 +87,37 @@ for sid in SCHOLAR_IDS:
     )[:MAX_PAPERS_PER_AUTHOR]
 
     for pub in pubs:
-        for attempt in (1, 2):
+        # retry fill on each pub
+        for attempt in range(1, MAX_RETRIES + 1):
             try:
-                scholarly.fill(pub); break
-            except Exception as e:
-                if attempt == 2:
-                    log.append(f"Skip pub: {e}\n"); continue
-                time.sleep(RETRY_DELAY)
+                scholarly.fill(pub)
+                break
+            except MaxTriesExceededException as e:
+                if attempt == MAX_RETRIES:
+                    log_lines.append(f"Skip pub ({sid}): {e}\n")
+                    pub = None
+                else:
+                    time.sleep(RETRY_DELAY)
+        if pub is None:
+            continue
 
         title = pub["bib"].get("title", "Unknown Title").strip()
-        if title.lower() in seen_titles: continue
+        if title.lower() in seen_titles:
+            continue
         seen_titles.add(title.lower())
 
         year = str(pub["bib"].get("pub_year", datetime.datetime.now().year))
         date_iso = f"{year}-01-01T00:00:00Z"
 
+        # authors list
         authors_raw = pub["bib"].get("author", "")
-        authors = [a.strip() for a in re.split(r",| and ", authors_raw) if a.strip()]
+        authors = [a.strip() for a in re.split(r",| and ", authors_raw) if a.strip()] or ["Unknown Author"]
 
-        citation  = pub["bib"].get("citation", "")
-        venue     = extract_venue(citation)
-        doi       = (pub["bib"].get("doi") or "").strip()
-        eprint    = (pub["bib"].get("eprint") or "").strip()
-        gs_url    = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={title.replace(' ', '+')}"
+        citation = pub["bib"].get("citation", "")
+        venue = extract_venue(citation)
+        doi = (pub["bib"].get("doi") or "").strip()
+        eprint = (pub["bib"].get("eprint") or "").strip()
+        gs_url = f"https://scholar.google.com/scholar?oi=bibs&hl=en&q={title.replace(' ', '+')}"
 
         if "arxiv" in venue.lower() or eprint:
             pub_type = "preprint"
@@ -97,32 +128,26 @@ for sid in SCHOLAR_IDS:
 
         featured = pub.get("num_citations", 0) >= FEATURED_THRESHOLD
 
-        meta = {
+        md_meta = {
             "title": title,
             "date": date_iso,
             "publishDate": date_iso,
             "doi": doi,
-            "authors": authors or ["Unknown Author"],
+            "authors": authors,
             "publication": venue,
             "publication_types": [pub_type],
             "featured": featured,
             "publication_url": pub_url,
-            # blanks so Hugo front-matter is valid
-            "abstract": "", "summary": "",
-            "tags": [], "categories": [], "projects": [],
+            "abstract": "",
+            "summary": "",
+            "tags": [],
+            "categories": [],
+            "projects": [],
         }
 
-        write_md(meta, HUGO_DIR / safe_slug(title))
-        log.append(f"Added: {title} ({year})\n")
+        write_md(md_meta, HUGO_DIR / safe_slug(title))
+        log_lines.append(f"Added: {title} ({year})\n")
 
-# append log
-(HUGO_DIR / "update_log.txt").open("a").writelines(log)
+# append/update log
+(HUGO_DIR / "update_log.txt").open("a", encoding="utf-8").writelines(log_lines)
 print("✅ Publications updated successfully!")
-
-# After the main loop finishes, prune outdated files
-latest_slugs = {safe_slug(t) for t in seen_titles}   # titles we just processed
-
-for md_path in HUGO_DIR.glob("*.md"):
-    if md_path.name not in latest_slugs and md_path.name != "update_log.txt":
-        md_path.unlink()               # delete the old file
-        log.append(f"Removed: {md_path.name}\n")
