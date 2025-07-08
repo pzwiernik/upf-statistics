@@ -77,7 +77,8 @@ for sid in SCHOLAR_IDS:
                 log.append(f"Skip author {sid}: {e}\n")
             else:
                 time.sleep(RETRY_DELAY)
-    if author is None:
+    if not author or "publications" not in author:
+        log.append(f"Skip author {sid}: no publications key returned\n")
         continue
 
     for pub in author["publications"]:
