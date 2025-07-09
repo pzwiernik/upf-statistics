@@ -70,7 +70,7 @@ section.wg-markdown {       /* fallback for older builds  */
 }
 
 .stream-item {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid #eee; /* optional visual separation */
 }
 
