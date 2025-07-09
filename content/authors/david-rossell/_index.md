@@ -16,7 +16,7 @@ interests:
 social:
   - icon: globe
     icon_pack: fas
-    link: "https://drossell.net/"
+    link: "https://sites.google.com/site/rosselldavid/"
   - icon: google-scholar
     icon_pack: ai
     link: "https://scholar.google.com/citations?user=3A2KLz8AAAAJ"
