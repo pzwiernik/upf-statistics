@@ -23,7 +23,19 @@ sections:
       title: Highlighted Publications (last 5 years)
       text: |
         ## Theory
-        - Foondun, M., Khoshnevisan, D. and Nualart, E. (2024), Instantaneous everywhere-blowup of parabolic SPDEs, **Probability Theory and Related Fields**, 190, 601-624.
+        <!-- 1 -->
+        <div class="media stream-item view-compact">
+          <div class="media-body">
+            <h3 class="article-title mb-0">
+              <a href="https://link.springer.com/article/10.1007/s00440-024-01205-9" target="_blank" rel="noopener">
+                Instantaneous everywhere-blow-up of parabolic SPDEs
+              </a>
+            </h3>
+            <div class="article-metadata">
+              M. Foondun, D. Khoshnevisan, <strong>E. Nualart</strong>. <em>Probab. Theory Relat. Fields</em>, 2024
+            </div>
+          </div>
+        </div>        
         - G. Mesters, P. Zwiernik, Non-independent component analysis. **Annals of Statistics** 2024, Vol. 52, No. 6, 2506-2528.
         - N. Broutin, N. Kamčev, and G. Lugosi. Increasing paths in random temporal graphs. **Annals of Applied Probability**, Vol. 34, No. 6, 5498-5521, 2024.
         - Brownlees, C., & Llorens-Terrazas, J. (2024). Empirical risk minimization for time series: Nonparametric performance bounds for prediction. **Journal of Econometrics**, 244(1), 105849.
