@@ -1,0 +1,13 @@
+/* Compact publication list
+   ------------------------ */
+ul.pub-list li {                 /* tighten vertical space  */
+  margin-bottom: .25rem !important;
+}
+
+ul.pub-list .btn {               /* hide the grey “PDF” pill */
+  display: none !important;
+}
+
+/* smaller title & author lines */
+ul.pub-list h3 { font-size: 0.90rem; margin-bottom: .1rem; }
+ul.pub-list .article-metadata { font-size: 0.80rem; }
