@@ -25,29 +25,64 @@ sections:
   content:
     title: Workshops & Conferences
     text: |
-      <!-- CARD 1 ────────────────────────────────────────────────────────── -->
+      <!-- CARD · Mathematical Aspects of Learning - 20 Years Later -->
       <div class="media stream-item view-compact">
         <div class="media-body">
           <div class="section-subheading article-title mb-0">
-            <a href="https://example.com/graphical-models-2024" target="_blank" rel="noopener">
-              Barcelona Workshop on Graphical Models
+            <a href="https://www.crm.cat/mathematical-aspects-of-learning-theory/"
+               target="_blank" rel="noopener">
+              Mathematical Aspects of Learning — 20 Years Later
             </a>
           </div>
+
           <div class="article-style">
-            Hands-on meeting on structure learning & inference in graphical models.
+            Workshop with talks by Piotr Zwiernik, Gergely Neu & others.
           </div>
+
           <div class="stream-meta article-metadata">
-            3–5&nbsp;Jul&nbsp;2024 · UPF Campus Ciutadella
+            9–13&nbsp;Sep&nbsp;2024 · Casa Convalescència
           </div>
         </div>
 
-        <!-- thumbnail (appears on the right) -->
-        <a class="ml-3" href="https://example.com/graphical-models-2024" target="_blank" rel="noopener">
-          <img src="/media/event/gm2024.jpg" alt="Graphical Models Workshop"
+        <!-- thumbnail on the right -->
+        <a class="ml-3"
+           href="https://www.crm.cat/mathematical-aspects-of-learning-theory/"
+           target="_blank" rel="noopener" aria-label="Mathematical Aspects of Learning 2024">
+          <img src="/media/event/featured.jpg"
+               alt="Mathematical Aspects of Learning workshop image"
                width="110" height="110" loading="lazy">
         </a>
       </div>
 
+      <!-- CARD · Mathematical Statistics and Learning 2021 -->
+      <div class="media stream-item view-compact">
+        <div class="media-body">
+          <div class="section-subheading article-title mb-0">
+            <a href="https://dscbarcelona.wixsite.com/msl2020"
+               target="_blank" rel="noopener">
+              Mathematical Statistics & Learning 2021
+            </a>
+          </div>
+
+          <div class="article-style">
+            Conference on high-dimensional statistics and ML theory.
+          </div>
+
+          <div class="stream-meta article-metadata">
+            29&nbsp;Jun – 2&nbsp;Jul&nbsp;2021 · Casa Convalescència
+          </div>
+        </div>
+
+        <!-- thumbnail on the right -->
+        <a class="ml-3"
+           href="https://dscbarcelona.wixsite.com/msl2020"
+           target="_blank" rel="noopener" aria-label="MSL 2021 image">
+          <img src="/media/event/download-7-.jpeg"
+               alt="MSL 2021 banner"
+               width="110" height="110" loading="lazy">
+        </a>
+      </div>
+      
       <!-- CARD · Google Focused Award Mini-workshop ───────────────────────── -->
       <div class="media stream-item view-compact">
         <div class="media-body">
