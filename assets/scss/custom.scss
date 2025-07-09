@@ -50,10 +50,9 @@ ul.pub-list > li[class*="mb-"],
 
 
 /* Tighten publication list even further */
-ul.pub-list > li > *:first-child,
-.wg-collection ul.pub-list > li > *:first-child {
-  margin-bottom: 0 !important;   /* nuke mb-2 / mb-3 on inner <div> */
+ul.pub-list > li *,
+.wg-collection ul.pub-list > li * {
+  margin-bottom: 0 !important;
 }
-
 
 /* ───────────────────────────────────────────────────────────── */
