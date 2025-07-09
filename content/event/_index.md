@@ -96,24 +96,24 @@ sections:
         </a>
       </div>
 
-      <!-- CARD 2 ────────────────────────────────────────────────────────── -->
+      <!-- BayesComp 2018 ───────────────────────────────────────────── -->
       <div class="media stream-item view-compact">
         <div class="media-body">
           <div class="section-subheading article-title mb-0">
-            <a href="https://example.com/bayescomp-2025" target="_blank" rel="noopener">
-              10<sup>th</sup> Bayesian Computing Conference
+            <a href="https://www.maths.nottingham.ac.uk/plp/pmztk/bayescomp/" target="_blank" rel="noopener">
+              10<sup>th</sup> BayesComp 2018
             </a>
           </div>
           <div class="article-style">
             Advances in scalable Bayesian computation.
           </div>
           <div class="stream-meta article-metadata">
-            12–14&nbsp;Jan&nbsp;2025 · UPF Auditorium
+            26-28&nbsp;Mar&nbsp;2018 · UPF Auditorium
           </div>
         </div>
 
-        <a class="ml-3" href="https://example.com/bayescomp-2025" target="_blank" rel="noopener">
-          <img src="/media/event/bayescomp2025.png" alt="BayesComp 2025 logo"
+        <a class="ml-3" href="https://www.maths.nottingham.ac.uk/plp/pmztk/bayescomp/" target="_blank" rel="noopener">
+          <img src="/media/bayescomp.jpeg" alt="BayesComp 2018 logo"
                width="110" height="110" loading="lazy">
         </a>
       </div>
