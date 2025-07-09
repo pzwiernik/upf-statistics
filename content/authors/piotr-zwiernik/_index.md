@@ -15,7 +15,7 @@ last_name:  "Zwiernik"
 superuser: true
 
 # Current role / position
-role: "Serra Húnter Distinguished Professor of Statistics"
+role: "Serra Húnter Professor"
 
 # Organizations / affiliations
 organizations:
