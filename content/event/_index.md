@@ -113,7 +113,7 @@ sections:
         </div>
 
         <a class="ml-3" href="https://www.maths.nottingham.ac.uk/plp/pmztk/bayescomp/" target="_blank" rel="noopener">
-          <img src="/media/bayescomp.jpeg" alt="BayesComp 2018 logo"
+          <img src="./media/bayescomp.jpeg" alt="BayesComp 2018 logo"
                width="110" height="110" loading="lazy">
         </a>
       </div>
