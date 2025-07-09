@@ -8,4 +8,4 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-Gergely Neu has become one of the new ICREA Professors. Congratulations!!!
+Gergely Neu has become one of the new ICREA Professors. This is a permanent, tenured positions to researchers from all over the world to come and work in Catalonia. Over the years these positions have become a synonym of global academic excellence. Congratulations Gergő!!!
