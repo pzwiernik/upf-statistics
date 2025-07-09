@@ -55,8 +55,11 @@ ul.pub-list > li *,
   margin-bottom: 0 !important;
 }
 
-/* TEMPORARY!  Paint coloured borders so you can see every box */
-ul.pub-list > li            { outline: 1px solid red;   }
-ul.pub-list > li *          { outline: 1px dashed green; }
+/* DEBUG — outline EVERY element in the publication section */
+div#section-collection *,          /* collection widget */
+section.wg-collection *            /* fallback selector */
+{
+  outline: 1px solid rgba(255,0,0,.4) !important;
+}
 
 /* ───────────────────────────────────────────────────────────── */
