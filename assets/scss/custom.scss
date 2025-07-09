@@ -21,3 +21,37 @@ ul.pub-list > li,                   /* citation layout       */
   margin-bottom: .15rem !important;   /* ↓ try .25-.50rem      */
   padding-bottom: 0 !important;       /* be extra safe         */
 }
+
+/* ───── tighten vertical gap between publications ───── */
+
+/* 1  zero-out the Bootstrap utility padding that Wowchemy adds */
+ul.pub-list > li,
+ul.pub-list > li.pb-2,                   /* citation layout */
+.wg-collection ul.pub-list > li,
+.wg-collection ul.pub-list > li.pb-2 {   /* inside Collection block */
+  padding-bottom: 0 !important;          /* override `pb-2` (=0.5 rem) */
+}
+
+/* 2  replace Wowchemy’s large margin with something smaller       */
+ul.pub-list > li:not(:last-child),
+.wg-collection ul.pub-list > li:not(:last-child) {
+  margin-bottom: .3rem !important;       /* tweak to taste: .2–.4 rem */
+}
+
+/* 3  (your existing typography rules—keep these) */
+ul.pub-list h3,
+.wg-collection .article-title {
+  font-size: .85rem !important;
+  line-height: 1.1 !important;
+  margin: 0 0 .05rem 0 !important;
+}
+
+ul.pub-list .article-metadata,
+.wg-collection .article-metadata {
+  font-size: .75rem !important;
+  margin: 0 !important;                  /* no top or bottom gap */
+}
+
+/* 4  hide the grey PDF pill (already present in your file) */
+ul.pub-list .btn,
+.wg-collection .btn.btn-outline-primary { display:none !important; }
