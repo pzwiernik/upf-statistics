@@ -34,4 +34,19 @@ ul.pub-list > li:not(:last-child),
   margin-bottom: 0 !important;         /* adjust to taste (.10–.30)   */
 }
 
+/* 1. Remove ul’s own top/bottom margin */
+ul.pub-list,
+.wg-collection ul.pub-list {
+  margin: 0 !important;
+  padding-left: 0 !important;   /* optional: align flush with left edge */
+}
+
+/* 2. Some Wowchemy builds add `mb-2` or `mb-3` on the <li>.
+      Nuke any `mb-*` utility class that may sneak in. */
+ul.pub-list > li[class*="mb-"],
+.wg-collection ul.pub-list > li[class*="mb-"] {
+  margin-bottom: 0 !important;
+}
+
+
 /* ───────────────────────────────────────────────────────────── */
