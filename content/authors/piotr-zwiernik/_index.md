@@ -1,6 +1,4 @@
 ---
-widget: about
-
 # Display name
 title: "Piotr Zwiernik"
 
