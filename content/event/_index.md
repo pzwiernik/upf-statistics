@@ -25,17 +25,13 @@ sections:
   content:
     title: Workshops & Conferences
     text: |
-      <!-- copy-paste & edit a card for each event -->
-      <!-- CARD 1 ---------------------------------------------------- -->
-      <div class="media stream-item view-compact">
-        <!-- thumbnail (right-hand side) -->
+     <div class="media stream-item view-compact">
         <a class="ml-3" href="https://example.com/graphical-models-2024"
            target="_blank" rel="noopener">
           <img src="/media/event/gm2024.jpg" alt="Graphical Models Workshop"
                width="110" height="110" loading="lazy">
         </a>
 
-        <!-- main text -->
         <div class="media-body">
           <!-- line 1 – title (linked) -->
           <div class="section-subheading article-title mb-0">
@@ -58,7 +54,7 @@ sections:
         </div>
       </div>
 
-      <!-- CARD 2 ---------------------------------------------------- -->
+
       <div class="media stream-item view-compact">
         <a class="ml-3" href="https://example.com/bayescomp-2025"
            target="_blank" rel="noopener">
