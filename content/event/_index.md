@@ -1,4 +1,3 @@
-@ -1,122 +0,0 @@
 ---
 title: Recent & Upcoming Events
 type: landing
