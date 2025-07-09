@@ -1,82 +1,67 @@
 ---
 # Display name
-title: Piotr Zwiernik
+title: "Piotr Zwiernik"
 
 # Full Name (for SEO)
-first_name: Piotr
-last_name: Zwiernik
+first_name: "Piotr"
+last_name: "Zwiernik"
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Associate Professor
+role: "Associate Professor"
 
 # Organizations/Affiliations
 organizations:
-  - name: Universitat Pompeu Fabra
-    url: 'https://pzwiernik.github.io'
+  - name: "Universitat Pompeu Fabra"
+    url: "https://pzwiernik.github.io"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: "My research interests include multivariate statistics and tensors."
 
 interests:
-  - High-dimensional statistics
-  - Tensors
+  - "High-dimensional statistics"
+  - "Tensors"
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
+    - course: "PhD in Statistics"
+      institution: "Warwick University"
       year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: "MSc in Mathematics"
+      institution: "University of Warsaw"
+      year: 2007
+    - course: "MSc in Economics"
+      institution: "Warsaw School of Economics"
+      year: 2003
 
 # Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:piotr.zwiernik@upf.edu'
+    link: "mailto:piotr.zwiernik@upf.edu"
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
   - icon: github
     icon_pack: fab
-    link: https://github.com/pzwiernik
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+    link: "https://github.com/pzwiernik"
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: ""
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
+# Organizational groups (for People widget)
 user_groups:
-  - Principal Investigators
-  
-editorial_roles:
-  - Associate Editor, *Journal of the Royal Statistical Society, Series B* (2023-)
-  - Associate Editor, *Biometrika* (2018-)
-  - Associate Editor, *Scandinavian Journal of Statistics* (2016-)
-  - Editorial Board, *Algebraic Statistics* (2014-)
----
+  - "Principal Investigators"
 
-### Editorial Service  
-{{< ul >}}
-{{ range .Params.editorial_roles }}
-  - {{ . }}
-{{ end }}
-{{< /ul >}}
+# Editorial roles (quoted to keep YAML happy)
+editorial_roles:
+  - "Associate Editor, *Journal of the Royal Statistical Society, Series B* (2023– )"
+  - "Associate Editor, *Biometrika* (2018– )"
+  - "Associate Editor, *Scandinavian Journal of Statistics* (2016– )"
+  - "Editorial Board, *Algebraic Statistics* (2014– )"
+---
