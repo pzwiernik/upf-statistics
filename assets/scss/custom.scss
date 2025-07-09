@@ -63,11 +63,9 @@ ul.pub-list .card {
   box-shadow: none !important; /* optional: removes box shadow */
 }
 
-/* DEBUG — outline EVERY element in the publication section */
-div#section-collection *,          /* collection widget */
-section.wg-collection *            /* fallback selector */
-{
-  outline: 1px solid rgba(255,0,0,.4) !important;
+ul.pub-list > li {
+  padding: 0 !important;
+  margin: 0 0 0.25rem 0 !important;
 }
 
 /* ───────────────────────────────────────────────────────────── */
