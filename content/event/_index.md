@@ -34,16 +34,13 @@ sections:
               Mathematical Aspects of Learning — 20 Years Later
             </a>
           </div>
-
           <div class="article-style">
             Workshop with talks by Piotr Zwiernik, Gergely Neu & others.
           </div>
-
           <div class="stream-meta article-metadata">
             9–13&nbsp;Sep&nbsp;2024 · Casa Convalescència
           </div>
         </div>
-
         <!-- thumbnail on the right -->
         <a class="ml-3"
            href="https://www.crm.cat/mathematical-aspects-of-learning-theory/"
@@ -63,16 +60,13 @@ sections:
               Mathematical Statistics & Learning 2021
             </a>
           </div>
-
           <div class="article-style">
             Conference on high-dimensional statistics and ML theory.
           </div>
-
           <div class="stream-meta article-metadata">
             29&nbsp;Jun – 2&nbsp;Jul&nbsp;2021 · Casa Convalescència
           </div>
         </div>
-
         <!-- thumbnail on the right -->
         <a class="ml-3"
            href="https://dscbarcelona.wixsite.com/msl2020"
