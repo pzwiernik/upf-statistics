@@ -74,4 +74,9 @@ editorial_roles:
   - Editorial Board, *Algebraic Statistics* (2014-)
 ---
 
-
+### Editorial Service  
+{{< ul >}}
+{{ range .Params.editorial_roles }}
+  - {{ . }}
+{{ end }}
+{{< /ul >}}
