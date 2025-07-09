@@ -14,3 +14,10 @@ ul.pub-list .article-metadata,
 /* Hide the grey PDF pill */
 ul.pub-list .btn,                         /* citation layout */
 .wg-collection .btn.btn-outline-primary { display:none !important; }
+
+/*  compact list – shrink vertical gap between items  */
+ul.pub-list > li,                   /* citation layout       */
+.wg-collection ul.pub-list > li {   /* if inside a collection */
+  margin-bottom: .35rem !important;   /* ↓ try .25-.50rem      */
+  padding-bottom: 0 !important;       /* be extra safe         */
+}
