@@ -45,7 +45,7 @@ sections:
         <a class="ml-3"
            href="https://www.crm.cat/mathematical-aspects-of-learning-theory/"
            target="_blank" rel="noopener" aria-label="Mathematical Aspects of Learning 2024">
-          <img src="./media/casac.jpg"
+          <img src="./media/casac.jpeg"
                alt="Mathematical Aspects of Learning workshop image"
                width="110" height="110" loading="lazy">
         </a>
