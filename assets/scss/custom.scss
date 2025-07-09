@@ -1,57 +1,37 @@
-ul.pub-list h3,                              /* citation layout */
-.wg-collection .article-title {              /* grid/compact    */
-  font-size: .85rem !important;              /* title smaller   */
-  line-height: 1.1 !important;               /* tighter lines   */
-  margin: 0 0 .05rem 0 !important;           /* almost no gap   */
-}
+/* ───── Publication list fine-tuning ───────────────────────── */
 
-ul.pub-list .article-metadata,
-.wg-collection .article-metadata {
-  font-size: .75rem !important;              /* author/date smaller */
-  margin-top: 0 !important;                  /* remove extra gap    */
-}
-
-/* Hide the grey PDF pill */
-ul.pub-list .btn,                         /* citation layout */
-.wg-collection .btn.btn-outline-primary { display:none !important; }
-
-/*  compact list – shrink vertical gap between items  */
-ul.pub-list > li,                   /* citation layout       */
-.wg-collection ul.pub-list > li {   /* if inside a collection */
-  margin-bottom: .15rem !important;   /* ↓ try .25-.50rem      */
-  padding-bottom: 0 !important;       /* be extra safe         */
-}
-
-/* ───── tighten vertical gap between publications ───── */
-
-/* 1  zero-out the Bootstrap utility padding that Wowchemy adds */
-ul.pub-list > li,
-ul.pub-list > li.pb-2,                   /* citation layout */
-.wg-collection ul.pub-list > li,
-.wg-collection ul.pub-list > li.pb-2 {   /* inside Collection block */
-  padding-bottom: 0 !important;          /* override `pb-2` (=0.5 rem) */
-}
-
-/* 2  replace Wowchemy’s large margin with something smaller       */
-ul.pub-list > li:not(:last-child),
-.wg-collection ul.pub-list > li:not(:last-child) {
-  margin-bottom: .3rem !important;       /* tweak to taste: .2–.4 rem */
-}
-
-/* 3  (your existing typography rules—keep these) */
-ul.pub-list h3,
-.wg-collection .article-title {
+/* 1. Typography (title & meta) */
+ul.pub-list h3,                             /* citation layout             */
+.wg-collection .article-title {             /* grid/compact inside widget  */
   font-size: .85rem !important;
   line-height: 1.1 !important;
-  margin: 0 0 .05rem 0 !important;
+  margin: 0 0 .05rem 0 !important;          /* tighten title→meta gap      */
 }
 
 ul.pub-list .article-metadata,
 .wg-collection .article-metadata {
   font-size: .75rem !important;
-  margin: 0 !important;                  /* no top or bottom gap */
+  margin: 0 !important;                     /* no extra gap above/below    */
 }
 
-/* 4  hide the grey PDF pill (already present in your file) */
+/* 2. Remove grey PDF button */
 ul.pub-list .btn,
-.wg-collection .btn.btn-outline-primary { display:none !important; }
+.wg-collection .btn.btn-outline-primary {
+  display: none !important;
+}
+
+/* 3. Shrink vertical spacing between list items               */
+/*    Wowchemy/Bootstrap adds `pb-2` (padding-bottom) + margin  */
+ul.pub-list > li,
+ul.pub-list > li.pb-2,
+.wg-collection ul.pub-list > li,
+.wg-collection ul.pub-list > li.pb-2 {
+  padding-bottom: 0 !important;             /* kill `pb-2` (0.5 rem)       */
+}
+
+ul.pub-list > li:not(:last-child),
+.wg-collection ul.pub-list > li:not(:last-child) {
+  margin-bottom: .10rem !important;         /* adjust to taste (.10–.30)   */
+}
+
+/* ───────────────────────────────────────────────────────────── */
