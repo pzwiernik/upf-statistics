@@ -6,7 +6,7 @@ sections:
   # ───────── 1 · Dynamic list (compact) ─────────
   - block: collection
     content:
-      title: Recent Publications & Preprints
+      title: Recent arXiv preprints
       page_type: publication
       filters:
         featured: false
