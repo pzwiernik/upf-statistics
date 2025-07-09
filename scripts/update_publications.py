@@ -67,7 +67,7 @@ for sid in SCHOLAR_IDS:
             scholarly.fill(
                 author,
                 sections=["publications"],
-                sortby="pub_year",
+                sortby="year",
                 publication_limit=MAX_PAPERS,
             )
             break
