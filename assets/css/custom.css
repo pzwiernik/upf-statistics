@@ -1,0 +1,77 @@
+/* ── Publication list fine–tuning ─────────────────────────── */
+
+/* 1. Typography ─ smaller title & meta */
+ul.pub-list h3,
+.wg-collection .article-title {
+  font-size: .85rem !important;
+  line-height: 1.1 !important;
+  margin: 0 0 .05rem 0 !important;   /* title → meta gap */
+}
+
+ul.pub-list .article-metadata,
+.wg-collection .article-metadata {
+  font-size: .75rem !important;
+  margin: 0 !important;
+}
+
+/* 2. Hide the grey PDF button */
+ul.pub-list .btn,
+.wg-collection .btn.btn-outline-primary {
+  display: none !important;
+}
+
+/* 3. Kill default spacing */
+/* 3 a)  citation view  (<ul class="pub-list"> … <li>) */
+ul.pub-list,
+ul.pub-list > li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+ul.pub-list > li:not(:last-child) {     /* gap between items */
+  margin-bottom: .05rem !important;     /* tweak to taste    */
+}
+
+/* 3 b)  collection “compact” view  (<div class="media stream-item view-compact">) */
+.media.stream-item.view-compact {
+  margin: 0 0 .15rem 0 !important;      /* vertical gap */
+  padding: 0 !important;
+}
+/* remove the unused thumb gutter */
+.media.stream-item.view-compact .ml-3 { margin-left: 0 !important; }
+
+
+/* ──  Markdown “Highlighted Publications” block only  ───────── */
+#wg-markdown,               /* section wrapper            */
+section.wg-markdown {       /* fallback for older builds  */
+  /* tighten every publication card in that section */
+  /* 1 ▸ card box ---------------------------------- */
+  .media.stream-item.view-compact {
+    margin-bottom: 0.15rem !important;   /* ↓ shrink gap  */
+    padding-bottom: 0 !important;
+    font-size: 0.8rem !important;        /* global font   */
+  }
+
+  /* 2 ▸ title line -------------------------------- */
+  .article-title {
+    font-size: 0.85rem !important;
+    line-height: 1.15 !important;
+    margin: 0 0 0.05rem 0 !important;
+  }
+
+  /* 3 ▸ author / meta line ------------------------ */
+  .article-metadata {
+    font-size: 0.75rem !important;
+    margin: 0 !important;
+  }
+}
+
+.journal-name {
+  color: #4a90e2;
+}
+
+.stream-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee; /* optional visual separation */
+}
+
+/* ─────────────────────────────────────────────────────────── */
