@@ -18,6 +18,6 @@ ul.pub-list .btn,                         /* citation layout */
 /*  compact list – shrink vertical gap between items  */
 ul.pub-list > li,                   /* citation layout       */
 .wg-collection ul.pub-list > li {   /* if inside a collection */
-  margin-bottom: .35rem !important;   /* ↓ try .25-.50rem      */
+  margin-bottom: .15rem !important;   /* ↓ try .25-.50rem      */
   padding-bottom: 0 !important;       /* be extra safe         */
 }
