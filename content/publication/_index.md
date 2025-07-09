@@ -140,7 +140,213 @@ sections:
           </div>
         </div>
 
-        <!-- Add more THEORY cards here if desired -->
+        <div class="media stream-item view-compact">
+          <div class="media-body">
+            <h3 class="article-title mb-0">
+              <a href="https://doi.org/10.1111/rssb.12637" target="_blank" rel="noopener">
+                Loss function selection and the use of improper models
+              </a>
+            </h3>
+            <div class="article-metadata">
+              J. Jewson, <strong>D. Rossell</strong>. <em>J. R. Stat. Soc. B</em>, 2022
+            </div>
+          </div>
+        </div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1214/22-AOS2180" target="_blank" rel="noopener">
+        Locally associated graphical models and mixed convex exponential families
+      </a>
+    </h3>
+    <div class="article-metadata">
+      S. Lauritzen, <strong>P. Zwiernik</strong>. <em>Ann. Stat.</em>, 50 (5), 2022
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="#" target="_blank" rel="noopener">
+        Multivariate mean estimation with direction-dependent accuracy
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>G. Lugosi</strong>, S. Mendelson. <em>J. Eur. Math. Soc.</em>, 2022
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1214/21-AAP1684" target="_blank" rel="noopener">
+        Broadcasting on random recursive trees
+      </a>
+    </h3>
+    <div class="article-metadata">
+      L. Addario-Berry, L. Devroye, <strong>G. Lugosi</strong>, <strong>V. Velona</strong>. <em>Ann. Appl. Probab.</em>, 2022
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1214/22-BA1314" target="_blank" rel="noopener">
+        Concentration of posterior probabilities and normalized L<sub>0</sub> criteria
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>D. Rossell</strong>. <em>Bayesian Anal.</em>, 17 (2), 2022
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1214/21-BA1282" target="_blank" rel="noopener">
+        Heterogeneous large datasets integration using Bayesian factor regression
+      </a>
+    </h3>
+    <div class="article-metadata">
+      A. Avalos-Pacheco, <strong>D. Rossell</strong>, R. Savage. <em>Bayesian Anal.</em>, 17 (1), 2022
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1080/10618600.2021.2006135" target="_blank" rel="noopener">
+        Adaptive Preferential Sampling in Phylodynamics
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>L. Cappello</strong>, <strong>J. A. Palacios</strong>. <em>J. Comput. Graph. Stat.</em>, 31 (2), 2022
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://jmlr.org/papers/v22/20-1256.html" target="_blank" rel="noopener">
+        Learning partial correlation graphs by covariance queries
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>G. Lugosi</strong>, J. Truszkowski, <strong>V. Velona</strong>, <strong>P. Zwiernik</strong>. <em>JMLR</em>, 22 (203), 2021
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1111/rssb.12444" target="_blank" rel="noopener">
+        Approximate Laplace approximations for scalable model selection
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>D. Rossell</strong>, O. Abril, A. Bhattacharya. <em>J. R. Stat. Soc. B</em>, 83 (4), 2021
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="#" target="_blank" rel="noopener">
+        Robust multivariate mean estimation: the optimality of trimmed mean
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>G. Lugosi</strong>, S. Mendelson. <em>Ann. Stat.</em>, 2021
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1214/21-AOS2103" target="_blank" rel="noopener">
+        Total positivity in exponential families with application to binary variables
+      </a>
+    </h3>
+    <div class="article-metadata">
+      S. Lauritzen, C. Uhler, <strong>P. Zwiernik</strong>. <em>Ann. Stat.</em>, 49 (3), 2021
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1214/21-STS807" target="_blank" rel="noopener">
+        Additive Bayesian variable selection under censoring and misspecification
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>D. Rossell</strong>, F. J. Rubio. <em>Statist. Sci.</em>, 38 (1), 2021
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1214/21-EJS1858" target="_blank" rel="noopener">
+        Dependence in elliptical partial correlation graphs
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>D. Rossell</strong>, <strong>P. Zwiernik</strong>. <em>Electron. J. Stat.</em>, 15 (2), 2021
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1007/s00440-019-00912-2" target="_blank" rel="noopener">
+        Noise sensitivity of the top eigenvector of a Wigner matrix
+      </a>
+    </h3>
+    <div class="article-metadata">
+      C. Bordenave, <strong>G. Lugosi</strong>, N. Zhivotovskiy. <em>Probab. Theory Relat. Fields</em>, 2020
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="#" target="_blank" rel="noopener">
+        Risk minimization by median-of-means tournaments
+      </a>
+    </h3>
+    <div class="article-metadata">
+      <strong>G. Lugosi</strong>, S. Mendelson. <em>J. Eur. Math. Soc.</em>, 2020
+    </div>
+  </div>
+</div>
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <h3 class="article-title mb-0">
+      <a href="https://doi.org/10.1073/pnas.2006097117" target="_blank" rel="noopener">
+        Benign overfitting in linear regression
+      </a>
+    </h3>
+    <div class="article-metadata">
+      P. L. Bartlett, P. L. Long, <strong>G. Lugosi</strong>, A. Tsigler. <em>PNAS</em>, 117 (48), 2020
+    </div>
+  </div>
+</div>
 
 
         <!-- ───────── APPLICATIONS ───────── -->
