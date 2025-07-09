@@ -33,7 +33,7 @@ ul.pub-list > li:not(:last-child) {     /* gap between items */
 
 /* 3 b)  collection “compact” view  (<div class="media stream-item view-compact">) */
 .media.stream-item.view-compact {
-  margin: 0 0 .05rem 0 !important;      /* vertical gap */
+  margin: 0 0 .15rem 0 !important;      /* vertical gap */
   padding: 0 !important;
 }
 /* remove the unused thumb gutter */
