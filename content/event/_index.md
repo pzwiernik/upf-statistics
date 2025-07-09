@@ -23,7 +23,7 @@ sections:
 ##############################################################################
 - block: markdown
   content:
-    title: Workshops & Conferences
+    title: Workshops & Conferences (last 10 years)
     text: |
       <!-- CARD · Mathematical Aspects of Learning - 20 Years Later -->
       <div class="media stream-item view-compact">
@@ -45,7 +45,7 @@ sections:
         <a class="ml-3"
            href="https://www.crm.cat/mathematical-aspects-of-learning-theory/"
            target="_blank" rel="noopener" aria-label="Mathematical Aspects of Learning 2024">
-          <img src="/media/event/featured.jpg"
+          <img src="./media/casac.jpg"
                alt="Mathematical Aspects of Learning workshop image"
                width="110" height="110" loading="lazy">
         </a>
@@ -71,7 +71,7 @@ sections:
         <a class="ml-3"
            href="https://dscbarcelona.wixsite.com/msl2020"
            target="_blank" rel="noopener" aria-label="MSL 2021 image">
-          <img src="/media/casac.jpeg"
+          <img src="./media/casac.jpeg"
                alt="MSL 2021 banner"
                width="110" height="110" loading="lazy">
         </a>
@@ -92,7 +92,7 @@ sections:
         </div>
         <!-- thumbnail on the right -->
         <a class="ml-3" href="#" aria-label="Workshop image">
-          <img src="/media/event/download-6-.jpeg" alt="Mini-workshop banner" width="110" height="110" loading="lazy">
+          <img src="./media/upf.jpeg" alt="Mini-workshop banner" width="110" height="110" loading="lazy">
         </a>
       </div>
 
