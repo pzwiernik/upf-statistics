@@ -77,7 +77,7 @@ sections:
         <a class="ml-3"
            href="https://dscbarcelona.wixsite.com/msl2020"
            target="_blank" rel="noopener" aria-label="MSL 2021 image">
-          <img src="/media/event/download-7-.jpeg"
+          <img src="/media/event/casac.jpeg"
                alt="MSL 2021 banner"
                width="110" height="110" loading="lazy">
         </a>
