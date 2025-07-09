@@ -55,12 +55,12 @@ ul.pub-list > li *,
   margin-bottom: 0 !important;
 }
 
-/* compact publications – kill Bootstrap gutter just in that section */
-#section-collection .row,
-#section-collection .g-2,
-#section-collection [class*="g-"] {
-  --bs-gutter-y: 0 !important;   /* vertical gap */
-  margin-bottom: 0 !important;   /* fallback older Bootstrap */
+/* Remove padding and margin from cards in publication list */
+ul.pub-list .card {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;     /* optional: removes border if you want ultra-compact */
+  box-shadow: none !important; /* optional: removes box shadow */
 }
 
 /* DEBUG — outline EVERY element in the publication section */
