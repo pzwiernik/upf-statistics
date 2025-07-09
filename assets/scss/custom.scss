@@ -1,9 +1,15 @@
-/* Compact publication list  ________________________________________ */
+/* Even-more-compact publication entry
+   (tweak numbers to taste)  _________________________________ */
 
-ul.pub-list li              { margin-bottom: .25rem !important; }
-ul.pub-list h3              { font-size: .90rem !important; margin-bottom: .1rem; }
-ul.pub-list .article-metadata{ font-size: .80rem !important; }
+ul.pub-list h3,                              /* citation layout */
+.wg-collection .article-title {              /* grid/compact    */
+  font-size: .85rem !important;              /* title smaller   */
+  line-height: 1.1 !important;               /* tighter lines   */
+  margin: 0 0 .05rem 0 !important;           /* almost no gap   */
+}
 
-/* Hide the grey PDF pill */
-ul.pub-list .btn,                         /* citation layout */
-.wg-collection .btn.btn-outline-primary { display:none !important; }
+ul.pub-list .article-metadata,
+.wg-collection .article-metadata {
+  font-size: .75rem !important;              /* author/date smaller */
+  margin-top: 0 !important;                  /* remove extra gap    */
+}
