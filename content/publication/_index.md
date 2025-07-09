@@ -37,7 +37,7 @@ sections:
             </h3>
             <div class="article-metadata">
               M. Foondun, D. Khoshnevisan, <strong>E. Nualart</strong> —
-              <em>Probab. Theory Relat. Fields</em>, 2024
+              <em class="journal-name">Probab. Theory Relat. Fields</em>, 2024
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ sections:
             </h3>
             <div class="article-metadata">
               G. Mesters, <strong>P. Zwiernik</strong> —
-              <em>Annals of Statistics</em>, 2024
+              <em class="journal-name">Annals of Statistics</em>, 2024
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ sections:
             </h3>
             <div class="article-metadata">
               N. Broutin, N. Kamčev, <strong>G. Lugosi</strong> —
-              <em>Ann. Appl. Probab.</em>, 2024
+              <em class="journal-name">Ann. Appl. Probab.</em>, 2024
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ sections:
             </h3>
             <div class="article-metadata">
               <strong>C. Brownlees</strong>, J. Llorens-Terrazas —
-              <em>J. Econometrics</em>, 2024
+              <em class="journal-name">J. Econometrics</em>, 2024
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ sections:
             </h3>
             <div class="article-metadata">
               <strong>D. Rossell</strong>, A. K. Kseung, I. Saez, M. Guindani —
-              <em>Biometrika</em>, 2024
+              <em class="journal-name">Biometrika</em>, 2024
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ sections:
             </h3>
             <div class="article-metadata">
               <strong>L. Cappello</strong>, A. Véber, J. A. Palacios —
-              <em>JASA</em>, 2024
+              <em class="journal-name">JASA</em>, 2024
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@ sections:
             </h3>
             <div class="article-metadata">
               F. Röttger, S. Engelke, <strong>P. Zwiernik</strong> —
-              <em>Annals of Statistics</em>, 2023
+              <em class="journal-name">Annals of Statistics</em>, 2023
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ sections:
             </h3>
             <div class="article-metadata">
               <strong>L. Cappello</strong>, O. H. Madrid Padilla, J. A. Palacios —
-              <em>J. Comput. Graph. Stat.</em>, 2023
+              <em class="journal-name">J. Comput. Graph. Stat.</em>, 2023
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              J. Jewson, <strong>D. Rossell</strong>. <em>J. R. Stat. Soc. B</em>, 2022
+              J. Jewson, <strong>D. Rossell</strong>. <em class="journal-name">J. R. Stat. Soc. B</em>, 2022
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              S. Lauritzen, <strong>P. Zwiernik</strong>. <em>Ann. Stat.</em>, 50 (5), 2022
+              S. Lauritzen, <strong>P. Zwiernik</strong>. <em class="journal-name">Ann. Stat.</em>, 50 (5), 2022
             </div>
           </div>
         </div>
@@ -174,7 +174,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>G. Lugosi</strong>, S. Mendelson. <em>J. Eur. Math. Soc.</em>, 2022
+              <strong>G. Lugosi</strong>, S. Mendelson. <em class="journal-name">J. Eur. Math. Soc.</em>, 2022
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              L. Addario-Berry, L. Devroye, <strong>G. Lugosi</strong>, <strong>V. Velona</strong>. <em>Ann. Appl. Probab.</em>, 2022
+              L. Addario-Berry, L. Devroye, <strong>G. Lugosi</strong>, <strong>V. Velona</strong>. <em class="journal-name">Ann. Appl. Probab.</em>, 2022
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>D. Rossell</strong>. <em>Bayesian Anal.</em>, 17 (2), 2022
+              <strong>D. Rossell</strong>. <em class="journal-name">Bayesian Anal.</em>, 17 (2), 2022
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              A. Avalos-Pacheco, <strong>D. Rossell</strong>, R. Savage. <em>Bayesian Anal.</em>, 17 (1), 2022
+              A. Avalos-Pacheco, <strong>D. Rossell</strong>, R. Savage. <em class="journal-name">Bayesian Anal.</em>, 17 (1), 2022
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>L. Cappello</strong>, <strong>J. A. Palacios</strong>. <em>J. Comput. Graph. Stat.</em>, 31 (2), 2022
+              <strong>L. Cappello</strong>, <strong>J. A. Palacios</strong>. <em class="journal-name">J. Comput. Graph. Stat.</em>, 31 (2), 2022
             </div>
           </div>
         </div>
@@ -239,7 +239,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>G. Lugosi</strong>, J. Truszkowski, <strong>V. Velona</strong>, <strong>P. Zwiernik</strong>. <em>JMLR</em>, 22 (203), 2021
+              <strong>G. Lugosi</strong>, J. Truszkowski, <strong>V. Velona</strong>, <strong>P. Zwiernik</strong>. <em class="journal-name">JMLR</em>, 22 (203), 2021
             </div>
           </div>
         </div>
@@ -252,7 +252,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>D. Rossell</strong>, O. Abril, A. Bhattacharya. <em>J. R. Stat. Soc. B</em>, 83 (4), 2021
+              <strong>D. Rossell</strong>, O. Abril, A. Bhattacharya. <em class="journal-name">J. R. Stat. Soc. B</em>, 83 (4), 2021
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>G. Lugosi</strong>, S. Mendelson. <em>Ann. Stat.</em>, 2021
+              <strong>G. Lugosi</strong>, S. Mendelson. <em class="journal-name">Ann. Stat.</em>, 2021
             </div>
           </div>
         </div>
@@ -278,7 +278,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              S. Lauritzen, C. Uhler, <strong>P. Zwiernik</strong>. <em>Ann. Stat.</em>, 49 (3), 2021
+              S. Lauritzen, C. Uhler, <strong>P. Zwiernik</strong>. <em class="journal-name">Ann. Stat.</em>, 49 (3), 2021
             </div>
           </div>
         </div>
@@ -291,7 +291,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>D. Rossell</strong>, F. J. Rubio. <em>Statist. Sci.</em>, 38 (1), 2021
+              <strong>D. Rossell</strong>, F. J. Rubio. <em class="journal-name">Statist. Sci.</em>, 38 (1), 2021
             </div>
           </div>
         </div>
@@ -304,7 +304,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>D. Rossell</strong>, <strong>P. Zwiernik</strong>. <em>Electron. J. Stat.</em>, 15 (2), 2021
+              <strong>D. Rossell</strong>, <strong>P. Zwiernik</strong>. <em class="journal-name">Electron. J. Stat.</em>, 15 (2), 2021
             </div>
           </div>
         </div>
@@ -317,7 +317,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              C. Bordenave, <strong>G. Lugosi</strong>, N. Zhivotovskiy. <em>Probab. Theory Relat. Fields</em>, 2020
+              C. Bordenave, <strong>G. Lugosi</strong>, N. Zhivotovskiy. <em class="journal-name">Probab. Theory Relat. Fields</em>, 2020
             </div>
           </div>
         </div>
@@ -343,7 +343,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              P. L. Bartlett, P. L. Long, <strong>G. Lugosi</strong>, A. Tsigler. <em>PNAS</em>, 117 (48), 2020
+              P. L. Bartlett, P. L. Long, <strong>G. Lugosi</strong>, A. Tsigler. <em class="journal-name">PNAS</em>, 117 (48), 2020
             </div>
           </div>
         </div>
@@ -361,7 +361,7 @@ sections:
             </h3>
             <div class="article-metadata">
               J. Jewson, L. Li, L. Battaglia, S. Hansen, <strong>D. Rossell</strong>, <strong>P. Zwiernik</strong> —
-              <em>Biometrics</em>, 2024
+              <em class="journal-name">Biometrics</em>, 2024
             </div>
           </div>
         </div>
@@ -375,7 +375,7 @@ sections:
             </h3>
             <div class="article-metadata">
               <strong>L. Cappello</strong>, J. Kim, S. Liu, J. A. Palacios —
-              <em>Statistical Science</em>, 2022
+              <em class="journal-name">Statistical Science</em>, 2022
             </div>
           </div>
         </div>
@@ -389,7 +389,7 @@ sections:
             </h3>
             <div class="article-metadata">
               C. Semken, <strong>D. Rossell</strong> —
-              <em>JRSS C</em>, 2022
+              <em class="journal-name">JRSS C</em>, 2022
             </div>
           </div>
         </div>
@@ -403,7 +403,7 @@ sections:
             </h3>
             <div class="article-metadata">
               V. Parikh <em>et al.</em>, <strong>L. Cappello</strong>, M. Ashley —
-              <em>Nat. Commun.</em>, 2022
+              <em class="journal-name">Nat. Commun.</em>, 2022
             </div>
           </div>
         </div>
@@ -416,7 +416,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              L. Beauchemin, M. Slifker, <strong>D. Rossell</strong>, J. Font-Burgada. <em>Immunoinformatics, Methods &amp; Protocols</em>, Springer (2020)
+              L. Beauchemin, M. Slifker, <strong>D. Rossell</strong>, J. Font-Burgada. <em class="journal-name">Immunoinformatics, Methods &amp; Protocols</em>, Springer (2020)
             </div>
           </div>
         </div>
@@ -430,7 +430,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              M. Graeve, <strong>M. Greenacre</strong>. <em>Limnol. Oceanogr. Methods&nbsp;18</em>, 196-210 (2020)
+              M. Graeve, <strong>M. Greenacre</strong>. <em class="journal-name">Limnol. Oceanogr. Methods&nbsp;18</em>, 196-210 (2020)
             </div>
           </div>
         </div>
@@ -444,7 +444,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>M. Greenacre</strong>. <em>Appl. Comput. Geosci.&nbsp;5</em>, 100017 (2020)
+              <strong>M. Greenacre</strong>. <em class="journal-name">Appl. Comput. Geosci.&nbsp;5</em>, 100017 (2020)
             </div>
           </div>
         </div>
@@ -458,7 +458,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              R. Gavard, H. Jones, D. Palacio Lozano, M. Thomas, <strong>D. Rossell</strong>, S. Spencer, M. Barrow. <em>Anal. Chem.&nbsp;92 (5)</em>, 3775-3786 (2020)
+              R. Gavard, H. Jones, D. Palacio Lozano, M. Thomas, <strong>D. Rossell</strong>, S. Spencer, M. Barrow. <em class="journal-name">Anal. Chem.&nbsp;92 (5)</em>, 3775-3786 (2020)
             </div>
           </div>
         </div>
