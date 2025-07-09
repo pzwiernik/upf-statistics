@@ -69,6 +69,12 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Principal Investigators
+  
+editorial_roles:
+  - Associate Editor, *Journal of the Royal Statistical Society, Series B* (2023-)
+  - Associate Editor, *Biometrika* (2018-)
+  - Associate Editor, *Scandinavian Journal of Statistics* (2016-)
+  - Editorial Board, *Algebraic Statistics* (2014-)
 ---
 
 
