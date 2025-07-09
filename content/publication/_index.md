@@ -330,7 +330,7 @@ sections:
               </a>
             </h3>
             <div class="article-metadata">
-              <strong>G. Lugosi</strong>, S. Mendelson. <em>J. Eur. Math. Soc.</em>, 2020
+              <strong>G. Lugosi</strong>, S. Mendelson. <em class="journal-name">J. Eur. Math. Soc.</em>, 2020
             </div>
           </div>
         </div>
