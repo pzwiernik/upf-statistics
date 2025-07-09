@@ -3,7 +3,7 @@ title: "Gábor Lugosi"
 
 # Names for SEO
 first_name: "Gábor"
-last_name:  "Lugosi"
+last_name: "Lugosi"
 
 # Current position
 role: "ICREA Research Professor"
