@@ -5,7 +5,7 @@ last_name: Rossell
 role: Associate Professor
 organizations:
   - name: Universitat Pompeu Fabra
-    url: "https://drossell.net/"
+    url: "https://sites.google.com/site/rosselldavid/"
 interests:
   - High-dimensional inference
   - Bayesian methods
