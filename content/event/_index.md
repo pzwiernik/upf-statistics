@@ -45,7 +45,7 @@ sections:
              href="https://www.crm.cat/mathematical-aspects-of-learning-theory/"
              target="_blank" rel="noopener"
              aria-label="Mathematical Aspects of Learning 2024">
-            <img src="/media/casac.jpeg"
+            <img src="./media/casac.jpeg"
                  alt="Mathematical Aspects of Learning workshop image"
                  width="110" height="110" loading="lazy">
           </a>
@@ -70,7 +70,7 @@ sections:
           <a class="ml-3"
              href="https://dscbarcelona.wixsite.com/msl2020"
              target="_blank" rel="noopener" aria-label="MSL 2021 image">
-            <img src="/media/casac.jpeg"
+            <img src="./media/casac.jpeg"
                  alt="MSL 2021 banner"
                  width="110" height="110" loading="lazy">
           </a>
@@ -90,7 +90,7 @@ sections:
             </div>
           </div>
           <a class="ml-3" href="#" aria-label="Workshop image">
-            <img src="/media/upf.jpeg"
+            <img src="./media/upf.jpeg"
                  alt="Mini-workshop banner"
                  width="110" height="110" loading="lazy">
           </a>
@@ -115,7 +115,7 @@ sections:
           <a class="ml-3"
              href="https://www.maths.nottingham.ac.uk/plp/pmztk/bayescomp/"
              target="_blank" rel="noopener">
-            <img src="/media/bayescomp.jpeg"
+            <img src="./media/bayescomp.jpeg"
                  alt="BayesComp 2018 logo"
                  width="110" height="110" loading="lazy">
           </a>
