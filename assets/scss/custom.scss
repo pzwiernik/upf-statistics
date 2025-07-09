@@ -1,13 +1,9 @@
-/* Compact publication list
-   ------------------------ */
-ul.pub-list li {                 /* tighten vertical space  */
-  margin-bottom: .25rem !important;
-}
+/* Compact publication list  ________________________________________ */
 
-ul.pub-list .btn {               /* hide the grey “PDF” pill */
-  display: none !important;
-}
+ul.pub-list li              { margin-bottom: .25rem !important; }
+ul.pub-list h3              { font-size: .90rem !important; margin-bottom: .1rem; }
+ul.pub-list .article-metadata{ font-size: .80rem !important; }
 
-/* smaller title & author lines */
-ul.pub-list h3 { font-size: 0.90rem; margin-bottom: .1rem; }
-ul.pub-list .article-metadata { font-size: 0.80rem; }
+/* Hide the grey PDF pill */
+ul.pub-list .btn,                         /* citation layout */
+.wg-collection .btn.btn-outline-primary { display:none !important; }
