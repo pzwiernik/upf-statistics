@@ -40,23 +40,29 @@ ul.pub-list > li:not(:last-child) {     /* gap between items */
 .media.stream-item.view-compact .ml-3 { margin-left: 0 !important; }
 
 
-/* Tweak manually-curated publication cards only */
+/* ──  Markdown “Highlighted Publications” block only  ───────── */
+#wg-markdown,               /* section wrapper            */
+section.wg-markdown {       /* fallback for older builds  */
+  /* tighten every publication card in that section */
+  /* 1 ▸ card box ---------------------------------- */
+  .media.stream-item.view-compact {
+    margin-bottom: 0.15rem !important;   /* ↓ shrink gap  */
+    padding-bottom: 0 !important;
+    font-size: 0.8rem !important;        /* global font   */
+  }
 
-.markdown-block .stream-item.view-compact {
-  font-size: 0.85rem;         /* smaller font */
-  margin-bottom: 0.2rem;      /* tighter spacing */
-  padding-bottom: 0 !important;
+  /* 2 ▸ title line -------------------------------- */
+  .article-title {
+    font-size: 0.8rem !important;
+    line-height: 1.15 !important;
+    margin: 0 0 0.05rem 0 !important;
+  }
+
+  /* 3 ▸ author / meta line ------------------------ */
+  .article-metadata {
+    font-size: 0.7rem !important;
+    margin: 0 !important;
+  }
 }
-
-.markdown-block .article-title {
-  font-size: 0.85rem;
-  line-height: 1.2;
-  margin-bottom: 0.05rem !important;
-}
-
-.markdown-block .article-metadata {
-  font-size: 0.75rem;
-  margin-bottom: 0 !important;
-}
-
+/* ─────────────────
 /* ─────────────────────────────────────────────────────────── */
