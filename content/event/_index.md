@@ -52,24 +52,18 @@ sections:
       <div class="media stream-item view-compact">
         <div class="media-body">
           <div class="section-subheading article-title mb-0">
-            <!-- no public website → linkless title -->
             Google Focused Award Mini-workshop
           </div>
-
           <div class="article-style">
             Joint UPF & Google Zurich workshop on machine-learning theory.
           </div>
-
           <div class="stream-meta article-metadata">
             7–8&nbsp;Mar&nbsp;2021 · UPF Campus Ciutadella
           </div>
         </div>
-
         <!-- thumbnail on the right -->
         <a class="ml-3" href="#" aria-label="Workshop image">
-          <img src="/media/event/download-6-.jpeg"
-               alt="Mini-workshop banner"
-               width="110" height="110" loading="lazy">
+          <img src="/media/event/download-6-.jpeg" alt="Mini-workshop banner" width="110" height="110" loading="lazy">
         </a>
       </div>
 
