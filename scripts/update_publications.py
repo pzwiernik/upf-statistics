@@ -91,17 +91,23 @@ for sid in SCHOLAR_IDS:
         ok = False
         for a in range(1, MAX_RETRIES + 1):
             try:
-                scholarly.fill(pub)
-                ok = True
+                scholarly.fill(pub)                       # try to fill details
+        
+                # Guard: make sure the parser actually found a title
+                if not pub.get("bib") or not pub["bib"].get("title"):
+                    raise ValueError("Missing title or bib field")
+        
+                ok = True                                 # success
                 break
-            except MaxTriesExceededException as e:
+        
+            except (MaxTriesExceededException, Exception) as e:
                 if a == MAX_RETRIES:
-                    log.append(f"Skip pub ({sid}): {e}\n")
+                    log.append(f"Skip pub ({sid}): {e}\n")    # log and skip
                 else:
-                    time.sleep(DELAY)
-        if not ok:
-            continue
+                    time.sleep(DELAY)                         # wait and retry
 
+        if not ok:
+            continue    # skip this publication and move o
         title = pub["bib"].get("title", "Unknown").strip()
         if title.lower() in seen:
             continue
