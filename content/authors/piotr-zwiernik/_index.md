@@ -1,67 +1,82 @@
 ---
+# ——————————————————————————————————————————
+#  Piotr Zwiernik · author profile
+#  (replace the whole file with this block)
+# ——————————————————————————————————————————
+
 # Display name
 title: "Piotr Zwiernik"
 
-# Full Name (for SEO)
+# Full name (for SEO)
 first_name: "Piotr"
-last_name: "Zwiernik"
+last_name:  "Zwiernik"
 
-# Is this the primary user of the site?
+# Primary user of the site?
 superuser: true
 
-# Role/position
-role: "Associate Professor"
+# Current role / position
+role: "Serra Húnter Distinguished Professor of Statistics"
 
-# Organizations/Affiliations
+# Organizations / affiliations
 organizations:
-  - name: "Universitat Pompeu Fabra"
-    url: "https://pzwiernik.github.io"
+  - name: "Dept. of Economics & Business, Universitat Pompeu Fabra"
+    url:  "https://www.upf.edu/web/econ"
+  - name: "Barcelona School of Economics (Associate Research Professor)"
+    url:  "https://bse.eu"
 
-# Short bio (displayed in user profile at end of posts)
-bio: "My research interests include multivariate statistics and tensors."
+# Short bio (shown at the end of posts)
+bio: >
+  I work on graphical models, covariance estimation, high-dimensional and
+  tensor-valued data, as well as geometric methods in modern statistics and
+  deep learning.
 
+# Research interests (bullet list)
 interests:
-  - "High-dimensional statistics"
-  - "Tensors"
+  - Graphical models & covariance estimation
+  - High-dimensional statistics
+  - Tensors & multilinear algebra
+  - Convex/geometry-based methods in ML
 
+# Education
 education:
   courses:
     - course: "PhD in Statistics"
-      institution: "Warwick University"
-      year: 2012
+      institution: "University of Warwick"
+      year: 2011
     - course: "MSc in Mathematics"
       institution: "University of Warsaw"
-      year: 2007
+      year: 2006
     - course: "MSc in Economics"
       institution: "Warsaw School of Economics"
       year: 2003
 
-# Social/Academic Networking
+# Social & academic networking
 social:
   - icon: envelope
     icon_pack: fas
     link: "mailto:piotr.zwiernik@upf.edu"
   - icon: google-scholar
     icon_pack: ai
-    link: "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    link: "https://scholar.google.com/citations?user=sIwtMXoAAAAJ"
   - icon: github
     icon_pack: fab
     link: "https://github.com/pzwiernik"
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
+# Gravatar e-mail (leave blank to disable)
 email: ""
 
-# Highlight the author in author lists? (true/false)
+# Highlight the author in lists?
 highlight_name: false
 
-# Organizational groups (for People widget)
+# Group memberships (People widget)
 user_groups:
   - "Principal Investigators"
 
-# Editorial roles (quoted to keep YAML happy)
+# Editorial roles
 editorial_roles:
-  - "Associate Editor, *Journal of the Royal Statistical Society, Series B* (2023– )"
-  - "Associate Editor, *Biometrika* (2018– )"
-  - "Associate Editor, *Scandinavian Journal of Statistics* (2016– )"
-  - "Editorial Board, *Algebraic Statistics* (2014– )"
+  - "Associate Editor, *Journal of the Royal Statistical Society: Series B* (2023 – )"
+  - "Associate Editor, *Biometrika* (2018 – )"
+  - "Associate Editor, *Scandinavian Journal of Statistics* (2016 – )"
+  - "Editorial Board, *Algebraic Statistics* (2014 – )"
+
 ---
