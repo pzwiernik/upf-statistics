@@ -1,5 +1,4 @@
 ---
-source: scholar
 title: Minimax rate of estimation for invariant densities associated to continuous
   stochastic differential equations over anisotropic Hölder classes
 date: '2025-01-01T00:00:00Z'

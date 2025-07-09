@@ -1,5 +1,4 @@
 ---
-source: scholar
 title: Bayesian variance change point detection with credible sets
 date: '2025-01-01T00:00:00Z'
 publishDate: '2025-01-01T00:00:00Z'
