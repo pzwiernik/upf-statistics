@@ -17,19 +17,6 @@ organizations:
 bio: |
   Gábor Lugosi is an ICREA Research Professor at Universitat Pompeu Fabra (Barcelona) whose work spans the theory of machine learning, combinatorial statistics, probability inequalities, random graphs, and information theory.
 
-  **Editorial service**  
-  - Associate Editor, *Journal of Machine Learning Research*  
-  - Associate Editor, *Probability Theory and Related Fields*  
-  - Associate Editor, *Annals of Applied Probability*  
-  - Former Associate Editor, *Mathematics of Operations Research*  
-  - Former Associate Editor, *IEEE Transactions on Information Theory*
-
-  **Honors & awards**  
-  - ERC Advanced Grant (2021)  
-  - BBVA Foundation Frontiers of Knowledge Award in Basic Sciences (2020)  
-  - IEEE Information Theory Society Paper Award (2006)  
-  - ICREA Academia Award (2010, 2015)
-
 interests:
   - Theory of machine learning
   - Combinatorial statistics
