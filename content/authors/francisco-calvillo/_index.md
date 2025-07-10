@@ -8,4 +8,6 @@ social:
     icon_pack: ai
     icon: NA
 superuser: false
+user_groups:
+  - Grad Students
 ---
