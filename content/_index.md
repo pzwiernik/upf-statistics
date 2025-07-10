@@ -15,7 +15,7 @@ sections:
         <br>
 
         This is the website of the statistics group in the [Department of Economics and Business](https://www.upf.edu/en/web/econ) at [Universitat Pompeu Fabra](https://www.upf.edu/) in Barcelona, Spain.  
-        Our group is part of the [BSE Data Science Center](https://bse.eu/data-science-center).
+        Our group is affiliated to the [BSE Data Science Center](https://bse.eu/data-science-center).
 
   - block: collection
     content:
