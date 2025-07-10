@@ -479,7 +479,7 @@ sections:
 
           <li><strong>Eulàlia Nualart</strong>: <em>Stochastic Processes and their Applications</em></li>
 
-          <li><strong>David Rossell</strong>: <em>Bayesian Analysis</em></li>
+          <li><strong>David Rossell</strong>: <em>Bayesian Analysis, JASA: Theory & Methods</em></li>
 
           <li><strong>Piotr Zwiernik</strong>: <em>Journal of the Royal Statistical Society&nbsp;– Series B</em>; <em>Biometrika</em>; <em>Algebraic Statistics</em>; <em>Scandinavian Journal of Statistics</em></li>
         </ul>
