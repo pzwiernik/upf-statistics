@@ -3,6 +3,9 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
+custom_css:
+  - css/custom.css
+
 # Appearance
 
 appearance:
@@ -237,6 +240,3 @@ extensions:
 publications:
   date_format: January 2006
   citation_style: apa
-
-custom_css:
-  - css/custom.css
