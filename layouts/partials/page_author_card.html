@@ -44,7 +44,7 @@
       <div class="text-sm text-neutral-700 dark:text-neutral-300">{{ . | markdownify | emojify }}</div>
     {{ end }}
 
-    {{ with $page_author_card.Params.editorial_roles }}
+    {{ with $author_page.Params.editorial_roles }}
       <div class="mt-3 text-sm text-neutral-700 dark:text-neutral-300">
         <strong>Editorial roles:</strong>
         <ul class="list-disc list-inside">
