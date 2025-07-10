@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/authors/albert-satorra/_index.md",
+                "file": "content/authors/piotr-zwiernik/_index.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,6 +183,7 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "content/authors/albert-satorra/_index.md",
     "content/post/piotr-zwiernik-is-an-ims-fellow/index.md",
     "content/post/piotr-zwiernik-is-an-ims-fellow/download.jpeg",
     "content/post/piotr-zwiernik-is-an-ims-fellow",
@@ -203,7 +204,6 @@
     "public/author/albert-sastorra/avatar_hu_759b59e20e8a1432.jpeg",
     "public/author/albert-sastorra/avatar.jpeg",
     "content/_index.md",
-    "content/authors/albert-satorra/_index.md",
     "content/people/index.md",
     "content/post/20-12-01-wowchemy-prize/index.md",
     "content/post/20-12-01-wowchemy-prize/featured.jpg",
