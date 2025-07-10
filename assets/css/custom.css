@@ -69,8 +69,7 @@ section.wg-markdown {       /* fallback for older builds  */
   color: #4a90e2;
 }
 
-.ul.article-list > li {
-  margin-bottom: 1.5rem;
+.stream-item {
+  margin-bottom: 5rem;
 }
-
 /* ─────────────────────────────────────────────────────────── */
