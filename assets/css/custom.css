@@ -69,9 +69,9 @@ section.wg-markdown {       /* fallback for older builds  */
   color: #4a90e2;
 }
 
-.stream-item {
-  padding-bottom: 2.5rem;
-  border-bottom: 5px solid #eee; /* optional visual separation */
+.summary-link {
+  display: block;
+  margin-bottom: 1rem;
 }
 
 /* ─────────────────────────────────────────────────────────── */
