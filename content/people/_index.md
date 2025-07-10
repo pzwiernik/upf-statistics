@@ -36,17 +36,17 @@ sections:
 
         ## Former PhD Students
 
-        - [Simon Briend](https://simon-briend.github.io/) – UniDistance Suisse ()  
+        - [Simon Briend](https://simon-briend.github.io/) – UniDistance Suisse   
         - [Vasiliki Velona](https://sites.google.com/view/v-vasiliki) – Hebrew University of Jerusalem  
-        - Jordi Llorens – University of Surrey  
-        - Julia Olkhovskaya – Vrije Universiteit Amsterdam  
-        - Dmitrii Tikhonenko – (link not found)  
-        - Miquel Torrens – Centre for Genomic Regulation  
-        - G. Stefan Gudmundsson – Aarhus University  
+        - [Jordi Llorens](https://sites.google.com/view/jllorensterrazas/home) – University of Surrey  
+        - [Julia Olkhovskaya](https://sites.google.com/view/julia-olkhovskaya/home) – Delft University of Technology  
+        - [Dmitrii Tikhonenko](https://profiles.imperial.ac.uk/d.tikhonenko) – Imperial College London
+        - [Miquel Torrens](https://www.crg.eu/en/group-members/miquel-torrens-dinares) – Centre for Genomic Regulation, Barcelona.
+        - [G. Stefan Gudmundsson](https://gstefan.github.io/) – Aarhus University  
 
         ## Past Visitors
 
-        - Luca Gherardini – Università degli Studi di Firenze (2024)  
-        - Remi Bardenet – CNRS, Université de Lille (2023)  
-        - Daniele Durante – Bocconi University (2023)  
+        - [Luca Gherardini](https://www.linkedin.com/in/gherardini-luca-419105193/?originalSubdomain=it) – Università degli Studi di Firenze (2024)  
+        - [Rémi Bardenet](https://rbardenet.github.io/) – CNRS, Université de Lille (2023)  
+        - [Daniele Durante](https://danieledurante.github.io/web/) – Bocconi University (2023)  
 ---
