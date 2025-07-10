@@ -27,9 +27,9 @@ sections:
       text: |
         ## Former Postdoctoral Researchers
 
-        - [Nicolas Bianco](https://whitenoise8.github.io/) – Karlsruhe Institute of Technology  
-        - [Sebastien Bubeck](https://sbubeck.com/) – Microsoft Research  
-        - [Ciara Pike‑Burke](https://www.ma.imperial.ac.uk/~cpikebur/) – Imperial College London ()  
+        - [Nicolas Bianco](https://sites.google.com/view/whitenoisenb) – Karlsruhe Institute of Technology  
+        - [Sebastien Bubeck](http://sbubeck.com/) – Open AI  
+        - [Ciara Pike‑Burke](https://www.ma.imperial.ac.uk/~cpikebur/) – Imperial College London   
         - [Jack Jewson](https://sites.google.com/view/jack-jewson-academic-profile/home) – Monash University  
         - [Déborah Sulem](https://dsulem.github.io/) – Università Svizzera Italiana  
         - [Nanwei Wang](https://nwang3.ext.unb.ca/) – University of New Brunswick  
