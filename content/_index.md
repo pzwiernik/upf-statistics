@@ -26,7 +26,7 @@ sections:
         exclude_featured: false
       order: desc
     design:
-      view: compact
+      view: list
       show_author: false
       show_date: true
       columns: "1"
