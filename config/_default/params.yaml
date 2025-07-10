@@ -13,10 +13,7 @@ appearance:
   theme_night: bse-dsc
   font: minimal
   font_size: M
-  
-icon:
-  logo: "media/icons/upf-stats-icon.png"  
-  
+    
 # SEO
 
 marketing:
