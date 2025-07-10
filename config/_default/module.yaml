@@ -3,7 +3,11 @@
 ## Install or uninstall themes and plugins here.
 ## Docs: https://gohugo.io/hugo-modules/
 ############################
-mounts:
+build:
+  writeStats: true
+  writeStats: true
+  
+  mounts:
   - source: layouts
     target: layouts
     
