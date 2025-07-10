@@ -183,6 +183,8 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "layouts/page_author.html",
+    "layouts/page_author_card.html",
     "hugo_stats.json",
     "content/authors/albert-satorra/_index.md",
     "content/post/piotr-zwiernik-is-an-ims-fellow/index.md",
@@ -199,8 +201,6 @@
     "public/_former-group-members/index.xml",
     "public/_former-group-members/simon-briend/page/1/index.html",
     "public/_former-group-members/simon-briend/page/1",
-    "public/_former-group-members/page/1/index.html",
-    "public/_former-group-members/simon-briend/page",
     "resources/_gen/images/author/albert-sastorra/avatar_hu_759b59e20e8a1432.jpeg",
     "public/author/albert-sastorra/avatar_hu_759b59e20e8a1432.jpeg",
     "public/author/albert-sastorra/avatar.jpeg",
