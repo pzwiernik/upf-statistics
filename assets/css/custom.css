@@ -71,7 +71,7 @@ section.wg-markdown {       /* fallback for older builds  */
 
 .stream-item {
   padding-bottom: 2.5rem;
-  border-bottom: 1px solid #eee; /* optional visual separation */
+  border-bottom: 5px solid #eee; /* optional visual separation */
 }
 
 /* ─────────────────────────────────────────────────────────── */
