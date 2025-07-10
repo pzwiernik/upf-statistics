@@ -3,6 +3,7 @@ title: "David Rossell"
 first_name: David
 last_name: Rossell
 role: Associate Professor
+superuser: true
 organizations:
   - name: Universitat Pompeu Fabra
     url: "https://sites.google.com/site/rosselldavid/"
