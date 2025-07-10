@@ -30,13 +30,7 @@ sections:
       show_author: false
       show_date: true
       columns: "1"
-    
-<style>
-ul.article-list > li {
-  margin-bottom: 1.5rem;
-}
-</style>
-    
+        
   - block: contact
     content:
       title: Find us in Barcelona
