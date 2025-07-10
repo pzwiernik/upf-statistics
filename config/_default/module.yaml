@@ -3,7 +3,10 @@
 ## Install or uninstall themes and plugins here.
 ## Docs: https://gohugo.io/hugo-modules/
 ############################
-
+mounts:
+  - source: layouts
+    target: layouts
+    
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
