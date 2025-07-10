@@ -1,23 +1,9 @@
 ---
-# ——————————————————————————————————————————
-#  Piotr Zwiernik · author profile
-#  (replace the whole file with this block)
-# ——————————————————————————————————————————
-
-# Display name
 title: "Piotr Zwiernik"
-
-# Full name (for SEO)
 first_name: "Piotr"
 last_name:  "Zwiernik"
-
-# Primary user of the site?
 superuser: true
-
-# Current role / position
 role: "Serra Húnter Professor"
-
-# Organizations / affiliations
 organizations:
   - name: "Dept. of Economics & Business, Universitat Pompeu Fabra"
     url:  "https://www.upf.edu/web/econ"
