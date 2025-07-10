@@ -6,6 +6,10 @@
 title: UPF Statistics # Website name
 baseURL: 'https://upf-statistics.netlify.app/' # Website URL
 
+build:
+  writeStats: true
+  writeStats: true
+
 ############################
 ## LANGUAGE
 ############################
