@@ -78,5 +78,4 @@ editorial_roles:
   - "Associate Editor, *Biometrika* (2018 – )"
   - "Associate Editor, *Scandinavian Journal of Statistics* (2016 – )"
   - "Editorial Board, *Algebraic Statistics* (2014 – )"
-
 ---
