@@ -118,5 +118,7 @@ publications:
   date_format: January 2006
   citation_style: apa
 
-custom_css:
-  - css/custom.css
+.summary-link {
+  display: block;
+  margin-bottom: 1rem;
+}
