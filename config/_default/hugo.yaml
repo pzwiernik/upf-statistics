@@ -46,7 +46,6 @@ taxonomies:
   category: categories
   publication_type: publication_types
   author: authors
-  event_type: event_types
 markup:
   _merge: deep
 related:
