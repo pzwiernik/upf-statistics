@@ -22,7 +22,7 @@ main:
     weight: 10
   - name: Selected publications
     parent: Research
-    url: /publication/#conferences
+    url: /publication/#spubs
     weight: 20
   - name: Editorial service
     parent: Research
