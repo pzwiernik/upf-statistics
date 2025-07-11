@@ -8,7 +8,7 @@ sections:
   ##############################################################################
   - block: markdown
     content:
-      title: Seminars
+      title: '<span id="seminars">Seminars</span>'
       text: |
         Our main seminar series is the **Statistics Seminar at UPF**, organized by Chiara Amorino and Lorenzo Cappello.  
         We also run the *Internal Statistics Seminar* and a number of reading seminars.
@@ -33,7 +33,7 @@ sections:
   ##############################################################################
   - block: markdown
     content:
-      title: Workshops & Conferences (last 10 years)
+      title: '<span id="conferences">Workshops & Conferences (last 10 years)</span>'
       text: |
         <!-- Your existing HTML content remains unchanged -->
     design:
