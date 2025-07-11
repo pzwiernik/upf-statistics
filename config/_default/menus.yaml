@@ -6,11 +6,11 @@ main:
     url: event
     weight: 20
   - name: Seminars
-    parent: event
+    parent: Events
     url: /event/#seminars
     weight: 10
   - name: Conferences
-    parent: event
+    parent: Events
     url: /event/#conferences
     weight: 20
   - name: Publications
