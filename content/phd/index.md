@@ -22,10 +22,9 @@ sections:
         
            These programs typically do not require coursework, and students begin working on their dissertation from day one.
 
-        ## Funding and Calendar
+        ## Funding 
         All students in the PhD program in Economics at UPF are funded by the department. Student that work with as via a collaborating PhD program are typically financed by us.
 
-        The application process is typically between November and January. Please contact us in advance so that we could guide you through this process.
 
         ## Examples
         [Richard Coll](https://richardcolljosifov.github.io/) is a student is a PhD student in Applied Mathematics at Universitat Politècnica de Catalunya, supervised by Gábor Lugosi (UPF) and Juanjo Rué (UPC).
@@ -33,6 +32,21 @@ sections:
         [Maxim Fedotov](https://www.upf.edu/en/web/econ/phd-e-i/-/asset_publisher/y8aJCiW7qGsx/content/fedotov-maxim/maximized) started as MSc student in our [Data Science program](https://bse.eu/masters-degrees/data-science/data-science-methodology). He is now doing the PhD Program at Universitat Pompeu Fabra supervised by Gábor Lugosi and David Rossell (both UPF).
 
         [Zhekai Pang](https://www.linkedin.com/in/zhekaipang/) completed MSc in Computational and Applied Economics at the University of Chicago. In 2025 he starts MRes year of the PhD program at UPF.
+        
+        ## Application and calendar
+        
+        Note: The application process is typically between November and January. Please contact us in advance so that we could guide you through this process.
+        
+        All interested applicants should submit the materials specified below to the Data Science PhD selection committee at [david.rossell@upf.edu](mailto:david.rossell@upf.edu), before Jan 15. Late applications may be considered in exceptional circumstances.
+        
+        1. Students interested in the PhD program at UPF must also submit an application to Year 2, following the instructions for the MRes Online Application. The deadline for that application is usually Jan 15, but double-check the UPF website.
+        2. Students who wish to pursue a PhD at a collaborating institution outside UPF should, in a first instance, send their application to the Data Science PhD selection committee only.
+         
+        Applications to the Data Science PhD selection committee must include:
+        - A copy of your final official undergraduate academic transcript, showing courses taken and grades obtained.
+        - If you have finished graduate studies or are currently undergoing a master’s degree when you submit your application, a copy of the final or provisional graduate academic transcript, showing courses taken and grades obtained.
+        - A motivation letter, including a concise statement on research interests.
+        - Two academic reference letters. If applying to the UPF program, besides uploading the letters at the UPF system they should also be emailed to [david.rossell@upf.edu](mailto:david.rossell@upf.edu). Please ensure that your referees send the letters by the deadline.
 
   - block: markdown
     content:
