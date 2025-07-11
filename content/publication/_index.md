@@ -8,7 +8,7 @@ sections:
   #######################################################################
   - block: collection
     content:
-      title: Recent arXiv preprints
+      title: '<span id="preprints">Recent arXiv preprints</span>' 
       page_type: publication
       filters:
         featured: false
@@ -23,7 +23,7 @@ sections:
   #######################################################################
   - block: markdown
     content:
-      title: Highlighted Publications (last 5 years)
+      title: '<span id="spubs">Highlighted Publications (last 5 years)</span>'
       text: |
         <!-- ─────────── THEORY ─────────── -->
         <h2 id="theory">Theory</h2>
@@ -468,7 +468,7 @@ sections:
   #######################################################################
   - block: markdown
     content:
-      title: Editorial Service
+      title: '<span id="editorial">Editorial Service</span>'
       text: |
         <h2 id="editorial">Current editorial service</h2>
 

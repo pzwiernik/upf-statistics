@@ -183,6 +183,8 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "public/publication/_index~/index.html",
+    "public/publication/_index~",
     "content/authors/michael-greenacre/_index~.md",
     "content/phd/index.md",
     "content/authors/albert-satorra/avatar.jpeg",
@@ -209,7 +211,6 @@
     "content/people/_index~.md",
     "layouts/page_author.html",
     "layouts/page_author_card.html",
-    "hugo_stats.json",
     "content/post/piotr-zwiernik-is-an-ims-fellow/index.md",
     "content/admin/index.md",
     "content/_index.md",

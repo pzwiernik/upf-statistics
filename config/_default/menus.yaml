@@ -13,8 +13,20 @@ main:
     parent: Events
     url: /event/#conferences
     weight: 20
-  - name: Publications
+  - name: Research
     url: publication
+    weight: 30
+  - name: Recent preprints
+    parent: Research
+    url: /publication/#preprints
+    weight: 10
+  - name: Selected publications
+    parent: Research
+    url: /publication/#conferences
+    weight: 20
+  - name: Editorial service
+    parent: Research
+    url: /publication/#editorial
     weight: 30
   - name: PhD Studies
     url: phd
