@@ -27,6 +27,7 @@ sections:
       show_date: true
       show_location: true
       columns: "1"
+      anchor: seminars     
 
   ##############################################################################
   # 2 · Manually-curated Workshops & Conferences (HTML cards)
@@ -37,5 +38,6 @@ sections:
       text: |
         <!-- Your existing HTML content remains unchanged -->
     design:
+      anchor: conferences     
       columns: "1"
 ---
