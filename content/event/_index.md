@@ -21,9 +21,6 @@ sections:
       page_type: event
       order: desc
       count: 10
-      view_all: true
-      view_all_text: "View all seminars"
-      view_all_url: /event/seminars/
     design:
       view: compact
       show_date: true
