@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "phd/index.md",
+                "file": "authors/jack-carter/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -182,6 +182,7 @@
   },
   "active": "9948f34e4f0acb7a",
   "lastOpenFiles": [
+    "phd/index.md",
     "authors/francisco-calvillo/_index~.md",
     "authors/francisco-calvillo/_index.md",
     "authors/francisco-calvillo",
