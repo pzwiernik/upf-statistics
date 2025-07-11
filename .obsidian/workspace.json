@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/phd/index.md",
+                "file": "content/people/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -183,9 +183,9 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "content/phd/index.md",
     "content/authors/albert-satorra/avatar.jpeg",
     "content/authors/albert-satorra/_index.md",
-    "content/phd/index.md",
     "content/authors/piotr-zwiernik/_index.md",
     "public/media/icon_hu_5cefa529ac01fd38.png",
     "resources/_gen/images/media/icon_hu_5cefa529ac01fd38.png",
@@ -196,7 +196,6 @@
     "public/media/icon_hu_d71b3da82c832510.png",
     "resources/_gen/images/media/icon_hu_d71b3da82c832510.png",
     "public/media/icon_hu_139f38e2c377004.png",
-    "resources/_gen/images/media/icon_hu_139f38e2c377004.png",
     "public/author/francisco-calvillo-marmaneu/index.xml",
     "public/author/francisco-calvillo-marmaneu/index.html",
     "public/author/francisco-calvillo-marmaneu",

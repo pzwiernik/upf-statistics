@@ -45,7 +45,7 @@ sections:
         - [G. Stefan Gudmundsson](https://gstefan.github.io/) – Aarhus University  
 
         ## Past Visitors
-
+        - [Sasha Rakhlin](https://www.mit.edu/~rakhlin/) - Massachusetts Institute of Technology (2024/2025)
         - [Luca Gherardini](https://www.linkedin.com/in/gherardini-luca-419105193/?originalSubdomain=it) – Università degli Studi di Firenze (2024)  
         - [Rémi Bardenet](https://rbardenet.github.io/) – CNRS, Université de Lille (2023)  
         - [Daniele Durante](https://danieledurante.github.io/web/) – Bocconi University (2023)  
