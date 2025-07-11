@@ -4,18 +4,23 @@ date: "2025-07-07"
 type: landing                       
 
 sections:
-  - block: hero
-    content:
-      title: |
-        PhD Opportunities with our Group
-
   - block: markdown
     content:
+      title: PhD Opportunities
       text: |
-        Our group is looking for students with a strong quantitative background interested in pursuing PhD studies in several areas related to Data Science (DS): **Statistics, Machine Learning, and Probability**.
+        Our group welcomes students with a strong quantitative background who are interested in pursuing PhD studies in Statistics, Machine Learning, or Probability.
+        
+        The Statistics group at UPF is part of the Economics department and the university has no mathematics/statistics department. There are two main ways to pursue a PhD with us:
 
-        Please see the website of PhD studies at the **[BSE Data Science Center](https://bse.eu/data-science-center)** for further information.
+        1. **Via the PhD program in Economics at UPF**  
+           Apply to the *Master of Research (MRes) year* (Year 2) of the [Economics PhD program](https://www.upf.edu/web/econ/phd-track) at Universitat Pompeu Fabra.  
+           Upon admission, students follow a tailored course plan—agreed upon with their advisors—and complete a Master’s thesis, which typically serves as the starting point for their PhD research.  
+           DS students choose from a set of graduate-level courses, see [course listings](https://www.upf.edu/es/web/econ/courses).
 
+        2. **Via a collaborating PhD program**  
+           Students may also enroll in a PhD program at a collaborating institution—such as the [Statistics PhD program](https://www.eio.upc.edu/en/doctorate/doctoral-program-of-the-department-of-statistics-and-operations-research) or the [Applied Mathematics PhD program](https://appliedmathematics.postgrau.upc.edu/en) at the Universitat Politècnica de Catalunya—while being supervised by a member of our group.  
+           These programs typically do not require coursework, and students begin working on their dissertation from day one.
+           
   - block: markdown
     content:
       title: About the Data Science Center

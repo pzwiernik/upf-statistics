@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/authors/piotr-zwiernik/_index.md",
+                "file": "content/phd/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "content/authors/piotr-zwiernik/_index.md",
     "public/media/icon_hu_5cefa529ac01fd38.png",
     "resources/_gen/images/media/icon_hu_5cefa529ac01fd38.png",
     "public/media/icon_hu_485efa67199ff7fe.png",
@@ -193,7 +194,6 @@
     "resources/_gen/images/media/icon_hu_d71b3da82c832510.png",
     "public/media/icon_hu_139f38e2c377004.png",
     "resources/_gen/images/media/icon_hu_139f38e2c377004.png",
-    "public/media/icon_hu_8a44ca7522166d8a.png",
     "public/author/francisco-calvillo-marmaneu/index.xml",
     "public/author/francisco-calvillo-marmaneu/index.html",
     "public/author/francisco-calvillo-marmaneu",
@@ -213,7 +213,6 @@
     "content/_index.md",
     "content/people/index.md",
     "content/post/20-12-01-wowchemy-prize/index.md",
-    "README.md",
-    "content/authors/piotr-zwiernik/_index.md"
+    "README.md"
   ]
 }
