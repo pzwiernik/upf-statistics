@@ -2,7 +2,6 @@ main:
   - name: People
     url: people
     weight: 10
-
   - name: Events
     url: event
     weight: 20
@@ -11,15 +10,12 @@ main:
         url: /event/#seminars
       - name: Conferences
         url: /event/#conferences
-
   - name: Publications
     url: publication
     weight: 30
-
   - name: PhD Studies
     url: phd
     weight: 40
-
   - name: Jobs
     url: jobs
     weight: 50
