@@ -1,6 +1,6 @@
 ---
 title: PhD Opportunities          
-date: "2025-07-07"                  
+date: "2025-07-11"                  
 type: landing                       
 
 sections:
@@ -13,14 +13,27 @@ sections:
         The Statistics group at UPF is part of the Economics department and the university has no mathematics/statistics department. There are two main ways to pursue a PhD with us:
 
         1. **Via the PhD program in Economics at UPF**  
-           Apply to the *Master of Research (MRes) year* (Year 2) of the [Economics PhD program](https://www.upf.edu/web/econ/phd-track) at Universitat Pompeu Fabra.  
-           Upon admission, students follow a tailored course plan—agreed upon with their advisors—and complete a Master’s thesis, which typically serves as the starting point for their PhD research.  
-           DS students choose from a set of graduate-level courses, see [course listings](https://www.upf.edu/es/web/econ/courses).
+           Apply to the *Master of Research (MRes) year* (Year 2) of the [Economics PhD program](https://www.upf.edu/es/web/econ/phd) at Universitat Pompeu Fabra. This second year is an equivalent of the 1st year of PhD Programs at North American institutions. Note that the department requires that students complete 5 years of university studies to be eligible to apply for this program. 
+        
+           Upon admission, students follow a tailored course plan—agreed upon with their advisors—and complete a Master’s thesis, which typically serves as the starting point for their PhD research; see [course listings](https://www.upf.edu/es/web/econ/courses).
 
-        2. **Via a collaborating PhD program**  
-           Students may also enroll in a PhD program at a collaborating institution—such as the [Statistics PhD program](https://www.eio.upc.edu/en/doctorate/doctoral-program-of-the-department-of-statistics-and-operations-research) or the [Applied Mathematics PhD program](https://appliedmathematics.postgrau.upc.edu/en) at the Universitat Politècnica de Catalunya—while being supervised by a member of our group.  
+        3. **Via a collaborating PhD program**  
+           Students may also enroll in a PhD program at a collaborating institution—such as the [Statistics PhD program](https://www.eio.upc.edu/en/doctorate/doctoral-program-of-the-department-of-statistics-and-operations-research) or the [Applied Mathematics PhD program](https://appliedmathematics.postgrau.upc.edu/en) at the Universitat Politècnica de Catalunya. If arranged in advance it is possible to be supervised by a member of our group.  
+        
            These programs typically do not require coursework, and students begin working on their dissertation from day one.
-           
+
+        ## Funding and Calendar
+        All students in the PhD program in Economics at UPF are funded by the department. Student that work with as via a collaborating PhD program are typically financed by us.
+
+        The application process is typically between November and January. Please contact us in advance so that we could guide you through this process.
+
+        ## Examples
+        [Richard Coll](https://richardcolljosifov.github.io/) is a student is a PhD student in Applied Mathematics at Universitat Politècnica de Catalunya, supervised by Gábor Lugosi (UPF) and Juanjo Rué (UPC).
+        
+        [Maxim Fedotov](https://www.upf.edu/en/web/econ/phd-e-i/-/asset_publisher/y8aJCiW7qGsx/content/fedotov-maxim/maximized) started as MSc student in our [Data Science program](https://bse.eu/masters-degrees/data-science/data-science-methodology). He is now doing the PhD Program at Universitat Pompeu Fabra supervised by Gábor Lugosi and David Rossell (both UPF).
+
+        [Zhekai Pang](https://www.linkedin.com/in/zhekaipang/) completed MSc in Computational and Applied Economics at the University of Chicago. In 2025 he starts MRes year of the PhD program at UPF.
+
   - block: markdown
     content:
       title: About the Data Science Center

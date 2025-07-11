@@ -183,6 +183,9 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "content/authors/albert-satorra/avatar.jpeg",
+    "content/authors/albert-satorra/_index.md",
+    "content/phd/index.md",
     "content/authors/piotr-zwiernik/_index.md",
     "public/media/icon_hu_5cefa529ac01fd38.png",
     "resources/_gen/images/media/icon_hu_5cefa529ac01fd38.png",
@@ -207,7 +210,6 @@
     "layouts/page_author.html",
     "layouts/page_author_card.html",
     "hugo_stats.json",
-    "content/authors/albert-satorra/_index.md",
     "content/post/piotr-zwiernik-is-an-ims-fellow/index.md",
     "content/admin/index.md",
     "content/_index.md",
