@@ -21,6 +21,7 @@ sections:
       page_type: event
       order: desc
       count: 10
+      view_all: true
     design:
       view: compact
       show_date: true
