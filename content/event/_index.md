@@ -18,10 +18,9 @@ sections:
   ##############################################################################
   - block: collection
     content:
-      title: 
       page_type: event
       order: desc
-      count: 20
+      count: 10
     design:
       view: compact
       show_date: true
@@ -132,4 +131,5 @@ sections:
           </a>
         </div>
     design:
-      columns: "1"---
+      columns: "1"
+---
