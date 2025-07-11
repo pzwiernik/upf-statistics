@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "authors/jack-carter/_index.md",
+                "file": "event/_index.md",
                 "mode": "source",
                 "source": false
               },
@@ -182,6 +182,8 @@
   },
   "active": "9948f34e4f0acb7a",
   "lastOpenFiles": [
+    "authors/jack-carter/_index.md",
+    "authors/michael-greenacre/_index~.md",
     "phd/index.md",
     "authors/francisco-calvillo/_index~.md",
     "authors/francisco-calvillo/_index.md",
