@@ -3,6 +3,8 @@ title: New post-doctoral researchers
 date: 2024-07-11T01:00:00.000Z
 draft: false
 featured: false
+authors:
+  - "false"
 image:
   filename: download-2-.jpeg
   focal_point: Smart

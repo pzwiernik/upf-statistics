@@ -3,6 +3,8 @@ title: Keynote talk at BAYSM 2023
 date: 2023-02-01T01:01:00.000Z
 draft: false
 featured: false
+authors:
+  - "false"
 image:
   filename: download-5-.jpeg
   focal_point: Smart

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/icrea-professorship-awarded-to-gergely-neu/index.md",
+                "file": "content/post/plenary-talk-and-student-award-at-icsds-2023/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,8 +183,19 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
-    "content/post/icrea-professorship-awarded-to-gergely-neu/download-2-.png",
+    "content/post/piotr-zwiernik-is-an-ims-fellow/index.md",
+    "content/post/new-post-doctoral-researchers/index.md",
+    "content/post/keynote-talk-at-baysm-2023/index.md",
     "content/post/icrea-professorship-awarded-to-gergely-neu/index.md",
+    "content/post/gábor-elected-to-the-institute-of-mathematical-statistics-ims-council/index.md",
+    "content/post/erc-starting-grant-2021-awarded-to-geert-mesters/index.md",
+    "content/post/editorial-duties/index.md",
+    "content/post/conference-on-mathematics-aspects-of-learning-20-years-later/index.md",
+    "content/post/board-of-directors/index.md",
+    "public/author/false/index.xml",
+    "public/author/false/index.html",
+    "public/author/false",
+    "content/post/icrea-professorship-awarded-to-gergely-neu/download-2-.png",
     "content/people/_index.md",
     "public/event/seminars/2024-05-22-victor-rivero/index.html",
     "public/event/seminars/2024-05-22-victor-rivero",
@@ -193,9 +204,6 @@
     "public/event/seminars/2024-02-29-zoraida-rico-fernandez/index.html",
     "public/event/seminars/2024-02-29-zoraida-rico-fernandez",
     "public/event/seminars/2024-03-12-federico-castelleti/index.html",
-    "public/event/seminars/2024-03-12-federico-castelleti",
-    "public/event/seminars/2024-03-21-sayan-mukherjee/index.html",
-    "public/event/seminars/2024-03-21-sayan-mukherjee",
     "content/event/seminars/2024-05-22-victor-rivero.md",
     "content/event/seminars/2024-05-09-mona-azadkia.md",
     "content/event/seminars/2024-05-02-stefan-franssen.md",
@@ -212,11 +220,6 @@
     "content/event/seminars/Download past_seminars_md/2024-04-12-sofia-olhede.md",
     "content/event/seminars/Download past_seminars_md/2024-03-21-sayan-mukherjee.md",
     "content/event/seminars/Download past_seminars_md/2024-03-12-federico-castelleti.md",
-    "content/event/seminars/Download past_seminars_md/2024-02-29-zoraida-rico-fernandez.md",
-    "content/event/seminars/Download past_seminars_md/2024-02-22-marco-avella-medina.md",
-    "content/event/internal seminar/2025-05-29-yaping~.md",
-    "content/event/internal seminar/2025-05-15-jack~.md",
-    "content/event/internal seminar/2025-04-03-elena~.md",
     "public/media/internal_hu_3ab42d0fecc323bc.webp",
     "resources/_gen/images/media/internal_hu_3ab42d0fecc323bc.webp",
     "public/media/internal_hu_816660d5d3fd9f9e.webp",
@@ -224,10 +227,7 @@
     "resources/_gen/images/media/internal_hu_32d3f70ddd990422.png",
     "resources/_gen/images/media/internal_hu_a53cfd7b7a50e7c7.png",
     "public/media/internal.png",
-    "content/event/internal seminar/2025-02-13-gabor~.md",
     "public/event/internal seminar/internal.png",
-    "content/event/internal seminar/internal.png",
-    "content/event/internal seminar/2025-05-29-yaping.md",
-    "public/media/seminar_hu_54784d5867b0de9d.webp"
+    "content/event/internal seminar/internal.png"
   ]
 }

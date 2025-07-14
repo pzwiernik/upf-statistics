@@ -4,6 +4,8 @@ subtitle: ""
 date: 2024-09-01T01:00:00.000Z
 draft: false
 featured: false
+authors:
+  - "false"
 image:
   filename: download-3-.jpeg
   focal_point: Smart

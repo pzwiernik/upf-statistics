@@ -3,6 +3,8 @@ title: Piotr Zwiernik is an IMS fellow
 date: 2024-04-01T01:00:00.000Z
 draft: false
 featured: false
+authors:
+  - "false"
 image:
   filename: download.jpeg
   focal_point: Smart

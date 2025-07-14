@@ -4,6 +4,8 @@ subtitle: ""
 date: 2022-02-02T02:02:00.000Z
 draft: false
 featured: false
+authors:
+  - "false"
 image:
   filename: download-1-.png
   focal_point: Smart
