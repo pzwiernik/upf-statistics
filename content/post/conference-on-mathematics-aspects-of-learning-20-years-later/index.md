@@ -2,6 +2,7 @@
 title: 'Conference on "Mathematics Aspects of Learning - 20 years later" '
 date: 2024-05-01T01:00:00.000Z
 draft: false
+profile: false
 reading_time: false
 featured: false
 image:

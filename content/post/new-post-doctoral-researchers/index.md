@@ -3,6 +3,7 @@ title: New post-doctoral researchers
 date: 2024-07-11T01:00:00.000Z
 draft: false
 featured: false
+profile: false
 reading_time: false
 authors:
   - "false"

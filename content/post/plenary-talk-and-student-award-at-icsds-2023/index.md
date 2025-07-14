@@ -3,6 +3,7 @@ title: Plenary talk and student award at ICSDS 2023
 subtitle: ""
 date: 2023-09-01T01:01:00.000Z
 draft: false
+profile: false
 featured: false
 reading_time: false
 authors:

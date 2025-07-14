@@ -3,6 +3,7 @@ title: Gábor elected to the Institute of Mathematical Statistics (IMS) council
 subtitle: ""
 date: 2023-03-03T01:01:00.000Z
 draft: false
+profile: false
 featured: false
 reading_time: false
 authors:
