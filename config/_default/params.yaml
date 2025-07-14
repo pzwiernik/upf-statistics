@@ -6,7 +6,8 @@
 custom_css:
   - css/custom.css
 
-sharing: false  # 👈 disables social media buttons on news/events/posts globally
+sharing: 
+  - false  
 
 # Appearance
 appearance:
