@@ -6,7 +6,7 @@ title: "Chiara Amorino"
 first_name: "Chiara"
 last_name: "Amorino"
 
-role: Assistant Professor
+role: Ramón y Cajal Professor
 
 organizations:
   - name: Universitat Pompeu Fabra
