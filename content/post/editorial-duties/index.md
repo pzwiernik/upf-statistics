@@ -1,6 +1,6 @@
 ---
 reading_time: false
-title: Editorial duties
+title: New editorial duties
 subtitle: ""
 date: 2024-09-01T01:00:00.000Z
 draft: false
