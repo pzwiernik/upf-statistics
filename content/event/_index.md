@@ -1,5 +1,7 @@
 ---
 title: Recent & Upcoming Events
+type: event
+
 sections:
   ##############################################################################
   # 0 · Introductory paragraph for the Seminars section
