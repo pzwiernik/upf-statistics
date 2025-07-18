@@ -5,7 +5,6 @@ date: 2024-09-01T23:01:00.000Z
 draft: false
 profile: false
 featured: false
-reading_time: false
 authors: false
 image:
   filename: ""
