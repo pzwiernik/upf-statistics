@@ -1,15 +1,15 @@
 ---
+reading_time: false
 title: Editorial duties
 subtitle: ""
 date: 2024-09-01T01:00:00.000Z
 draft: false
-profile: false
-featured: false
-reading_time: false
 authors:
   - "false"
+profile: false
+featured: false
 image:
-  filename: download-3-.jpeg
+  filename: ""
   focal_point: Smart
   preview_only: false
 ---
