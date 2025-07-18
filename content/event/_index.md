@@ -1,6 +1,6 @@
 ---
 title: Recent & Upcoming Events
-type: event
+type: landing
 
 sections:
   ##############################################################################
