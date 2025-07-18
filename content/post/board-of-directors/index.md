@@ -1,14 +1,14 @@
 ---
-title: Board of directors
+reading_time: false
+title: ISBA Board of directors
 date: 2024-09-01T23:01:00.000Z
 draft: false
-featured: false
-profile: false
-reading_time: false
 authors:
   - "false"
+profile: false
+featured: false
 image:
-  filename: download.png
+  filename: ""
   focal_point: Smart
   preview_only: false
 ---
