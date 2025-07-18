@@ -5,8 +5,7 @@ draft: false
 featured: false
 profile: false
 reading_time: false
-authors:
-  - "false"
+authors: false
 image:
   filename: download-5-.jpeg
   focal_point: Smart
