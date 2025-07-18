@@ -22,7 +22,7 @@ sections:
       page_type: event
       tag: seminar
       archive_button: true
-      archive_button_url: "/event/?tag=seminar"
+      archive_button_url: "/tag/seminar/"
       order: desc
       count: 10
     design:
