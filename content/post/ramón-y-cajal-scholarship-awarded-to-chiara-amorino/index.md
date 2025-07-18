@@ -3,6 +3,7 @@ title: Ramón y Cajal Scholarship awarded to Chiara Amorino
 date: 2025-06-19T07:37:00.000+02:00
 draft: false
 authors: false
+reading_time: false
 featured: false
 image:
   filename: featured
