@@ -10,6 +10,7 @@ event_url: ""
 publishDate: 2024-05-02T00:00:00
 draft: false
 featured: false
+tags: [seminar]
 image:
   filename: "seminar.png"
   focal_point: Smart

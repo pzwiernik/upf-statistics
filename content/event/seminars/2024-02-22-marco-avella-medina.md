@@ -14,4 +14,5 @@ image:
   filename: "seminar.png"
   focal_point: Smart
   preview_only: false
+tags: [seminar]
 ---

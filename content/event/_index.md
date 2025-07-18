@@ -17,8 +17,12 @@ sections:
   # 1 · Dynamic list — seminars (.md files in content/event/)
   ##############################################################################
   - block: collection
+    label: Seminars
     content:
       page_type: event
+      tag: seminar
+      archive_button: true
+      archive_button_url: "/event/?tag=seminar"
       order: desc
       count: 10
     design:
