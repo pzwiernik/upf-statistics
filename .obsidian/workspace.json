@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino/index.md",
+                "file": "content/authors/chiara-amorino/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "content/post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino/index.md",
     "content/post/plenary-talk-and-student-award-at-icsds-2023/index.md",
     "content/post/piotr-zwiernik-is-an-ims-fellow/index.md",
     "content/post/new-post-doctoral-researchers/index.md",
@@ -193,7 +194,6 @@
     "content/post/editorial-duties/index.md",
     "content/post/conference-on-mathematics-aspects-of-learning-20-years-later/index.md",
     "content/post/board-of-directors/index.md",
-    "content/post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino/index.md",
     "content/post/_index.md",
     "content/post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino",
     "content/authors/chiara-amorino/_index.md",
