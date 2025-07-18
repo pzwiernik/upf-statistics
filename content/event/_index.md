@@ -1,7 +1,5 @@
 ---
 title: Recent & Upcoming Events
-type: landing
-
 sections:
   ##############################################################################
   # 0 · Introductory paragraph for the Seminars section
