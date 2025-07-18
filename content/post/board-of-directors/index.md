@@ -1,6 +1,6 @@
 ---
 reading_time: false
-title: ISBA Board of directors
+title: David Rossell in ISBA Board of directors
 date: 2024-09-01T23:01:00.000Z
 draft: false
 authors:
