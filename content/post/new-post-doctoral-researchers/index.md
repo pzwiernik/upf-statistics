@@ -1,14 +1,14 @@
 ---
+reading_time: false
 title: New post-doctoral researchers
 date: 2024-07-11T01:00:00.000Z
 draft: false
-featured: false
-profile: false
-reading_time: false
 authors:
   - "false"
+profile: false
+featured: false
 image:
-  filename: download-2-.jpeg
+  filename: ""
   focal_point: Smart
   preview_only: false
 ---
