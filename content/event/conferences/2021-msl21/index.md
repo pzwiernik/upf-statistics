@@ -5,7 +5,7 @@ date_end: 2021-07-02T00:00:00
 location: "Casa Convalescència"
 event: Conference
 event_url: "https://dscbarcelona.wixsite.com/msl2020"
-tags: [conference]
+tag: [conference]
 featured: false
 draft: false
 image:

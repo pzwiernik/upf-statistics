@@ -5,7 +5,7 @@ date_end: 2021-03-08T00:00:00
 location: "UPF Campus Ciutadella"
 event: Workshop
 event_url: ""          # add a URL if you have one
-tags: [conference]
+tag: [conference]
 featured: false
 draft: false
 image:

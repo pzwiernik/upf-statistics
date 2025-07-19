@@ -5,7 +5,7 @@ date_end: 2018-03-28T00:00:00  # (optional) end date
 location: "UPF Auditorium"
 event: Workshop
 event_url: "https://www.maths.nottingham.ac.uk/plp/pmztk/bayescomp/"
-tags: [conference]             # ← IMPORTANT
+tag: [conference]             # ← IMPORTANT
 featured: false
 draft: false
 image:

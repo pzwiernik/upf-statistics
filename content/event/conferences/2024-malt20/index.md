@@ -5,7 +5,7 @@ date_end: 2024-09-13T00:00:00
 location: "Casa Convalescència"
 event: Workshop
 event_url: "https://www.crm.cat/mathematical-aspects-of-learning-theory/"
-tags: [conference]
+tag: [conference]
 featured: false
 draft: false
 image:
