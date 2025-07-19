@@ -182,6 +182,13 @@
   },
   "active": "9948f34e4f0acb7a",
   "lastOpenFiles": [
+    "tag/conference/_index~.md",
+    "tag/seminar/_index~.md",
+    "tag/conference/_index.md",
+    "tag/conference",
+    "tag/seminar copy/_index.md",
+    "tag/seminar copy",
+    "tag/untitled folder",
     "event/conferences/2021-google/upf.jpeg",
     "event/conferences/2024-malt20/casac.jpeg",
     "event/conferences/2021-msl21/casac.jpeg",
@@ -210,14 +217,9 @@
     "event/conferences/2018-bayescomp copy/bayescomp.jpeg",
     "event/conferences/2018-bayescomp copy",
     "event/conferences/2018-bayescomp/index.md",
-    "event/conferences/2018-bayescomp/bayescomp.jpeg",
     "event/conferences/2018-bayescomp/2018-bayescomp.md",
-    "event/conferences/2018-bayescomp",
-    "event/conferences/untitled folder",
     "event/conferences/2018-bayescomp~.md",
     "event/conferences/2018-bayescomp.md",
-    "event/conferences",
-    "tag/seminar/_index~.md",
     "tag/seminar/_index.md",
     "event/internal seminar/2025-02-13-gabor~.md",
     "event/internal seminar/2025-05-29-yaping~.md",
@@ -225,8 +227,6 @@
     "event/internal seminar/2025-04-03-elena~.md",
     "event/seminars/2025-05-08-sara~.md",
     "event/seminars/2025-04-24-kamelia~.md",
-    "event/seminars/2025-04-10-charlotte~.md",
-    "event/seminars/2025-03-13-vincent~.md",
-    "event/seminars/2025-02-27-ivan~.md"
+    "event/seminars/2025-04-10-charlotte~.md"
   ]
 }
