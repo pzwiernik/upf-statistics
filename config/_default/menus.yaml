@@ -7,11 +7,11 @@ main:
     weight: 20
   - name: Seminars
     parent: Events
-    url: /tag/seminar/
+    url: /event/#seminars
     weight: 10
   - name: Conferences
     parent: Events
-    url: /tag/conference/
+    url: /event/#conferences
     weight: 20
   - name: Research
     url: publication
