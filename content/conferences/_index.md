@@ -4,7 +4,16 @@ url: "/conferences/"
 layout: page
 ---
 
-These our the conferences that our group organized or co-organized in the last couple of years.
+Workshops and conferences hosted or co-organized by the UPF Statistics group over the last decade.
 
-<!-- Hugo “Go template” block to list all events tagged “conference” -->
-{{< conferences-list limit="50" >}}
+{{< collection
+  page_type="event"
+  tag="conference"
+  count="50"
+  order="desc"
+  view="compact"
+  show_date=true
+  show_location=true
+  archive_button=true
+  archive_button_url="/tag/conference/"
+>}}
