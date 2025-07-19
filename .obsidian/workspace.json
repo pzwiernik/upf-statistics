@@ -183,6 +183,10 @@
   },
   "active": "f7092016a678559c",
   "lastOpenFiles": [
+    "layouts/taxonomy/tags.html",
+    "layouts/taxonomy",
+    "layouts/untitled folder",
+    "layouts/_default",
     "content/event/internal seminar/2025-05-29-yaping~.md",
     "content/event/internal seminar/2025-05-15-jack~.md",
     "content/event/internal seminar/2025-04-03-elena~.md",
@@ -208,7 +212,6 @@
     "content/event/seminars/2024-10-16-catalina~.md",
     "content/event/seminars/2024-05-22-victor-rivero~.md",
     "content/event/seminars/2024-05-09-mona-azadkia~.md",
-    "content/event/seminars/2024-05-02-stefan-franssen~.md",
     "content/tag/conference",
     "content/tag/seminar copy",
     "content/tag/untitled folder",
@@ -224,10 +227,7 @@
     "content/event/conferences/2018-bayescomp copy 4/bayescomp.jpeg",
     "content/event/conferences/2018-bayescomp copy 4",
     "content/event/conferences/2018-bayescomp copy 3/bayescomp.jpeg",
-    "content/event/conferences/2018-bayescomp copy 3",
     "content/event/conferences/2018-bayescomp copy 2/bayescomp.jpeg",
-    "content/event/conferences/2018-bayescomp copy 2",
-    "content/event/conferences/2018-bayescomp copy/bayescomp.jpeg",
-    "content/event/conferences/2018-bayescomp copy"
+    "content/event/conferences/2018-bayescomp copy/bayescomp.jpeg"
   ]
 }
