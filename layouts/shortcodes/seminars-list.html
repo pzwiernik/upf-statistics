@@ -1,9 +1,15 @@
 {{/* layouts/shortcodes/seminars-list.html */}}
 
-{{/* Grab the taxonomy term “seminar” and its pages */}}
-{{ $term := index .Site.Taxonomies.tag "seminar" }}
-{{ $all := $term.Pages }}
-{{ $sorted := sort $all "Date" "desc" }}
+{{/* 1. Grab only the event pages under content/event/ */}}
+{{ $events := where site.RegularPages "Section" "event" }}
+
+{{/* 2. Filter by your front-matter key */}}
+{{ $seminars := where $events "Params.tag" "seminar" }}
+
+{{/* 3. Sort descending by Date (empty slice is fine) */}}
+{{ $sorted := sort $seminars "Date" "desc" }}
+
+{{/* 4. Take the first N (default 50) */}}
 {{ $limit := (.Get "limit" | default 50) | int }}
 {{ $list := first $limit $sorted }}
 
@@ -13,10 +19,11 @@
   {{ end }}
 </div>
 
-{{ if gt (len $all) (len $list) }}
+{{/* 5. “See all” button if there’s more */}}
+{{ if gt (len $seminars) (len $list) }}
   <p class="mt-4">
     <a href="/tag/seminar/" class="btn btn-primary">
-      See all seminars ({{ len $all }})
+      See all seminars ({{ len $seminars }})
     </a>
   </p>
 {{ end }}
