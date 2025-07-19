@@ -22,7 +22,9 @@ sections:
   content:
     page_type: event
     tag: seminar
-    event_filter: all        # ← include past & upcoming talks
+    filters:                    # ← new, supported on Netlify build
+      exclude_past: false       # include past seminars
+      exclude_future: false     # include upcoming ones
     order: desc
     count: 10
     archive_button: true
@@ -32,7 +34,7 @@ sections:
     show_date: true
     show_location: true
     columns: "1"
-    anchor: seminars         # ← in-page target for /event/#seminars
+    anchor: seminars            # in-page target for /event/#seminars
 
 ##############################################################################
 # 2 · Dynamic list — Conferences & Workshops
@@ -42,7 +44,9 @@ sections:
   content:
     page_type: event
     tag: conference
-    event_filter: all
+    filters:
+      exclude_past: false
+      exclude_future: false
     order: desc
     count: 10
     archive_button: true
@@ -52,4 +56,4 @@ sections:
     show_date: true
     show_location: true
     columns: "1"
-    anchor: conferences      # ← in-page target for /event/#conferences
+    anchor: conferences         # in-page target for /event/#conferences
