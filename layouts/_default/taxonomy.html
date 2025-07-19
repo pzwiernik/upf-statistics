@@ -1,0 +1,29 @@
+{{/* layouts/_default/taxonomy.html */}}
+{{ partial "header.html" . }}
+
+<main class="content">
+  <div class="container">
+
+    <!-- Page header: term title + subtitle -->
+    <header class="page-header mt-4 mb-6">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+        <p class="lead">{{ . | markdownify }}</p>
+      {{ end }}
+    </header>
+
+    <!-- List all pages in this term -->
+    {{ $paginator := .Paginate .Pages }}
+    <section class="stream">
+      {{ range $paginator.Pages }}
+        {{ partial "cards/event.html" . }}
+      {{ end }}
+    </section>
+
+    <!-- Pagination controls -->
+    {{ partial "pagination.html" $paginator }}
+
+  </div>
+</main>
+
+{{ partial "footer.html" . }}
