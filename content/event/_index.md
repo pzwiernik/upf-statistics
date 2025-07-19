@@ -21,8 +21,8 @@ sections:
   label: Seminars
   content:
     page_type: event
+    tag: seminar           # ← tag filter belongs INSIDE `filters`
     filters:
-      tag: seminar           # ← tag filter belongs INSIDE `filters`
       exclude_past:   false  # show past
       exclude_future: false  # show future
     order: desc
