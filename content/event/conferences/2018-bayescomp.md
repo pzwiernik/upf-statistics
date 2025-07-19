@@ -9,7 +9,7 @@ tags: [conference]             # ← IMPORTANT
 featured: false
 draft: false
 image:
-  filename: "bayescomp.jpeg"   # place the jpeg under assets/media/ or static/
+  filename: "../media/bayescomp.jpeg"   # place the jpeg under assets/media/ or static/
   focal_point: Smart
 ---
 Advances in scalable Bayesian computation.
