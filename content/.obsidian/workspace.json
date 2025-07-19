@@ -11,10 +11,14 @@
             "id": "8b3fd346c3ac1493",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "authors/piotr-zwiernik/_index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "_index"
             }
           }
         ]
@@ -163,6 +167,8 @@
   },
   "active": "8b3fd346c3ac1493",
   "lastOpenFiles": [
+    "authors/lorenzo-cappello/_index.md",
+    "authors/david-rossell/_index.md",
     "seminars/internal seminar/2025-05-29-yaping~.md",
     "conferences/2024-malt20/index.md",
     "conferences/2024-malt20/casac.jpeg",
@@ -206,8 +212,6 @@
     "seminars/seminars/2024-11-21-domenico.md",
     "seminars/seminars/2024-11-14-aliaksander.md",
     "seminars/seminars/2024-11-07-alexander.md",
-    "seminars/seminars/2024-10-24-alan.md",
-    "seminars/seminars/2024-10-16-catalina.md",
     "seminars/internal seminar/internal.png"
   ]
 }
