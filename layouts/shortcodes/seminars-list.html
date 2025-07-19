@@ -1,17 +1,24 @@
 {{/* layouts/shortcodes/seminars-list.html */}}
 
-{{/* 1. Lookup the “seminar” term in your tag taxonomy */}}
-{{ $term := index .Site.Taxonomies.tag "seminar" }}
+{{/* 1. Get all your event pages */}}
+{{ $allEvents := where site.RegularPages "Type" "event" }}
 
-{{- if not $term -}}
+{{/* 2a. Filter those using the singular key */}}
+{{ $bySingular := where $allEvents "Params.tag" "seminar" }}
+
+{{/* 2b. Filter those using the plural key */}}
+{{ $byPlural   := where $allEvents "Params.tags" "seminar" }}
+
+{{/* 3. Merge and dedupe the two lists */}}
+{{ $seminars   := uniq (append $bySingular $byPlural) }}
+
+{{ if not (len $seminars) }}
   <p>No seminars found.</p>
-{{ else -}}
-  {{/* 2. Sort descending by Date */}}
-  {{ $pages := sort $term.Pages "Date" "desc" }}
-
-  {{/* 3. Take first N (default 50) */}}
-  {{ $limit := (.Get "limit" | default 50) | int }}
-  {{ $list := first $limit $pages }}
+{{ else }}
+  {{/* 4. Sort and limit */}}
+  {{ $sorted := sort $seminars "Date" "desc" }}
+  {{ $limit  := (.Get "limit" | default 50) | int }}
+  {{ $list   := first $limit $sorted }}
 
   <div class="stream">
     {{ range $list }}
@@ -19,11 +26,10 @@
     {{ end }}
   </div>
 
-  {{/* 4. “See all” button if more exist */}}
-  {{ if gt (len $pages) (len $list) }}
+  {{ if gt (len $seminars) (len $list) }}
     <p class="mt-4">
       <a href="/tag/seminar/" class="btn btn-primary">
-        See all seminars ({{ len $pages }})
+        See all seminars ({{ len $seminars }})
       </a>
     </p>
   {{ end }}
