@@ -1,6 +1,7 @@
 ---
 title: Recent & Upcoming Events
 type: landing
+---
 
 sections:
   ##############################################################################
@@ -14,15 +15,16 @@ sections:
         We also run the *Internal Statistics Seminar* and a number of reading seminars.
 
   ##############################################################################
-  # 1 · Dynamic list — seminars (.md files in content/event/)
+  # 1 · Dynamic list — Seminars (from *any* folder, filtered by tag)
   ##############################################################################
   - block: collection
     label: Seminars
+    anchor: seminars                
     content:
       page_type: event
-      tag: seminar
+      tag: seminar                  # picks up both seminar folders
       archive_button: true
-      archive_button_url: "/tag/seminar/"
+      archive_button_url: "/tags/seminar/"   # taxonomy archive
       order: desc
       count: 10
     design:
@@ -32,7 +34,7 @@ sections:
       columns: "1"
 
   ##############################################################################
-  # 2 · Manually-curated Workshops & Conferences (HTML cards)
+  # 2 · Manually-curated Workshops & Conferences (static HTML cards)
   ##############################################################################
   - block: markdown
     content:
@@ -96,7 +98,7 @@ sections:
               Google Focused Award Mini-workshop
             </div>
             <div class="article-style">
-              Joint UPF & Google Zurich workshop on machine-learning theory.
+              Joint UPF &amp; Google Zurich workshop on machine-learning theory.
             </div>
             <div class="stream-meta article-metadata">
               7–8&nbsp;Mar&nbsp;2021 · UPF Campus Ciutadella
@@ -135,4 +137,3 @@ sections:
         </div>
     design:
       columns: "1"
----
