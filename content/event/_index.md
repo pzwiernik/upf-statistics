@@ -15,16 +15,16 @@ sections:
       We also run the *Internal Statistics Seminar* and several reading seminars.
 
 ##############################################################################
-# 1 · Dynamic list — Seminars
+# 1 · Dynamic list — Seminars (past + upcoming)
 ##############################################################################
 - block: collection
   label: Seminars
   content:
     page_type: event
-    tag: seminar
-    filters:                    # ← new, supported on Netlify build
-      exclude_past: false       # include past seminars
-      exclude_future: false     # include upcoming ones
+    filters:
+      tag: seminar           # ← tag filter belongs INSIDE `filters`
+      exclude_past:   false  # show past
+      exclude_future: false  # show future
     order: desc
     count: 10
     archive_button: true
@@ -34,7 +34,7 @@ sections:
     show_date: true
     show_location: true
     columns: "1"
-    anchor: seminars            # in-page target for /event/#seminars
+    anchor: seminars         # in-page target for /event/#seminars
 
 ##############################################################################
 # 2 · Dynamic list — Conferences & Workshops
@@ -43,9 +43,9 @@ sections:
   label: Conferences
   content:
     page_type: event
-    tag: conference
     filters:
-      exclude_past: false
+      tag: conference
+      exclude_past:   false
       exclude_future: false
     order: desc
     count: 10
@@ -56,4 +56,4 @@ sections:
     show_date: true
     show_location: true
     columns: "1"
-    anchor: conferences         # in-page target for /event/#conferences
+    anchor: conferences      # in-page target for /event/#conferences
