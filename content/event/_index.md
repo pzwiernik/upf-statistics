@@ -19,12 +19,13 @@ sections:
   # ------------------------------------------------------------------
   - block: collection
     label: Seminars
+    anchor: seminars                # in-page target for /event/#seminars
     content:
       page_type: event
       tag: seminar
-      past_events: true           
+      past_events: true
       archive_button: true
-      archive_button_url: "/tag/seminar/"   
+      archive_button_url: "/tag/seminar/"
       order: desc
       count: 10
     design:
@@ -33,11 +34,11 @@ sections:
       show_location: true
       columns: "1"
 
-      
-##############################################################################
+  ##############################################################################
   # 2 · Manually-curated Workshops & Conferences (static HTML cards)
   ##############################################################################
   - block: markdown
+    anchor: conferences             # in-page target for /event/#conferences
     content:
       title: '<span id="conferences">Workshops & Conferences (last 10 years)</span>'
       text: |
