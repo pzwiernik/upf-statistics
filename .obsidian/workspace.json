@@ -183,6 +183,7 @@
   },
   "active": "f7092016a678559c",
   "lastOpenFiles": [
+    "content/event/conferences/2018-bayescomp/index.md",
     "content/event/conferences/2018-bayescomp/bayescomp.jpeg",
     "content/event/conferences/2018-bayescomp/2018-bayescomp.md",
     "content/event/conferences/2018-bayescomp",
@@ -227,7 +228,6 @@
     "resources/_gen/images/media/internal_hu_32d3f70ddd990422.png",
     "resources/_gen/images/media/internal_hu_a53cfd7b7a50e7c7.png",
     "public/media/internal.png",
-    "public/event/internal seminar/internal.png",
-    "content/event/internal seminar/internal.png"
+    "public/event/internal seminar/internal.png"
   ]
 }
