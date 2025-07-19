@@ -1,0 +1,20 @@
+{{/* layouts/shortcodes/seminars-list.html */}}
+
+{{ $all := where site.RegularPages "Section" "event" }}
+{{ $seminars := where $all "Params.tag" "seminar" }}
+{{ $sorted := sort $seminars "Date" "desc" }}
+{{ $list := first (.Get "limit" | default 50) $sorted }}
+
+<div class="stream">
+  {{ range $list }}
+    {{ partial "cards/event.html" . }}
+  {{ end }}
+</div>
+
+{{ if gt (len $seminars) (len $list) }}
+  <p class="mt-4">
+    <a href="/tag/seminar/" class="btn btn-primary">
+      See all seminars ({{ len $seminars }})
+    </a>
+  </p>
+{{ end }}

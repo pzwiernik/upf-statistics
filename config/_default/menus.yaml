@@ -7,7 +7,7 @@ main:
     weight: 20
   - name: Seminars
     parent: Events
-    url: /event/#seminars
+    url: /seminars/
     weight: 10
   - name: Conferences
     parent: Events
