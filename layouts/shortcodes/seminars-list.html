@@ -1,29 +1,30 @@
 {{/* layouts/shortcodes/seminars-list.html */}}
 
-{{/* 1. Grab only the event pages under content/event/ */}}
-{{ $events := where site.RegularPages "Section" "event" }}
+{{/* 1. Lookup the “seminar” term in your tag taxonomy */}}
+{{ $term := index .Site.Taxonomies.tag "seminar" }}
 
-{{/* 2. Filter by your front-matter key */}}
-{{ $seminars := where $events "Params.tag" "seminar" }}
+{{- if not $term -}}
+  <p>No seminars found.</p>
+{{ else -}}
+  {{/* 2. Sort descending by Date */}}
+  {{ $pages := sort $term.Pages "Date" "desc" }}
 
-{{/* 3. Sort descending by Date (empty slice is fine) */}}
-{{ $sorted := sort $seminars "Date" "desc" }}
+  {{/* 3. Take first N (default 50) */}}
+  {{ $limit := (.Get "limit" | default 50) | int }}
+  {{ $list := first $limit $pages }}
 
-{{/* 4. Take the first N (default 50) */}}
-{{ $limit := (.Get "limit" | default 50) | int }}
-{{ $list := first $limit $sorted }}
+  <div class="stream">
+    {{ range $list }}
+      {{ partial "cards/event.html" . }}
+    {{ end }}
+  </div>
 
-<div class="stream">
-  {{ range $list }}
-    {{ partial "cards/event.html" . }}
+  {{/* 4. “See all” button if more exist */}}
+  {{ if gt (len $pages) (len $list) }}
+    <p class="mt-4">
+      <a href="/tag/seminar/" class="btn btn-primary">
+        See all seminars ({{ len $pages }})
+      </a>
+    </p>
   {{ end }}
-</div>
-
-{{/* 5. “See all” button if there’s more */}}
-{{ if gt (len $seminars) (len $list) }}
-  <p class="mt-4">
-    <a href="/tag/seminar/" class="btn btn-primary">
-      See all seminars ({{ len $seminars }})
-    </a>
-  </p>
 {{ end }}
