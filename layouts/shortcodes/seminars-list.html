@@ -1,36 +1,17 @@
-{{/* layouts/shortcodes/seminars-list.html */}}
+{{ $all := where site.RegularPages "Section" "event" }}
+{{ $conf := where $all "Params.tag" "conference" }}
+{{ $sorted := sort $conf "Date" "desc" }}
+{{ $list := first (.Get "limit" | default 50) $sorted }}
 
-{{/* 1. Get all your event pages */}}
-{{ $allEvents := where site.RegularPages "Type" "event" }}
-
-{{/* 2a. Filter those using the singular key */}}
-{{ $bySingular := where $allEvents "Params.tag" "seminar" }}
-
-{{/* 2b. Filter those using the plural key */}}
-{{ $byPlural   := where $allEvents "Params.tags" "seminar" }}
-
-{{/* 3. Merge and dedupe the two lists */}}
-{{ $seminars   := uniq (append $bySingular $byPlural) }}
-
-{{ if not (len $seminars) }}
-  <p>No seminars found.</p>
-{{ else }}
-  {{/* 4. Sort and limit */}}
-  {{ $sorted := sort $seminars "Date" "desc" }}
-  {{ $limit  := (.Get "limit" | default 50) | int }}
-  {{ $list   := first $limit $sorted }}
-
-  <div class="stream">
-    {{ range $list }}
-      {{ partial "cards/event.html" . }}
-    {{ end }}
-  </div>
-
-  {{ if gt (len $seminars) (len $list) }}
-    <p class="mt-4">
-      <a href="/tag/seminar/" class="btn btn-primary">
-        See all seminars ({{ len $seminars }})
-      </a>
-    </p>
+<div class="stream">
+  {{ range $list }}
+    {{ partial "cards/event.html" . }}
   {{ end }}
+</div>
+{{ if gt (len $conf) (len $list) }}
+  <p class="mt-4">
+    <a href="/tag/conference/" class="btn btn-primary">
+      See all conferences ({{ len $conf }})
+    </a>
+  </p>
 {{ end }}
