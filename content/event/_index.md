@@ -4,9 +4,9 @@ type: landing
 ---
 
 sections:
-  # --------------------------------------------------------------------
+  # ------------------------------------------------------------------
   # 0 · Intro text
-  # --------------------------------------------------------------------
+  # ------------------------------------------------------------------
   - block: markdown
     content:
       title: '<span id="seminars">Seminars</span>'
@@ -14,16 +14,18 @@ sections:
         Our main seminar series is the **Statistics Seminar at UPF**, organised by Chiara Amorino and Lorenzo Cappello.  
         We also run the *Internal Statistics Seminar* and a number of reading seminars.
 
-  # --------------------------------------------------------------------
-  # 1 · Dynamic list — seminars
-  # --------------------------------------------------------------------
+  # ------------------------------------------------------------------
+  # 1 · Dynamic list — Seminars
+  # ------------------------------------------------------------------
   - block: collection
     label: Seminars
+    anchor: seminars
     content:
       page_type: event
       tag: seminar
+      past_events: true           # ← show past as well as future
       archive_button: true
-      archive_button_url: "/tags/seminar/"   # taxonomy archive (plural “tags”)
+      archive_button_url: "/tag/seminar/"   # change to /tags/… if your taxonomy uses plural
       order: desc
       count: 10
     design:
@@ -31,7 +33,6 @@ sections:
       show_date: true
       show_location: true
       columns: "1"
-      anchor: seminars          # ← keep it here; no longer hijacks the button
 
   # --------------------------------------------------------------------
   # 2 · Static Workshops & Conferences cards (unchanged)
