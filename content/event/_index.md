@@ -12,7 +12,7 @@ sections:
     title: '<span id="seminars">Seminars</span>'
     text: |
       Our main seminar series is the **Statistics Seminar at UPF**, organised by Chiara Amorino and Lorenzo Cappello.  
-      We also run the *Internal Statistics Seminar* and a number of reading seminars.
+      We also run the *Internal Statistics Seminar* and several reading seminars.
 
 ##############################################################################
 # 1 · Dynamic list — Seminars
@@ -22,7 +22,7 @@ sections:
   content:
     page_type: event
     tag: seminar
-    past_events: true          # include past & upcoming talks
+    event_filter: all          # ← include past & upcoming talks
     order: desc
     count: 10
     archive_button: true
@@ -42,7 +42,7 @@ sections:
   content:
     page_type: event
     tag: conference
-    past_events: true
+    event_filter: all
     order: desc
     count: 10
     archive_button: true
@@ -52,4 +52,4 @@ sections:
     show_date: true
     show_location: true
     columns: "1"
-    anchor: conferences        # target for /event/#conferences
+    anchor: conferences        # in-page target for /event/#conferences
