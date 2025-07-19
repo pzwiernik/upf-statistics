@@ -22,9 +22,9 @@ sections:
     content:
       page_type: event
       tag: seminar
-      past_events: true           # ← show past as well as future
+      past_events: true           
       archive_button: true
-      archive_button_url: "/tag/seminar/"   # change to /tags/… if your taxonomy uses plural
+      archive_button_url: "/tag/seminar/"   
       order: desc
       count: 10
     design:
@@ -33,13 +33,6 @@ sections:
       show_location: true
       columns: "1"
 
-  - block: markdown
-    content:
-      title: '<span id="conferences">Workshops & Conferences (last 10 years)</span>'
-      text: |
-        <!-- your HTML cards here (unchanged) -->
-    design:
-      columns: "1"
       
 ##############################################################################
   # 2 · Manually-curated Workshops & Conferences (static HTML cards)
