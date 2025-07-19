@@ -22,9 +22,7 @@ sections:
   content:
     page_type: event
     tag: seminar
-    filters:
-      exclude_past: false        # show past events
-      exclude_future: false      # show future events
+    event_filter: all        # ← include past & upcoming talks
     order: desc
     count: 10
     archive_button: true
@@ -34,7 +32,7 @@ sections:
     show_date: true
     show_location: true
     columns: "1"
-    anchor: seminars             # target for /event/#seminars
+    anchor: seminars         # ← in-page target for /event/#seminars
 
 ##############################################################################
 # 2 · Dynamic list — Conferences & Workshops
@@ -44,9 +42,7 @@ sections:
   content:
     page_type: event
     tag: conference
-    filters:
-      exclude_past: false
-      exclude_future: false
+    event_filter: all
     order: desc
     count: 10
     archive_button: true
@@ -56,4 +52,4 @@ sections:
     show_date: true
     show_location: true
     columns: "1"
-    anchor: conferences          # target for /event/#conferences
+    anchor: conferences      # ← in-page target for /event/#conferences
