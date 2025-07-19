@@ -19,11 +19,10 @@ sections:
   # ------------------------------------------------------------------
   - block: collection
     label: Seminars
-    anchor: seminars              # target for /event/#seminars
     content:
       page_type: event
       tag: seminar
-      event_filter: all           # ← show past and upcoming
+      event_filter: all          # show past and upcoming
       archive_button: true
       archive_button_url: "/tag/seminar/"
       order: desc
@@ -33,17 +32,17 @@ sections:
       show_date: true
       show_location: true
       columns: "1"
+      anchor: seminars           # ← anchor lives inside design
 
   # ------------------------------------------------------------------
-  # 2 · Dynamic list — Conferemces
+  # 2 · Dynamic list — Conferences & Workshops
   # ------------------------------------------------------------------
   - block: collection
     label: Conferences
-    anchor: conferences              # target for /event/#seminars
     content:
       page_type: event
       tag: conference
-      event_filter: all           # ← show past and upcoming
+      event_filter: all
       archive_button: true
       archive_button_url: "/tag/conference/"
       order: desc
@@ -53,4 +52,4 @@ sections:
       show_date: true
       show_location: true
       columns: "1"
-
+      anchor: conferences        # ← anchor inside design
