@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "authors/piotr-zwiernik/_index.md",
+                "file": "post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -167,6 +167,10 @@
   },
   "active": "8b3fd346c3ac1493",
   "lastOpenFiles": [
+    "publication/_arxiv/fixed-point_estimation_of_the_drift_parameter_in_stochastic_differential_equatio.md",
+    "post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino 1/index.md",
+    "post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino 1",
+    "authors/piotr-zwiernik/_index.md",
     "authors/lorenzo-cappello/_index.md",
     "authors/david-rossell/_index.md",
     "seminars/internal seminar/2025-05-29-yaping~.md",
@@ -197,7 +201,6 @@
     "conferences/conferences/2018-bayescomp",
     "conferences/conferences",
     "conferences/_index.md",
-    "conferences",
     "seminars/seminars/seminar.png",
     "seminars/seminars/2025-05-08-sara.md",
     "seminars/seminars/2025-04-24-kamelia.md",
@@ -209,9 +212,6 @@
     "seminars/seminars/2025-01-16-gleb.md",
     "seminars/seminars/2024-12-05-stjin.md",
     "seminars/seminars/2024-11-28-eva.md",
-    "seminars/seminars/2024-11-21-domenico.md",
-    "seminars/seminars/2024-11-14-aliaksander.md",
-    "seminars/seminars/2024-11-07-alexander.md",
     "seminars/internal seminar/internal.png"
   ]
 }
