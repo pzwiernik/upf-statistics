@@ -11,7 +11,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-We’re happy to share that **David Rossell** has been elected to the **Board of Directors** of the **International Society for Bayesian Analysis (ISBA)** for the 2025–2027 term.
+We are happy to share that **David Rossell** has been elected to the **Board of Directors** of the **International Society for Bayesian Analysis (ISBA)** for the 2025–2027 term.
 
 ISBA promotes the development and application of Bayesian methods across disciplines. David’s election reflects his active contributions to the Bayesian community and his leadership in research and teaching at **Universitat Pompeu Fabra** and the **Barcelona School of Economics**.
 
