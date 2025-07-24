@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/authors/chiara-amorino/_index.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "source": false
               },
@@ -181,8 +181,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f7092016a678559c",
+  "active": "766dc3bc1256a83e",
   "lastOpenFiles": [
+    "content/authors/chiara-amorino/_index.md",
     "content/publication/_arxiv/fixed-point_estimation_of_the_drift_parameter_in_stochastic_differential_equatio.md",
     "content/post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino 1/index.md",
     "content/post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino 1",
@@ -227,7 +228,6 @@
     "content/seminars/seminars/2024-11-28-eva.md",
     "content/seminars/seminars/2024-11-21-domenico.md",
     "content/seminars/seminars/2024-11-14-aliaksander.md",
-    "content/seminars/seminars/2024-11-07-alexander.md",
     "content/seminars/internal seminar/internal.png"
   ]
 }
