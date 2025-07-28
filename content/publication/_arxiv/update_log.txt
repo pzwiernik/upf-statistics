@@ -1,10 +1,10 @@
-arXiv update run 2025-07-21 04:31 UTC
+arXiv update run 2025-07-28 04:00 UTC
 Added: Orthogonal eigenvectors and singular vectors of tensors (2025)
 Added: Improving variable selection properties by leveraging external data (2025)
 Added: Universality of Benign Overfitting in Binary Linear Classification (2025)
+Added: Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces (2025)
 Added: Detecting weighted hidden cliques (2025)
 Added: Temporal connectivity of Random Geometric Graphs (2025)
-Added: Uniform temporal trees (2025)
 Added: Linear Bandits with Non-i.i.d. Noise (2025)
 Added: Inverse Q-Learning Done Right: Offline Imitation Learning in $Q^π$-Realizable MDPs (2025)
 Added: Distances for Markov chains from sample streams (2025)
