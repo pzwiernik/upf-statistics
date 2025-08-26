@@ -28,6 +28,21 @@ sections:
         <!-- ─────────── THEORY ─────────── -->
         <h2 id="theory">Theory</h2>
 
+
+        <div class="media stream-item view-compact">
+          <div class="media-body">
+            <h3 class="article-title mb-0">
+              <a href="https://www.e-publications.org/ims/submission/AOS/user/submissionFile/64935?confirm=c5d6653c" target="_blank" rel="noopener">
+                Entropic covariance models
+              </a>
+            </h3>
+            <div class="article-metadata">
+              <strong>P. Zwiernik</strong> —
+              <em class="journal-name">Annals of Statistics</em>, 2025
+            </div>
+          </div>
+        </div>
+
         <div class="media stream-item view-compact">
           <div class="media-body">
             <h3 class="article-title mb-0">
