@@ -104,20 +104,6 @@ sections:
         <div class="media stream-item view-compact">
           <div class="media-body">
             <h3 class="article-title mb-0">
-              <a href="https://doi.org/10.1016/j.jeconom.2023.105849" target="_blank" rel="noopener">
-                Empirical risk minimisation for time series
-              </a>
-            </h3>
-            <div class="article-metadata">
-              <strong>C. Brownlees</strong>, J. Llorens-Terrazas —
-              <em class="journal-name">J. Econometrics</em>, 2024
-            </div>
-          </div>
-        </div>
-
-        <div class="media stream-item view-compact">
-          <div class="media-body">
-            <h3 class="article-title mb-0">
               <a href="https://doi.org/10.1093/biomet/asae068" target="_blank" rel="noopener">
                 Semi-parametric local variable selection under misspecification
               </a>
