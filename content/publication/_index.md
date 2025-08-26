@@ -129,7 +129,7 @@ sections:
           </div>
         </div>
 
-<div class="media stream-item view-compact">
+        <div class="media stream-item view-compact">
           <div class="media-body">
             <h3 class="article-title mb-0">
               <a href="https://doi.org/10.1214/25-AOS2497" target="_blank" rel="noopener">
@@ -506,12 +506,9 @@ sections:
 
         <ul class="ul-interests">
           <li><strong>Gábor Lugosi</strong>: <em>Annals of Applied Probability</em>; <em>Journal of Machine Learning Research</em>; <em>Probability Theory and Related Fields</em></li>
-
           <li><strong>Eulàlia Nualart</strong>: <em>Stochastic Processes and their Applications</em></li>
-
-          <li><strong>David Rossell</strong>: <em>Bayesian Analysis, JASA: Theory & Methods</em></li>
-
-          <li><strong>Piotr Zwiernik</strong>: <em>Journal of the Royal Statistical Society&nbsp;– Series B</em>; <em>Biometrika</em>; <em>Algebraic Statistics</em>; <em>Scandinavian Journal of Statistics</em></li>
+          <li><strong>David Rossell</strong>: <em>Bayesian Analysis, JASA: Theory &amp; Methods</em></li>
+          <li><strong>Piotr Zwiernik</strong>: <em>Journal of the Royal Statistical Society – Series B</em>; <em>Biometrika</em>; <em>Algebraic Statistics</em>; <em>Scandinavian Journal of Statistics</em></li>
         </ul>
     design:
       columns: "1"
