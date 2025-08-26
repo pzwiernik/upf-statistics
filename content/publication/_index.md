@@ -505,8 +505,6 @@ sections:
         <h2 id="editorial">Current editorial service</h2>
 
         <ul class="ul-interests">
-          <li><strong>Christian Brownlees</strong>: <em>Annals of Financial Economics</em>; <em>Econometrics</em>; <em>Journal of Network Theory in Finance</em>; <em>Journal of Risk and Financial Management</em></li>
-
           <li><strong>Gábor Lugosi</strong>: <em>Annals of Applied Probability</em>; <em>Journal of Machine Learning Research</em>; <em>Probability Theory and Related Fields</em></li>
 
           <li><strong>Eulàlia Nualart</strong>: <em>Stochastic Processes and their Applications</em></li>
