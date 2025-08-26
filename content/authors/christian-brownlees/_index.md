@@ -19,6 +19,6 @@ social:
     icon_pack: ai
     link: "https://scholar.google.com/citations?user=DcJFBpAAAAAJ"
 user_groups:
-  - Principal Investigators
+  - Affiliated
 ---
 
