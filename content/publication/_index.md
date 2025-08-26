@@ -46,6 +46,22 @@ sections:
         <div class="media stream-item view-compact">
           <div class="media-body">
             <h3 class="article-title mb-0">
+              <a href="https://link.springer.com/article/10.1007/s00440-024-01346-5" target="_blank" rel="noopener">
+                Polynomial rates via deconvolution for nonparametric estimation in McKean-Vlasov SDEs
+              </a>
+            </h3>
+            <div class="article-metadata">
+              <strong>C. Amorino</strong>, D. Belomestny, V. Pilipauskaite, M Podolskij, S. Zhou  —
+              <em class="journal-name">Probab. Theory Relat. Fields</em>, 2024
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="media stream-item view-compact">
+          <div class="media-body">
+            <h3 class="article-title mb-0">
               <a href="https://link.springer.com/article/10.1007/s00440-024-01205-9" target="_blank" rel="noopener">
                 Instantaneous everywhere-blow-up of parabolic SPDEs
               </a>
@@ -126,6 +142,21 @@ sections:
             </div>
           </div>
         </div>
+
+<div class="media stream-item view-compact">
+          <div class="media-body">
+            <h3 class="article-title mb-0">
+              <a href="https://doi.org/10.1214/25-AOS2497" target="_blank" rel="noopener">
+                Minimax rate for multivariate data under componentwise local differential privacy constraints
+              </a>
+            </h3>
+            <div class="article-metadata">
+              <strong>C. Amorino</strong>, A. Gloter  —
+              <em class="journal-name">Annals of Statistics</em>, 2023
+            </div>
+          </div>
+        </div>
+
 
         <div class="media stream-item view-compact">
           <div class="media-body">
