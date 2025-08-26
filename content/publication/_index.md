@@ -515,7 +515,4 @@ sections:
         </ul>
     design:
       columns: "1"
-        
-    design:
-      columns: "1"
 ---
