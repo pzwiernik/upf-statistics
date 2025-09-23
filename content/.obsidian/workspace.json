@@ -167,6 +167,11 @@
   },
   "active": "8b3fd346c3ac1493",
   "lastOpenFiles": [
+    "publication/_arxiv/robust_sub-gaussian_mean_estimators_in_metric_spaces.md",
+    "authors/zhekai-pang/_index.md",
+    "authors/zhekai-pang",
+    "authors/francisco-calvillo 1/_index.md",
+    "authors/francisco-calvillo 1",
     "post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino/index.md",
     "publication/_arxiv/fixed-point_estimation_of_the_drift_parameter_in_stochastic_differential_equatio.md",
     "post/ramón-y-cajal-scholarship-awarded-to-chiara-amorino 1/index.md",
@@ -199,8 +204,6 @@
     "conferences/conferences/2024-malt20",
     "conferences/conferences/2021-msl21",
     "conferences/conferences/2021-google",
-    "conferences/conferences/2018-bayescomp",
-    "conferences/conferences",
     "conferences/_index.md",
     "seminars/seminars/seminar.png",
     "seminars/seminars/2025-05-08-sara.md",
@@ -209,9 +212,6 @@
     "seminars/seminars/2025-03-13-vincent.md",
     "seminars/seminars/2025-02-27-ivan.md",
     "seminars/seminars/2025-02-20-yaniv.md",
-    "seminars/seminars/2025-02-06-florian.md",
-    "seminars/seminars/2025-01-16-gleb.md",
-    "seminars/seminars/2024-12-05-stjin.md",
     "seminars/internal seminar/internal.png"
   ]
 }

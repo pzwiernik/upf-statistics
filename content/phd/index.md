@@ -31,7 +31,7 @@ sections:
         
         [Maxim Fedotov](https://www.upf.edu/en/web/econ/phd-e-i/-/asset_publisher/y8aJCiW7qGsx/content/fedotov-maxim/maximized) started as MSc student in our [Data Science program](https://bse.eu/masters-degrees/data-science/data-science-methodology). He is now doing the PhD Program at Universitat Pompeu Fabra supervised by Gábor Lugosi and David Rossell (both UPF).
 
-        [Zhekai Pang](https://www.linkedin.com/in/zhekaipang/) completed MSc in Computational and Applied Economics at the University of Chicago. In 2025 he starts MRes year of the PhD program at UPF.
+        [Zhekai Pang](https://www.linkedin.com/in/zhekaipang/) completed MSc in Computational and Applied Mathematics at the University of Chicago. In 2025 he starts MRes year of the PhD program at UPF.
         
         ## Application and calendar
         
