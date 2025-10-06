@@ -1,4 +1,4 @@
-arXiv update run 2025-09-29 03:29 UTC
+arXiv update run 2025-10-06 03:26 UTC
 Added: Orthogonal eigenvectors and singular vectors of tensors (2025)
 Added: Improving variable selection properties by leveraging external data (2025)
 Added: Universality of Benign Overfitting in Binary Linear Classification (2025)
@@ -13,9 +13,9 @@ Added: Fixed-Point Estimation of the Drift Parameter in Stochastic Differential 
 Added: Fractional interacting particle system: drift parameter estimation via Malliavin calculus (2025)
 Added: Empirical Bayes for Data Integration (2025)
 Added: Semi-parametric local variable selection under misspecification (2023)
+Added: On the local well-posedness of randomly forced reaction-diffusion equations with $L^2$ initial data and a superlinear reaction term (2025)
 Added: Differential Machine Learning for Time Series Prediction (2025)
 Added: Multivariate Poisson approximation of joint subgraph counts in random graphs via size-biased couplings (2025)
-Added: On the well-posedness of SPDEs with locally Lipschitz coefficients (2024)
-Added: New (and old) predictive schemes with a.c.i.d. sequences (2025)
+Added: Bayesian Predictive Inference Beyond Martingales (2025)
 Added: A Bayesian framework for change-point detection with uncertainty quantification (2025)
 Added: Bayesian variance change point detection with credible sets (2022)
