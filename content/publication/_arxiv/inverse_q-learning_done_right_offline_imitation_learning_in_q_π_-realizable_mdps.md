@@ -12,8 +12,8 @@ publication: arXiv
 publication_types:
 - preprint
 featured: false
-publication_url: http://arxiv.org/abs/2505.19946v2
-url_pdf: http://arxiv.org/pdf/2505.19946v2
+publication_url: http://arxiv.org/abs/2505.19946v3
+url_pdf: http://arxiv.org/pdf/2505.19946v3
 generated: arxiv
 abstract: ''
 summary: ''
