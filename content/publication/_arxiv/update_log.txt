@@ -1,13 +1,13 @@
-arXiv update run 2025-10-27 03:44 UTC
+arXiv update run 2025-11-03 03:42 UTC
 Added: Probabilistic PCA on tensors (2025)
 Added: Beyond independent component analysis: identifiability and algorithms (2025)
 Added: Orthogonal eigenvectors and singular vectors of tensors (2025)
 Added: Finding a Nash equilibrium of a random win-lose game in expected polynomial time (2025)
 Added: Robust, sub-Gaussian mean estimators in metric spaces (2025)
 Added: Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces (2025)
+Added: Sparse Optimistic Information Directed Sampling (2025)
 Added: Linear Bandits with Non-i.i.d. Noise (2025)
 Added: Inverse Q-Learning Done Right: Offline Imitation Learning in $Q^π$-Realizable MDPs (2025)
-Added: Distances for Markov chains from sample streams (2025)
 Added: Factorization by extremal privacy mechanisms: new insights into efficiency (2025)
 Added: Fixed-Point Estimation of the Drift Parameter in Stochastic Differential Equations Driven by Rough Multiplicative Fractional Noise (2025)
 Added: Fractional interacting particle system: drift parameter estimation via Malliavin calculus (2025)
