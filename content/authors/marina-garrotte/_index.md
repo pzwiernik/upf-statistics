@@ -4,7 +4,7 @@ first_name: Marina
 last_name: Garrote-López
 
 # Role and affiliation
-role: Postdoctoral Researcher
+role: Beatriu de Pinós Fellow
 organizations:
   - name: "Universitat Pompeu Fabra"
     url: "https://www.upf.edu"
