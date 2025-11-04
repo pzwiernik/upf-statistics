@@ -3,7 +3,7 @@ title: Piotr Zwiernik
 first_name: Piotr
 last_name: Zwiernik
 superuser: false
-role: Serra Húnter Professor
+role: Serra Húnter Senior Fellow
 organizations:
   - name: Dept. of Economics & Business, Universitat Pompeu Fabra
     url: https://www.upf.edu/web/econ
