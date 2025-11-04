@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "86fec3025c233acf",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -157,6 +170,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -165,7 +179,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b3fd346c3ac1493",
+  "active": "86fec3025c233acf",
   "lastOpenFiles": [
     "publication/_arxiv/robust_sub-gaussian_mean_estimators_in_metric_spaces.md",
     "authors/zhekai-pang/_index.md",

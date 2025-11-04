@@ -4,7 +4,7 @@ first_name: Jack
 last_name: Carter
 
 # Role and affiliation
-role: Postdoctoral Researcher
+role: EUTOPIA-SIF Fellow
 organizations:
   - name: "Universitat Pompeu Fabra"
     url: "https://www.upf.edu"
