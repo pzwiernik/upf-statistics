@@ -26,7 +26,7 @@ sections:
       title: Alumni & Past Visitors
       text: |
         ## Former Postdoctoral Researchers
-- [Alessandro Mascaro](https://www.linkedin.com/in/alessandromascaro/) - AstraZeneca
+        - [Alessandro Mascaro](https://www.linkedin.com/in/alessandromascaro/) - AstraZeneca
         - [Nicolas Bianco](https://sites.google.com/view/whitenoisenb) – Karlsruhe Institute of Technology  
         - [Sebastien Bubeck](http://sbubeck.com/) – Open AI  
         - [Ciara Pike‑Burke](https://www.ma.imperial.ac.uk/~cpikebur/) – Imperial College London   
