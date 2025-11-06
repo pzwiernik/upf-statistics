@@ -28,12 +28,12 @@ sections:
         ## Former Postdoctoral Researchers
         - [Alessandro Mascaro](https://www.linkedin.com/in/alessandromascaro/) - AstraZeneca
         - [Nicolas Bianco](https://sites.google.com/view/whitenoisenb) – Karlsruhe Institute of Technology  
-        - [Sebastien Bubeck](http://sbubeck.com/) – Open AI  
-        - [Ciara Pike‑Burke](https://www.ma.imperial.ac.uk/~cpikebur/) – Imperial College London   
-        - [Jack Jewson](https://sites.google.com/view/jack-jewson-academic-profile/home) – Monash University  
         - [Déborah Sulem](https://dsulem.github.io/) – Università Svizzera Italiana  
-        - [Nanwei Wang](https://nwang3.ext.unb.ca/) – University of New Brunswick  
-
+        - [Jack Jewson](https://sites.google.com/view/jack-jewson-academic-profile/home) – Monash University  
+        - [Ciara Pike‑Burke](https://www.ma.imperial.ac.uk/~cpikebur/) – Imperial College London   
+         - [Nanwei Wang](https://nwang3.ext.unb.ca/) – University of New Brunswick  
+        - [Sebastien Bubeck](http://sbubeck.com/) – Open AI  
+ 
         ## Former PhD Students
 
         - [Simon Briend](https://simon-briend.github.io/) – UniDistance Suisse   
