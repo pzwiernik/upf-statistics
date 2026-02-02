@@ -1,4 +1,4 @@
-arXiv update run 2026-01-26 04:10 UTC
+arXiv update run 2026-02-02 04:49 UTC
 Added: Probabilistic PCA on tensors (2025)
 Added: Beyond independent component analysis: identifiability and algorithms (2025)
 Added: Orthogonal eigenvectors and singular vectors of tensors (2025)
@@ -17,6 +17,6 @@ Added: Improving variable selection properties by leveraging external data (2025
 Added: On the local well-posedness of randomly forced reaction-diffusion equations with $L^2$ initial data and a superlinear reaction term (2025)
 Added: Differential Machine Learning for Time Series Prediction (2025)
 Added: Multivariate Poisson approximation of joint subgraph counts in random graphs via size-biased couplings (2025)
+Added: Computationally efficient segmentation for non-stationary time series with oscillatory patterns (2026)
 Added: Bayesian Predictive Inference Beyond Martingales (2025)
 Added: A Bayesian framework for change-point detection with uncertainty quantification (2025)
-Added: Bayesian variance change point detection with credible sets (2022)
