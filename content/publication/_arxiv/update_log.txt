@@ -1,13 +1,13 @@
-arXiv update run 2026-04-13 05:30 UTC
+arXiv update run 2026-04-20 05:29 UTC
 Added: Probabilistic PCA on tensors (2025)
 Added: Beyond independent component analysis: identifiability and algorithms (2025)
 Added: Orthogonal eigenvectors and singular vectors of tensors (2025)
 Added: A study of centrality measures in random recursive trees (2026)
 Added: Ratio Covers of Convex Sets and Optimal Mixture Density Estimation (2026)
 Added: The statistical threshold for planted matchings and spanning trees (2026)
+Added: Online learning with noisy side observations (2026)
 Added: Sparse Optimistic Information Directed Sampling (2025)
 Added: Linear Bandits with Non-i.i.d. Noise (2025)
-Added: Inverse Q-Learning Done Right: Offline Imitation Learning in $Q^π$-Realizable MDPs (2025)
 Added: On the role of symmetry for staircase mechanisms in local differential privacy efficiency across different privacy regimes (2026)
 Added: Concentration Inequalities for Suprema of Empirical Processes with Dependent Data via Generic Chaining with Applications to Statistical Learning (2025)
 Added: Factorization by extremal privacy mechanisms: new insights into efficiency (2025)
