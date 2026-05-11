@@ -1,7 +1,7 @@
-arXiv update run 2026-05-04 05:52 UTC
+arXiv update run 2026-05-11 06:24 UTC
+Added: Causal discovery under mean independence and linearity (2026)
 Added: Probabilistic PCA on tensors (2025)
 Added: Beyond independent component analysis: identifiability and algorithms (2025)
-Added: Orthogonal eigenvectors and singular vectors of tensors (2025)
 Added: A study of centrality measures in random recursive trees (2026)
 Added: Ratio Covers of Convex Sets and Optimal Mixture Density Estimation (2026)
 Added: The statistical threshold for planted matchings and spanning trees (2026)
